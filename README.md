@@ -30,11 +30,15 @@ Boston Scavenger
 
 ### Far Vision
 
-Demystify food trucks worldwide, enhancing the experience with some best practices from restaurants, like: where and when to find them, how to get them to your neighborhood, and ordering ahead to earn points.
+Demystify food trucks worldwide, enhancing the experience with some best practices from restaurants like: where and when to find them, how to get them to your neighborhood, and ordering ahead to earn points.
 
 ### Near Vision
 
 Provide people local to Boston with up-to-date information about good, transient food sources nearby.
+
+### Tag Line
+
+*Sometimes your schedule makes finding food hard. If only there was a way you could find good, interesting food trucks close by... Soon you can with Boston Scavenger!*
 
 ### Stakeholders
 
