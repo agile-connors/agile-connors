@@ -61,7 +61,7 @@ The product backlog is maintained using Trello and is publicly accessible [here]
 
 ### Backlog Sizing
 
-Backlog items were initially sized using a relative size estimating activity. Team members collaborated to group backlog items into groups of items of similar size. Story points were then assigned to backlog items based on these groups.
+Backlog items were initially sized using relative mass valuation. Team members collaborated to order all existing backlog items from smallest to largest. These items were then organized into groups of similar size and story points were assigned based on these groups.
 
 *Note: Only development team members participated in sizing backlog items.*
 
