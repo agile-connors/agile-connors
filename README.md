@@ -44,17 +44,12 @@ Provide people local to Boston with up-to-date information about good, transient
 
 #### User Persona
 
-![](persona-avatar.png)
-
-Name: Danielle Alexandrine Madriaga
-
-Age: 19
-
-Occupation: Student
-
-Interests: Traveling, singing, eating
-
-Descriptions: Danielle is a Harvard Summer School student and has class from 6:30 - 9:30 pm. Because Cabot Dining Hall dinner closes at 7:15 PM, she can never have dinner. Danielle also likes to eat local food at food trucks, but has trouble finding trucks nearby when her class is over.
+![Danielle Madriaga](user-persona.png)<br />
+**Name:** Danielle Alexandrine Madriaga<br />
+**Age:** 19<br />
+**Occupation:** Student<br />
+**Interests:** Traveling, singing, eating<br />
+**Description:** Danielle is a Harvard Summer School student and has class from 6:30 - 9:30 pm. Because Cabot Dining Hall dinner closes at 7:15 PM, she can never have dinner. Danielle also likes to eat local food at food trucks, but has trouble finding trucks nearby when her class is over.
 
 ## Product Backlog
 
