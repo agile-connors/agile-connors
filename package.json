@@ -1,0 +1,21 @@
+{
+  "name": "agile-connors",
+  "version": "1.0.0",
+  "description": "Project for CSCI S-71: Agile Software Development. A web application for finding food trucks in Boston.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylepixel/agile-connors.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylepixel/agile-connors/issues"
+  },
+  "homepage": "https://github.com/kylepixel/agile-connors#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
