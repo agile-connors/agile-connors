@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/kylepixel/agile-connors#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "proj4": "^2.4.3",
+    "request": "^2.81.0"
   }
 }

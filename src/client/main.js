@@ -15,4 +15,25 @@ function initMap() {
     google.maps.event.addListener(map, "click", function(event) {
         console.log(map.getCenter().lat(), map.getCenter().lng());
     });
+
+    fetchTruckData();
+}
+
+function fetchTruckData() {
+    $.ajax({
+        url: '/api/trucks',
+        type: 'GET',
+        dataType: 'JSON',
+        success: handleTruckData
+    });
+}
+
+function handleTruckData(data) {
+    data.forEach(function(truck) {
+        var marker = new google.maps.Marker({
+            position: { lat: truck.lat, lng: truck.lng },
+            map: map,
+            title: truck.title
+        });
+    });
 }
