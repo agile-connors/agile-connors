@@ -59,6 +59,10 @@ Provide people local to Boston with up-to-date information about good, transient
 
 The product backlog is maintained using Trello and is publicly accessible [here](https://trello.com/b/sfmmsg8h/agile-connors).
 
+### Backlog Sizing
+
+Backlog items were initially sized using a relative size estimating activity. Team members collaborated to group backlog items into groups of items of similar size. Story points were then assigned to backlog items based on these groups.
+
 *Note: Only development team members participated in sizing backlog items.*
 
 ### Backlog Order
