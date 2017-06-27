@@ -73,6 +73,9 @@ Additionally, backlog items are generally prioritized higher if they are known t
 
 Otherwise, features are examined for effort vs. impact and prioritized accordingly. This means that the implementation complexity is compared to how far the feature moves the product toward the product vision.
 
+### Estimating Activity
+We used affinity estimating to estimate our product backlog.
+
 ### Definition of Ready
 
 - [ ] The backlog item has a **title**.
