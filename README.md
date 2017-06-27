@@ -79,5 +79,4 @@ Otherwise, features are examined for effort vs. impact and prioritized according
 - [ ] The backlog item has a **user story sentence**.
 - [ ] The backlog item has **one or more acceptance criteria**.
 - [ ] The backlog item is **estimated in story points** and is **5 points or less**.
-- [ ] The backlog item has **a sketch for any relevant user interface elements**.
 - [ ] The backlog item has any **additional details** needed to understand the requirements.
