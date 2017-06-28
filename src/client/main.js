@@ -28,6 +28,17 @@ function fetchTruckData() {
     });
 }
 
+ var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">__NAME__</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>__NAME__</b> is a... </p>'+
+      '<p>More information, <a href="https://www.google.com">'+
+      'click here</a></p>'+
+      '</div>'+
+      '</div>';
+
 var truck_icon = 'img/truck.png';
 function handleTruckData(data) {
     data.forEach(function(truck) {
@@ -36,6 +47,15 @@ function handleTruckData(data) {
             map: map,
             title: truck.title,
             icon: truck_icon
+        });
+
+        var windowContent = contentString.replace(/__NAME__/g, truck.title);
+        var infowindow = new google.maps.InfoWindow({
+            content: windowContent
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
         });
     });
 }
