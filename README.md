@@ -7,6 +7,7 @@ Project for CSCI S-71: Agile Software Development. A web application for finding
 - [Project Team](#project-team)
 - [Product Design](#product-design)
 - [Product Backlog](#product-backlog)
+- [Development](#development)
 
 ## Project Team
 
@@ -83,3 +84,25 @@ We used affinity estimating to estimate our product backlog.
 - [ ] The backlog item has **one or more acceptance criteria**.
 - [ ] The backlog item is **estimated in story points** and is **5 points or less**.
 - [ ] The backlog item has any **additional details** needed to understand the requirements.
+
+## Development
+
+Download and install [Node.js](https://nodejs.org/en/) if you don't already have it. This project was developed with Node v4.6.0. Any higher version should also work.
+
+To set up the project and start the server, perform the following commands.
+
+```sh
+# Clone the repository.
+git clone https://github.com/kylepixel/agile-connors.git
+
+# Change directory.
+cd agile-connors
+
+# Install dependencies.
+npm install
+
+# Start the server.
+npm start
+```
+
+Finally, open `localhost:3000` in a web browser.
