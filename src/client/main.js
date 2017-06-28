@@ -28,12 +28,14 @@ function fetchTruckData() {
     });
 }
 
+var truck_icon = 'img/truck.png';
 function handleTruckData(data) {
     data.forEach(function(truck) {
         var marker = new google.maps.Marker({
             position: { lat: truck.lat, lng: truck.lng },
             map: map,
-            title: truck.title
+            title: truck.title,
+            icon: truck_icon
         });
     });
 }

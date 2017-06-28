@@ -106,3 +106,6 @@ npm start
 ```
 
 Finally, open `localhost:3000` in a web browser.
+
+## Resources
+* Truck Icon made by [Nikita Golubev](http://www.flaticon.com/authors/nikita-golubev) from www.flaticon.com 
