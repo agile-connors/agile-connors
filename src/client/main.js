@@ -1,5 +1,3 @@
-var map;
-
 function initMap() {
 
     var mapElement = document.getElementById('map');
@@ -10,21 +8,23 @@ function initMap() {
         disableDefaultUI: true,
         styles: [{"featureType":"all","elementType":"all","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":-30}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#353535"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#656565"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#505050"}]},{"featureType":"poi","elementType":"geometry.stroke","stylers":[{"color":"#808080"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#454545"}]},{"featureType":"transit","elementType":"labels","stylers":[{"hue":"#007bff"},{"saturation":100},{"lightness":-40},{"invert_lightness":true},{"gamma":1.5}]},{"featureType":"transit.station.bus","elementType":"geometry.fill","stylers":[{"color":"#08498f"}]}]
     };
-    map = new google.maps.Map(mapElement, mapOptions);
+    var map = new google.maps.Map(mapElement, mapOptions);
 
     google.maps.event.addListener(map, "click", function(event) {
         console.log(map.getCenter().lat(), map.getCenter().lng());
     });
 
-    fetchTruckData();
+    fetchTruckData(map);
 }
 
-function fetchTruckData() {
+function fetchTruckData(map) {
     $.ajax({
         url: '/api/trucks',
         type: 'GET',
         dataType: 'JSON',
-        success: handleTruckData
+        success: function(data){
+            addMapMarkers(map, data)
+        }
     });
 }
 
@@ -40,22 +40,28 @@ function fetchTruckData() {
       '</div>';
 
 var truck_icon = 'img/truck.png';
-function handleTruckData(data) {
+function addMapMarker(map, truck) {
+    var marker = new google.maps.Marker({
+        position: {lat: truck.lat, lng: truck.lng},
+        map: map,
+        title: truck.title,
+        icon: truck_icon
+    });
+
+    var windowContent = contentString.replace(/__NAME__/g, truck.title);
+    var infowindow = new google.maps.InfoWindow({
+        content: windowContent
+    });
+
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+    return marker;
+}
+
+function addMapMarkers(map, data) {
     data.forEach(function(truck) {
-        var marker = new google.maps.Marker({
-            position: { lat: truck.lat, lng: truck.lng },
-            map: map,
-            title: truck.title,
-            icon: truck_icon
-        });
-
-        var windowContent = contentString.replace(/__NAME__/g, truck.title);
-        var infowindow = new google.maps.InfoWindow({
-            content: windowContent
-        });
-
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
-        });
+        addMapMarker(map, truck);
     });
 }
