@@ -77,6 +77,18 @@ Otherwise, features are examined for effort vs. impact and prioritized according
 ### Estimating Activity
 We used affinity estimating to estimate our product backlog.
 
+## Story Points Forecast
+Our initial forecast is eight story points.
+
+Our fist eight story points encompass:
+* Creating a map of Boston
+* Showing all of the food trucks on the map
+* Showing the truck's availability and title when clicked on or hovered over
+* Having the option to filter by which day of the week trucks are open
+
+We chose eight story points because the above realistically seems like what 
+we could complete in 2 days while producing a stable product increment.
+
 ### Definition of Ready
 
 - [ ] The backlog item has a **title**.
