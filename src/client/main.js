@@ -66,8 +66,8 @@ function fetchTrucks(map) {
         url: '/api/trucks',
         type: 'GET',
         dataType: 'JSON',
-        success: function(data){
-            addMapMarkers(map, data)
+        success: function(trucks){
+            addMapMarkers(map, trucks)
         }
     });
 }
@@ -83,8 +83,8 @@ function fetchTrucks(map) {
       '</div>'+
       '</div>';
 
-function addMapMarkers(map, data) {
-    data.forEach(function(truck) {
+function addMapMarkers(map, trucks) {
+    trucks.forEach(function(truck) {
         addMapMarker(map, truck);
     });
 }

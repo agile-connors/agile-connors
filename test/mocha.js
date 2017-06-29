@@ -1,4 +1,4 @@
-var expect    = require("chai").expect;
+var expect = require("chai").expect;
 
 describe("Mocha", function() {
     describe("Boolean", function() {
