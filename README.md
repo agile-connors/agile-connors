@@ -108,6 +108,8 @@ TODO
 
 ### Daily Scrum
 
+![Sprint 1 - Daily Scrum](sprint1-scrum.png)
+
 We conducted a daily scrum after the first day of our two day sprint. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
 
 See below for a summary of this conversation.
@@ -137,7 +139,10 @@ We discussed **impediments** at length and there turned out to be quite a few:
 
 Our **impediment removal** plan is as follows:
 
-TODO
+- Plan any meetings or collaborative sessions ahead of time (at least 24 hours in advance).
+- Ensure every member of the team has a basic familiarity with the language and project.
+- Use TDD when possible, and at least ensure tests are written as features are developed to ensure testability.
+- If any other serious issues come up, we will meet as a team within 24 hours and find a solution.
 
 ### Sprint Review
 
@@ -145,7 +150,9 @@ TODO
 
 #### Burndown Chart
 
-TODO
+We completed our entire sprint backlog of 8 points by the end of the sprint. 6 points were completed on the first day. The final 2 points were completed on the second day.
+
+![Sprint 1 - Burndown Chart](sprint1-burndown.png)
 
 ## Development
 
