@@ -56,9 +56,7 @@ function createMapOfBoston() {
             "stylers": [{"color": "#08498f"}]
         }]
     };
-    var map = new google.maps.Map(mapElement, mapOptions);
-
-    return map;
+    return new google.maps.Map(mapElement, mapOptions);
 }
 
 function createInfoWindow(map) {
@@ -109,18 +107,15 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
         success: function(trucks){
             var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
             //var markerClusterer = addMarkerClusterer(map, markers);
-            attachUiEvents(map, markers/*, markerClusterer*/);
+            attachUiEvents(markers);
         }
     });
 }
 
 function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
-
-    var markers = trucks.map(function(truck) {
+    return trucks.map(function(truck) {
         return addMapMarker(map, infoWindow, markerSpiderfier, truck);
     });
-
-    return markers;
 }
 
 function createInfoWindowContent(truck) {
@@ -165,33 +160,40 @@ function addMarkerClusterer(map, markers) {
     });
 }
 
-function attachUiEvents(map, allMarkers/*, markerClusterer*/) {
+function attachUiEvents(allMarkers/*, markerClusterer*/) {
 
     $('#showCurrentlyAvailableCheckbox').click(function() {
         var isChecked = $(this).is(':checked');
         if (isChecked) {
-            showCurrentlyAvailableMarkers(map, allMarkers);
+            showCurrentlyAvailableMarkers(allMarkers);
         }
         else {
-            showAllMarkers(map, allMarkers);
+            showAllMarkers(allMarkers);
         }
     });
 }
 
-function showCurrentlyAvailableMarkers(map, allMarkers) {
+function showCurrentlyAvailableMarkers(allMarkers) {
     for (var marker of allMarkers) {
         var isAvailable = dateWithinAvailability(marker.truck.availability, new Date());
         marker.setVisible(isAvailable);
     }
 }
 
-function showAllMarkers(map, allMarkers) {
+function showAllMarkers(allMarkers) {
     for (var marker of allMarkers) {
         marker.setVisible(true);
     }
 }
 
-// Export in Node.js environment, for testing.
-if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+function isNodeJsEnvironment() {
+    return typeof module !== 'undefined' &&
+           typeof module.exports !== 'undefined';
+}
+function exportNodeJsFunctionsForTesting() {
     exports.createMapOfBoston = createMapOfBoston;
+}
+
+if (isNodeJsEnvironment()) {
+    exportNodeJsFunctionsForTesting();
 }
