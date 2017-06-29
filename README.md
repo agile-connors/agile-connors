@@ -124,6 +124,17 @@ See below for a summary of this conversation.
   - *Last 24 hours:* Review backlog items. Buy pretzels.
   - *Next 24 hours:* Document impediment removal plan.
 
+We discussed **impediments** at length and there turned out to be quite a few:
+
+- Schedules, locations / distance
+- Initial set up of environment
+- Lack of experience with technology
+- Testability (a lot of UI and not a lot of stored state)
+
+Our **impediment removal** plan is as follows:
+
+TODO
+
 ### Sprint Review
 
 TODO
