@@ -102,6 +102,29 @@ Our initial forecast is **8 story points**. These points comprise of:
 
 We chose 8 story points because the above seems like what we could realistically complete in 2 days while producing a stable product increment.
 
+### Daily Scrum
+
+We conducted a daily scrum after the first day of our two day sprint. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
+
+See below for a summary of this conversation.
+
+- **Kyle**
+  - *Last 24 hours:* Set up Github repository, front end and back end source code. Repo.
+  - *Next 24 hours:* Work on assigned backlog item (first toggle controls). Compile and organize README content, ensure it meets requirements.
+- **Lennart**
+  - *Last 24 hours:* Add tooltip to trucks on map (includes title and placeholder hyperlink). Set up Slack integration for Github.
+  - *Next 24 hours:* Work on assigned backlog item (view truck availability in tooltip).
+- **Ben**
+  - *Last 24 hours:* Add truck icon to map markers. Set up Travis CI integration with Github, tests run automatically. Set up Slack integration for Travis CI. Set up testing boilerplate. Refactor code for testability.
+  - *Next 24 hours:* Review non-code parts of rubric and ensure completion. Write tests.
+- **Henry**
+  - *Last 24 hours:* Work on Trello board, populating stories. Pair programming with Ben :writing tests and refactoring.
+  - *Next 24 hours:* More pair programming with Ben, create more tests.
+- **Kerry**
+  - *Last 24 hours:* Review backlog items. Buy pretzels.
+  - *Next 24 hours:* Document impediment removal plan.
+TODO
+
 ## Development
 
 Download and install [Node.js](https://nodejs.org/en/) if you don't already have it. This project was developed with Node v4.6.0. Any higher version should also work.
