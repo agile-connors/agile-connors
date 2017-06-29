@@ -108,6 +108,8 @@ TODO
 
 ### Daily Scrum
 
+![Sprint 1 - Daily Scrum](sprint1-scrum.png)
+
 We conducted a daily scrum after the first day of our two day sprint. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
 
 See below for a summary of this conversation.
