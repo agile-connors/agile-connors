@@ -77,7 +77,8 @@ function fetchTrucks(map) {
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">__NAME__</h1>'+
       '<div id="bodyContent">'+
-      '<p><b>__NAME__</b> is a... </p>'+
+      '<p><b>__NAME__</b> is a... </p>' +
+      'Open from __HOURS__' +
       '<p>More information, <a href="https://www.google.com">'+
       'click here</a></p>'+
       '</div>'+
@@ -98,6 +99,8 @@ function addMapMarker(map, truck) {
     });
 
     var windowContent = contentString.replace(/__NAME__/g, truck.title);
+    windowContent = windowContent.replace(/__HOURS__/g, truck.availability);
+
     var infowindow = new google.maps.InfoWindow({
         content: windowContent
     });
