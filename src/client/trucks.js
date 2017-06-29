@@ -53,12 +53,18 @@ function getEndTime(availability) {
 function dateWithinAvailability (availability, date) {
     return date >= getStartTime(availability) &&
            date <= getEndTime(availability);
-};
+}
 
 
-// Export in Node.js environment, for testing.
-if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+function isNodeJsEnvironment() {
+    return typeof module !== 'undefined' &&
+           typeof module.exports !== 'undefined';
+}
+function exportNodeJsFunctionsForTestingTrucks() {
     exports.getStartTime = getStartTime;
     exports.getEndTime = getEndTime;
     exports.dateWithinAvailability = dateWithinAvailability;
+}
+if (isNodeJsEnvironment()) {
+    exportNodeJsFunctionsForTestingTrucks();
 }

@@ -3,13 +3,10 @@ var trucks = require('../trucks.json');
 var trucksjs = require('../../src/client/trucks.js');
 
 describe("Trucks", function() {
-    it("should not be empty", function() {
+    it("test data should not be empty", function() {
         expect(typeof trucks !== 'undefined' && trucks.length > 0);
     });
-});
 
-
-describe("Trucks", function() {
     describe("Availability", function () {
        it("Get start time", function () {
            var startTime = trucksjs.getStartTime("11 a.m. - 3 p.m.");

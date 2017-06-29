@@ -190,10 +190,11 @@ function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&
            typeof module.exports !== 'undefined';
 }
-function exportNodeJsFunctionsForTesting() {
+function exportNodeJsFunctionsForTestingMain() {
+    exports.isNodeJsEnvironment = isNodeJsEnvironment;
     exports.createMapOfBoston = createMapOfBoston;
 }
 
 if (isNodeJsEnvironment()) {
-    exportNodeJsFunctionsForTesting();
+    exportNodeJsFunctionsForTestingMain();
 }
