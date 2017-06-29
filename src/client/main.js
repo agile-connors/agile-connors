@@ -79,8 +79,8 @@ function fetchTrucks(map) {
       '<div id="bodyContent">'+
       '<p><b>__NAME__</b> is a... </p>' +
       'Open from __HOURS__' +
-      '<p>More information, <a href="https://www.google.com">'+
-      'click here</a></p>'+
+      '<p>More information: <a href="__WEBSITE__">'+
+      '__WEBSITE_TEXT__</a></p>'+
       '</div>'+
       '</div>';
 
@@ -100,6 +100,14 @@ function addMapMarker(map, truck) {
 
     var windowContent = contentString.replace(/__NAME__/g, truck.title);
     windowContent = windowContent.replace(/__HOURS__/g, truck.availability);
+    if (truck.website) {
+        windowContent = windowContent.replace(/__WEBSITE__/g, truck.website);
+        windowContent = windowContent.replace(/__WEBSITE_TEXT__/g, truck.title + " website");
+    }
+    else {
+        windowContent = windowContent.replace(/__WEBSITE__/g, "");
+        windowContent = windowContent.replace(/__WEBSITE_TEXT__/g, "No website found");
+    }  
 
     var infowindow = new google.maps.InfoWindow({
         content: windowContent
