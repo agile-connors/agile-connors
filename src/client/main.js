@@ -1,9 +1,12 @@
+var MARKER_CLUSTERER_MAX_ZOOM = 15;
+
 function createMapOfBoston() {
     var mapElement = document.getElementById('map');
     var mapOptions = {
         center: {lat: 42.3530715, lng: -71.0736387},
         zoom: 13,
         minZoom: 13,
+        maxZoom: 16,
         disableDefaultUI: true,
         clickableIcons: false,
         styles: [{
@@ -48,25 +51,71 @@ function createMapOfBoston() {
     };
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    google.maps.event.addListener(map, "click", function (event) {
-        console.log(map.getCenter().lat(), map.getCenter().lng());
-    });
     return map;
+}
+
+function createInfoWindow(map) {
+
+    var infoWindow = new google.maps.InfoWindow();
+
+    google.maps.event.addListener(map, 'click', function() {
+        infoWindow.close();
+    });
+
+    return infoWindow;
+}
+
+function createMarkerSpiderfier(map) {
+
+    var markerSpiderfierOptions = { 
+        keepSpiderfied: true
+    };
+    var markerSpiderfier = new OverlappingMarkerSpiderfier(map, markerSpiderfierOptions);
+
+    markerSpiderfier.addListener('format', function(marker, status) {
+        var imageUrl;
+        switch (status) {
+            case OverlappingMarkerSpiderfier.markerStatus.SPIDERFIED:
+            case OverlappingMarkerSpiderfier.markerStatus.UNSPIDERFIABLE:
+                imageUrl = '/img/truck.png';
+                break;
+            case OverlappingMarkerSpiderfier.markerStatus.SPIDERFIABLE:
+                imageUrl = '/img/truck-expand.png';
+                break;
+            default:
+                imageUrl = null;
+        }
+        if (imageUrl) {
+            marker.setIcon({ url: imageUrl });
+        }
+    });
+
+    return markerSpiderfier;
 }
 
 function initMap() {
     var map = createMapOfBoston();
-    fetchTrucks(map);
+    var infoWindow = createInfoWindow(map);
+    var markerSpiderfier = createMarkerSpiderfier(map);
+    fetchTrucks(map, infoWindow, markerSpiderfier);
 }
 
-function fetchTrucks(map) {
+function fetchTrucks(map, infoWindow, markerSpiderfier) {
     $.ajax({
         url: '/api/trucks',
         type: 'GET',
         dataType: 'JSON',
         success: function(trucks){
-            addMapMarkers(map, trucks)
+            var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
+            var markerClusterer = addMarkerClusterer(map, markers);
         }
+    });
+}
+
+function addMarkerClusterer(map, markers) {
+    return new MarkerClusterer(map, markers, {
+        imagePath: '/img/marker-cluster',
+        maxZoom: MARKER_CLUSTERER_MAX_ZOOM
     });
 }
 
@@ -82,19 +131,24 @@ function fetchTrucks(map) {
       '</div>'+
       '</div>';
 
-function addMapMarkers(map, trucks) {
-    trucks.forEach(function(truck) {
-        addMapMarker(map, truck);
+function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
+
+    var markers = trucks.map(function(truck) {
+        return addMapMarker(map, infoWindow, markerSpiderfier, truck);
     });
+
+    return markers;
 }
 
-function addMapMarker(map, truck) {
+function addMapMarker(map, infoWindow, markerSpiderfier, truck) {
     var marker = new google.maps.Marker({
         position: {lat: truck.lat, lng: truck.lng},
         map: map,
         title: truck.title,
         icon: 'img/truck.png'
     });
+
+    markerSpiderfier.addMarker(marker);
 
     var windowContent = contentString.replace(/__NAME__/g, truck.title);
     windowContent = windowContent.replace(/__HOURS__/g, truck.availability);
@@ -105,14 +159,11 @@ function addMapMarker(map, truck) {
     else {
         windowContent = windowContent.replace(/__WEBSITE__/g, "");
         windowContent = windowContent.replace(/__WEBSITE_TEXT__/g, "No website found");
-    }  
-
-    var infowindow = new google.maps.InfoWindow({
-        content: windowContent
-    });
+    }
 
     marker.addListener('click', function () {
-        infowindow.open(map, marker);
+        infoWindow.setContent(windowContent);
+        infoWindow.open(map, marker);
     });
 
     return marker;
