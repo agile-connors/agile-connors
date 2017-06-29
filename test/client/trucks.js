@@ -8,15 +8,19 @@ describe("Trucks", function() {
     });
 
     describe("Availability", function () {
-       it("Get start time", function () {
-           var startTime = trucksjs.getStartTime("11 a.m. - 3 p.m.");
-           expect(startTime.getHours()).to.equal(11);
-           expect(startTime.getMinutes()).to.equal(0);
+        it("should get hours when minutes aren't present", function () {
+            var startTime = trucksjs.getStartTime("11 a.m. - 3 p.m.");
+            expect(startTime.getHours()).to.equal(11);
+            expect(startTime.getMinutes()).to.equal(0);
+        });
 
-           var startTime2 = trucksjs.getStartTime("11:30 a.m. - 3 p.m.");
-           expect(startTime2.getHours()).to.equal(11);
-           expect(startTime2.getMinutes()).to.equal(30);
+        it("should get hours when minutes are present", function () {
+            var startTime2 = trucksjs.getStartTime("11:30 a.m. - 3 p.m.");
+            expect(startTime2.getHours()).to.equal(11);
+            expect(startTime2.getMinutes()).to.equal(30);
+        });
 
+       it("should get hours when period is p.m.", function () {
            var startTime3 = trucksjs.getStartTime("2 p.m. - 3 p.m.");
            expect(startTime3.getHours()).to.equal(14);
            expect(startTime3.getMinutes()).to.equal(0);
@@ -26,14 +30,24 @@ describe("Trucks", function() {
             var endTime = trucksjs.getEndTime("7 a.m. - 11 a.m.");
             expect(endTime.getHours()).to.equal(11);
             expect(endTime.getMinutes()).to.equal(0);
+        });
 
-            var endTime2 = trucksjs.getEndTime("10:30 a.m. - 11:30 a.m.");
-            expect(endTime2.getHours()).to.equal(11);
-            expect(endTime2.getMinutes()).to.equal(30);
+        it("Get end time with minutes", function () {
+            var endTime = trucksjs.getEndTime("10:30 a.m. - 11:30 a.m.");
+            expect(endTime.getHours()).to.equal(11);
+            expect(endTime.getMinutes()).to.equal(30);
+        });
 
-            var endTime3 = trucksjs.getEndTime("2 p.m. - 3:30 p.m.");
-            expect(endTime3.getHours()).to.equal(15);
-            expect(endTime3.getMinutes()).to.equal(30);
+        it("Get end time in afternoon", function () {
+            var endTime = trucksjs.getEndTime("2 p.m. - 3:30 p.m.");
+            expect(endTime.getHours()).to.equal(15);
+            expect(endTime.getMinutes()).to.equal(30);
+        });
+
+        it("Get end time open late", function () {
+            var endTime = trucksjs.getEndTime("10 p.m. - 2 a.m.");
+            expect(endTime.getHours()).to.equal(2);
+            expect(endTime.getMinutes()).to.equal(0);
         });
 
         it("Date within availability", function () {
