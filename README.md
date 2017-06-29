@@ -102,6 +102,10 @@ Our initial forecast is **8 story points**. These points comprise of:
 
 We chose 8 story points because the above seems like what we could realistically complete in 2 days while producing a stable product increment.
 
+### Pair Programming
+
+TODO
+
 ### Daily Scrum
 
 We conducted a daily scrum after the first day of our two day sprint. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
