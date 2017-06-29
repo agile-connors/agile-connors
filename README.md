@@ -147,7 +147,24 @@ Our **impediment removal** plan is as follows:
 
 ### Sprint Review
 
-TODO
+#### Start doing
+Write down tasks that come up as work is being done in our current card's task list. So we can track all completed work.
+Come up with schedules before leaving class for the day. So we can decide when we'll sit down for pair programming.
+
+#### Stop doing
+Working on items aren't in the Sprint backlog. 
+[(1) Provide link to truck website, if available on Agile Connors | Trello](https://trello.com/c/8DlYozJC/20-1-provide-link-to-truck-website-if-available)
+
+#### Continue doing
+Making Trello board to manage assignment guidelines.
+[Agile Connors Meta | Trello](https://trello.com/b/pJo83OOM/agile-connors-meta)
+Pair programming. Great learning experience.
+Assigning card's to users in our group, so that we know whose main responsibilty completing a card is.
+
+#### Kudos/shoutouts
+Kyle quickly got the initial google maps api setup.
+Ben did a lot to get the testing setup.
+Lennart communicated with our stakeholder Danielle and recieved feedback from her. 
 
 #### Burndown Chart
 
