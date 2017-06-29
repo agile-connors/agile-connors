@@ -5,4 +5,3 @@ node_js:
 script: npm test
 notifications:
     slack: agilesoftwarecourse:04DMpZE4tYwq9F5m4sWvWXaZ
-        on_success: change
