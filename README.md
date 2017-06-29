@@ -137,7 +137,10 @@ We discussed **impediments** at length and there turned out to be quite a few:
 
 Our **impediment removal** plan is as follows:
 
-TODO
+- Plan any meetings or collaborative sessions ahead of time (at least 24 hours in advance).
+- Ensure every member of the team has a basic familiarity with the language and project.
+- Use TDD when possible, and at least ensure tests are written as features are developed to ensure testability.
+- If any other serious issues come up, we will meet as a team within 24 hours and find a solution.
 
 ### Sprint Review
 
