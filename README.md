@@ -145,7 +145,9 @@ TODO
 
 #### Burndown Chart
 
-TODO
+We completed our entire sprint backlog of 8 points by the end of the sprint. 6 points were completed on the first day. The final 2 points were completed on the second day.
+
+![Sprint 1 - Burndown Chart](sprint1-burndown.png)
 
 ## Development
 
