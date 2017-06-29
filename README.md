@@ -166,6 +166,10 @@ Kyle quickly got the initial google maps api setup.
 Ben did a lot to get the testing setup.
 Lennart communicated with our stakeholder Danielle and recieved feedback from her. 
 
+We also met with our real stakeholder and received their input on the project thus far:
+
+![Sprint 1 - Stakeholder Input](sprint1-stakeholder.png)
+
 #### Burndown Chart
 
 We completed our entire sprint backlog of 8 points by the end of the sprint. 6 points were completed on the first day. The final 2 points were completed on the second day.
