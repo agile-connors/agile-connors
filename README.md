@@ -7,6 +7,7 @@ Project for CSCI S-71: Agile Software Development. A web application for finding
 - [Project Team](#project-team)
 - [Product Design](#product-design)
 - [Product Backlog](#product-backlog)
+- [Sprint 1](#sprint-1)
 - [Development](#development)
 
 ## Project Team
@@ -77,18 +78,6 @@ Otherwise, features are examined for effort vs. impact and prioritized according
 ### Estimating Activity
 We used affinity estimating to estimate our product backlog.
 
-## Story Points Forecast
-Our initial forecast is eight story points.
-
-Our fist eight story points encompass:
-* Creating a map of Boston
-* Showing all of the food trucks on the map
-* Showing the truck's availability and title when clicked on or hovered over
-* Having the option to filter by which day of the week trucks are open
-
-We chose eight story points because the above realistically seems like what 
-we could complete in 2 days while producing a stable product increment.
-
 ### Definition of Ready
 
 - [ ] The backlog item has a **title**.
@@ -96,6 +85,22 @@ we could complete in 2 days while producing a stable product increment.
 - [ ] The backlog item has **one or more acceptance criteria**.
 - [ ] The backlog item is **estimated in story points** and is **5 points or less**.
 - [ ] The backlog item has any **additional details** needed to understand the requirements.
+
+## Sprint 1
+
+*Tuesday 6/27, 6:15pm - Thursday 6/29 3:00pm*
+
+### Story Points Forecast
+
+Our initial forecast is **8 story points**. These points comprise of:
+
+- (2) View a map of Boston
+- (3) View food trucks on the map
+- (1) View truck title
+- (1) View trucks available at current time
+- (1) View truck availability
+
+We chose 8 story points because the above seems like what we could realistically complete in 2 days while producing a stable product increment.
 
 ## Development
 
