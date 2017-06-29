@@ -1,6 +1,6 @@
-// Utility methods for trucks
-var exports = exports || {};
-
+/**
+ * @param {string} rawTime
+ */
 function convertTimeStringToDate(rawTime) {
     function getTodaysDate(hours, minutes) {
         var date = new Date();
@@ -33,23 +33,32 @@ function convertTimeStringToDate(rawTime) {
     }
     return getTodaysDate(hours, minutes);
 }
+
 /**
- * Returns the start time of a truck in the format `11:00`
- * @param availability from a truck in the format `11 a.m. - 3 p.m.`
+ * Returns the start time of a truck in the format '11:00'.
+ * @param {string} availability Availability property from a truck in the format '11 a.m. - 3 p.m.'.
  */
-exports.getStartTime = function getStartTime(availability) {
+function getStartTime(availability) {
     var hyphenPos = availability.indexOf("-");
     var startRaw = availability.slice(0, hyphenPos - 1);
     return convertTimeStringToDate(startRaw);
 }
 
-exports.getEndTime = function getEndTime(availability) {
+function getEndTime(availability) {
     var hyphenPos = availability.indexOf("-");
     var startRaw = availability.substr(hyphenPos + 2);
     return convertTimeStringToDate(startRaw);
 }
 
-exports.dateWithinAvailability = function dateWithinAvailability (availability, date) {
-    return date >= exports.getStartTime(availability) &&
-           date <= exports.getEndTime(availability);
+function dateWithinAvailability (availability, date) {
+    return date >= getStartTime(availability) &&
+           date <= getEndTime(availability);
 };
+
+
+// Export in Node.js environment, for testing.
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    exports.getStartTime = getStartTime;
+    exports.getEndTime = getEndTime;
+    exports.dateWithinAvailability = dateWithinAvailability;
+}

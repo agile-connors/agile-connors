@@ -1,6 +1,4 @@
-var exports = exports || {};
-
-exports.createMapOfBoston = function createMapOfBoston() {
+function createMapOfBoston() {
     var mapElement = document.getElementById('map');
     var mapOptions = {
         center: {lat: 42.3530715, lng: -71.0736387},
@@ -57,7 +55,7 @@ exports.createMapOfBoston = function createMapOfBoston() {
 }
 
 function initMap() {
-    var map = exports.createMapOfBoston();
+    var map = createMapOfBoston();
     fetchTrucks(map);
 }
 
@@ -118,4 +116,9 @@ function addMapMarker(map, truck) {
     });
 
     return marker;
+}
+
+// Export in Node.js environment, for testing.
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    exports.createMapOfBoston = createMapOfBoston;
 }
