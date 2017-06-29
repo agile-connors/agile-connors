@@ -123,6 +123,13 @@ See below for a summary of this conversation.
 - **Kerry**
   - *Last 24 hours:* Review backlog items. Buy pretzels.
   - *Next 24 hours:* Document impediment removal plan.
+
+### Sprint Review
+
+TODO
+
+#### Burndown Chart
+
 TODO
 
 ## Development
