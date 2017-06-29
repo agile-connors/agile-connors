@@ -55,6 +55,8 @@ function dateWithinAvailability (availability, date) {
            date <= getEndTime(availability);
 }
 
+// TODO(ben): Add a date closing within 1 hour functionality
+
 
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&

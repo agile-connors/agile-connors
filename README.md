@@ -103,8 +103,9 @@ Our initial forecast is **8 story points**. These points comprise of:
 We chose 8 story points because the above seems like what we could realistically complete in 2 days while producing a stable product increment.
 
 ### Pair Programming
+#### Henry and Ben tested and added functionality
+![Sprint 1 - Pair Programming](pair_programming.jpg)
 
-TODO
 
 ### Daily Scrum
 
