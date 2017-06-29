@@ -1,4 +1,11 @@
-var MARKER_CLUSTERER_MAX_ZOOM = 15;
+//var MARKER_CLUSTERER_MAX_ZOOM = 15;
+
+function initMap() {
+    var map = createMapOfBoston();
+    var infoWindow = createInfoWindow(map);
+    var markerSpiderfier = createMarkerSpiderfier(map);
+    fetchTrucks(map, infoWindow, markerSpiderfier);
+}
 
 function createMapOfBoston() {
     var mapElement = document.getElementById('map');
@@ -67,8 +74,9 @@ function createInfoWindow(map) {
 
 function createMarkerSpiderfier(map) {
 
-    var markerSpiderfierOptions = { 
-        keepSpiderfied: true
+    var markerSpiderfierOptions = {
+        keepSpiderfied: true,
+        markersWontMove: true
     };
     var markerSpiderfier = new OverlappingMarkerSpiderfier(map, markerSpiderfierOptions);
 
@@ -93,13 +101,6 @@ function createMarkerSpiderfier(map) {
     return markerSpiderfier;
 }
 
-function initMap() {
-    var map = createMapOfBoston();
-    var infoWindow = createInfoWindow(map);
-    var markerSpiderfier = createMarkerSpiderfier(map);
-    fetchTrucks(map, infoWindow, markerSpiderfier);
-}
-
 function fetchTrucks(map, infoWindow, markerSpiderfier) {
     $.ajax({
         url: '/api/trucks',
@@ -107,29 +108,11 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
         dataType: 'JSON',
         success: function(trucks){
             var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
-            var markerClusterer = addMarkerClusterer(map, markers);
+            //var markerClusterer = addMarkerClusterer(map, markers);
+            attachUiEvents(map, markers/*, markerClusterer*/);
         }
     });
 }
-
-function addMarkerClusterer(map, markers) {
-    return new MarkerClusterer(map, markers, {
-        imagePath: '/img/marker-cluster',
-        maxZoom: MARKER_CLUSTERER_MAX_ZOOM
-    });
-}
-
- var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">__NAME__</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>__NAME__</b> is a... </p>' +
-      'Open from __HOURS__' +
-      '<p>More information: <a href="__WEBSITE__">'+
-      '__WEBSITE_TEXT__</a></p>'+
-      '</div>'+
-      '</div>';
 
 function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
 
@@ -140,33 +123,72 @@ function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
     return markers;
 }
 
+function createInfoWindowContent(truck) {
+    return '' +
+        '<div id="content">' +
+            '<div id="siteNotice"></div>' +
+            '<h1>' + truck.title + '</h1>' +
+            '<div id="bodyContent">' +
+                '<p><strong>' + truck.title + '</strong> is a... </p>' +
+                '<p>Open from ' + truck.availability + '</p>' +
+                '<p>More information: <a href="#">No website found</a></p>' +
+            '</div>'+
+        '</div>';
+}
+
 function addMapMarker(map, infoWindow, markerSpiderfier, truck) {
+
     var marker = new google.maps.Marker({
         position: {lat: truck.lat, lng: truck.lng},
         map: map,
         title: truck.title,
-        icon: 'img/truck.png'
+        icon: 'img/truck.png',
+        truck: truck
     });
 
     markerSpiderfier.addMarker(marker);
 
-    var windowContent = contentString.replace(/__NAME__/g, truck.title);
-    windowContent = windowContent.replace(/__HOURS__/g, truck.availability);
-    if (truck.website) {
-        windowContent = windowContent.replace(/__WEBSITE__/g, truck.website);
-        windowContent = windowContent.replace(/__WEBSITE_TEXT__/g, truck.title + " website");
-    }
-    else {
-        windowContent = windowContent.replace(/__WEBSITE__/g, "");
-        windowContent = windowContent.replace(/__WEBSITE_TEXT__/g, "No website found");
-    }
-
+    var infoWindowContent = createInfoWindowContent(truck);
     marker.addListener('click', function () {
-        infoWindow.setContent(windowContent);
+        infoWindow.setContent(infoWindowContent);
         infoWindow.open(map, marker);
     });
 
     return marker;
+}
+
+function addMarkerClusterer(map, markers) {
+    return new MarkerClusterer(map, markers, {
+        imagePath: '/img/marker-cluster',
+        maxZoom: MARKER_CLUSTERER_MAX_ZOOM,
+        ignoreHidden: true
+    });
+}
+
+function attachUiEvents(map, allMarkers/*, markerClusterer*/) {
+
+    $('#showCurrentlyAvailableCheckbox').click(function() {
+        var isChecked = $(this).is(':checked');
+        if (isChecked) {
+            showCurrentlyAvailableMarkers(map, allMarkers);
+        }
+        else {
+            showAllMarkers(map, allMarkers);
+        }
+    });
+}
+
+function showCurrentlyAvailableMarkers(map, allMarkers) {
+    for (var marker of allMarkers) {
+        var isAvailable = dateWithinAvailability(marker.truck.availability, new Date());
+        marker.setVisible(isAvailable);
+    }
+}
+
+function showAllMarkers(map, allMarkers) {
+    for (var marker of allMarkers) {
+        marker.setVisible(true);
+    }
 }
 
 // Export in Node.js environment, for testing.
