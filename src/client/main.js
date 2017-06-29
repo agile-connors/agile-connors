@@ -7,6 +7,7 @@ exports.createMapOfBoston = function createMapOfBoston() {
         zoom: 13,
         minZoom: 13,
         disableDefaultUI: true,
+        clickableIcons: false,
         styles: [{
             "featureType": "all",
             "elementType": "all",
