@@ -162,22 +162,26 @@ function addMarkerClusterer(map, markers) {
 
 function attachUiEvents(allMarkers/*, markerClusterer*/) {
 
-    $('#showCurrentlyAvailableCheckbox').click(function() {
-        var isChecked = $(this).is(':checked');
-        if (isChecked) {
-            showCurrentlyAvailableMarkers(allMarkers);
-        }
-        else {
-            showAllMarkers(allMarkers);
-        }
-    });
-}
+    $('#showPeriodOfDay').change(function() {
+        var chosen = $( "#showPeriodOfDay").val();
+        console.log("Time filter changed to: " + chosen);
+        for (var marker of allMarkers) {
+            if (chosen === "anytime") {
+                marker.setVisible(true);
+            } else if (chosen === "currentlyAvailable"){
+                var isAvailable = dateWithinAvailability(marker.truck.availability, new Date());
+                marker.setVisible(isAvailable);
+            } else if (chosen === "morning"){
+                marker.setVisible(isOpenInMorning(marker.truck.availability));
+            } else if (chosen === "afternoon"){
+                marker.setVisible(isOpenInAfternoon(marker.truck.availability));
+            } else if (chosen === "evening"){
+                marker.setVisible(isOpenInEvening(marker.truck.availability));
+            }
 
-function showCurrentlyAvailableMarkers(allMarkers) {
-    for (var marker of allMarkers) {
-        var isAvailable = dateWithinAvailability(marker.truck.availability, new Date());
-        marker.setVisible(isAvailable);
-    }
+        }
+
+    });
 }
 
 function showNearbyMarkers(allMarkers, location, maxDistance) {
@@ -188,11 +192,7 @@ function showNearbyMarkers(allMarkers, location, maxDistance) {
 }
 
 
-function showAllMarkers(allMarkers) {
-    for (var marker of allMarkers) {
-        marker.setVisible(true);
-    }
-}
+
 
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&

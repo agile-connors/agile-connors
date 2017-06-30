@@ -9,16 +9,22 @@
 <body>
 	<header id="header">
         <label class="headerLocationSearchBox">
-            <form class="search-bar">
+            <form class="searchBar">
                 <input name="location" type="search" placeholder="Search near location">
                 <input name="distance" type="search" placeholder="Distance">
                 <input name="submit" type="button" value="Search">
             </form>
         </label>
-		<label class="headerCheckboxOption">
-			<input id="showCurrentlyAvailableCheckbox" type="checkbox" />
-			<span>Show only currently available</span>
-		</label>
+        <label class="headerTimePeriod">
+            <span>Time</span>
+            <select id="showPeriodOfDay">
+                <option value="anytime">Anytime</option>
+                <option value="currentlyAvailable">Currently Available</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+        </label>
 	</header>
     <div id="map"></div>
     <script src="vendor/jquery-3.2.1.min.js"></script>

@@ -19,13 +19,13 @@ body {
 	z-index: 20;
 }
 
-.headerCheckboxOption {
+.headerTimePeriod {
 	float: right;
 	font-size: 12px;
 	line-height: 40px;
 }
 
-.search-bar {
+.searchBar {
 	display: inline-block;
 	font-size: 12px;
 	line-height: 40px;
