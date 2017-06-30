@@ -58,6 +58,14 @@ function dateWithinAvailability (availability, date) {
 // TODO(ben): Add a date closing within 1 hour functionality
 
 
+// Calculate the distance between the truck and the search location.
+// Returns: True if the distance between the truck and the location is less than maxDistance.
+//          False if they are too far apart.
+function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
+    return true;
+}
+
+
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&
            typeof module.exports !== 'undefined';

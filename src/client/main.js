@@ -180,6 +180,14 @@ function showCurrentlyAvailableMarkers(allMarkers) {
     }
 }
 
+function showNearbyMarkers(allMarkers, location, maxDistance) {
+    for (var marker of allMarkers) {
+        var isNearby = locationIsNearby(marker.truck.latitude, marker.truck.longitude, location, maxDistance);
+        marker.setVisible(isNearby);
+    }
+}
+
+
 function showAllMarkers(allMarkers) {
     for (var marker of allMarkers) {
         marker.setVisible(true);
