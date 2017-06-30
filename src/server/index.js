@@ -20,11 +20,12 @@ app.get('/api/trucks', function(req, res) {
         const data = JSON.parse(body);
         const responseData = data.features.map(function(feature) {
             const coordinates = proj4('EPSG:3857', 'EPSG:4326', [feature.attributes.POINT_X, feature.attributes.POINT_Y]);
-            console.log(feature);
             return {
+                id: feature.attributes.FID,
                 day: feature.attributes.Day,
                 title: feature.attributes.Truck,
                 location: feature.attributes.Title,
+                notes: feature.attributes.Notes,
                 website: feature.attributes.Link || null,
                 availability: feature.attributes.Hours,
                 lat: coordinates[1],

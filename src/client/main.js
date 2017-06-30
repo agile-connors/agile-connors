@@ -105,7 +105,7 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
         type: 'GET',
         dataType: 'JSON',
         success: function(trucks){
-            console.log(JSON.stringify(trucks));
+            // console.log(JSON.stringify(trucks));
             var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
             //var markerClusterer = addMarkerClusterer(map, markers);
             attachUiEvents(markers);
