@@ -1,2141 +1,2753 @@
 [
   {
+    "day": "Monday",
     "title": "Pomaire Chilean Grill",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "https:\/\/www.facebook.com\/pomairebostonchilean\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Monday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Boston Medical Center",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Monday",
     "title": "Papi's Stuffed Sopapillas",
+    "location": "Clarendon Street",
     "website": "http:\/\/www.stuffedbypapi.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Monday",
     "title": "Moyzilla",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.moyzillaboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Monday",
     "title": "Mo'Rockin Fusion",
+    "location": "Stuart Street",
     "website": "http:\/\/www.morockinfusion.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Monday",
     "title": "North East of the Border",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Monday",
     "title": "Riceburg",
+    "location": "Boston University East",
     "website": "http:\/\/www.riceburg1.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Monday",
     "title": "Tenoch Mexican",
+    "location": "Boston University West",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350909391204,
     "lng": -71.112693547358
   },
   {
+    "day": "Monday",
     "title": "Compliments",
+    "location": "Charlestown Navy Yard",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.374682390831,
     "lng": -71.0545786033
   },
   {
+    "day": "Wednesday",
     "title": "Mo'Rockin Fusion",
+    "location": "Greenway",
     "website": "http:\/\/www.morockinfusion.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.351281064296,
     "lng": -71.059652703136
   },
   {
+    "day": "Wednesday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Bon Me",
+    "location": "West End",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Wednesday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Greenway",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Monday",
     "title": "Coffee Trike",
+    "location": "Greenway",
     "website": "http:\/\/www.thecoffeetrike.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.359494968006,
     "lng": -71.052076270348
   },
   {
+    "day": "Wednesday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "Chubby Chickpea",
+    "location": "Financial District",
     "website": "http:\/\/www.thechubbychickpea.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Monday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Monday",
     "title": "Pennypackers",
+    "location": "Financial District",
     "website": "http:\/\/pennypackersfinefoods.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35605915987,
     "lng": -71.054867448495
   },
   {
+    "day": "Monday",
     "title": "Sweet Tomato",
+    "location": "Innovation District",
     "website": "http:\/\/www.sweettomatoespizzatruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35240653621,
     "lng": -71.046559910764
   },
   {
+    "day": "Monday",
     "title": "Bibim Box",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/www.facebook.com\/Bibim-Box-1751040118466317\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Saturday",
     "title": "Tenoch Mexican",
+    "location": "Maverick Square",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.368871458886,
     "lng": -71.039742063012
   },
   {
+    "day": "Wednesday",
     "title": "Bon Me",
+    "location": "Dudley Square",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.328730229143,
     "lng": -71.083788307251
   },
   {
+    "day": "Tuesday",
     "title": "The Dining Car",
+    "location": "Boston Public Library",
     "website": "http:\/\/diningcar.net\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Sunday",
     "title": "Tea Station",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "http:\/\/www.bostonteastation.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Wednesday",
     "title": "Stoked Pizza",
+    "location": "Boston Public Library",
     "website": "http:\/\/www.stokedpizzaco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Thursday",
     "title": "Mei Mei",
+    "location": "Boston Public Library",
     "website": "http:\/\/www.meimeiboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Friday",
     "title": "Clyde's Cupcakes",
+    "location": "Boston Public Library",
     "website": "http:\/\/clydescupcakes.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Saturday",
     "title": "Tea Station",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "http:\/\/www.bostonteastation.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Monday",
     "title": "Sweet Bubble",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Tuesday",
     "title": "Frozen Hoagies",
+    "location": "Boston Public Library",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Thursday",
     "title": "Sweet Bubble",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Friday",
     "title": "Sweet Bubble",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Saturday",
     "title": "Tea Station",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "http:\/\/www.bostonteastation.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Sunday",
     "title": "Tea Station",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "http:\/\/www.bostonteastation.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Wednesday",
     "title": "Sweet Bubble",
-    "website": null,
+    "location": "Boston Public Library",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Tuesday",
     "title": "Compliments",
+    "location": "Clarendon Street",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Wednesday",
     "title": "Moyzilla",
+    "location": "Clarendon Street",
     "website": "http:\/\/www.moyzillaboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Thursday",
     "title": "Stoked Pizza",
+    "location": "Clarendon Street",
     "website": "http:\/\/www.stokedpizzaco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Friday",
     "title": "Daddy's Bonetown Burger",
-    "website": null,
+    "location": "Clarendon Street",
+    "website": "https:\/\/twitter.com\/bonetownburgers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Saturday",
     "title": "Big Daddy Hotdogs",
-    "website": null,
+    "location": "Clarendon Street",
+    "website": "https:\/\/twitter.com\/bigdaddyhotdogs?lang=en",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Sunday",
     "title": "Riceburg",
+    "location": "Clarendon Street",
     "website": "http:\/\/www.riceburg1.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Monday",
     "title": "Med Home Cooking",
-    "website": null,
+    "location": "Clarendon Street",
+    "website": "https:\/\/www.facebook.com\/Mediterranean-Home-Cooking-440428386060916\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Tuesday",
     "title": "Baja Taco Truck",
+    "location": "Clarendon Street",
     "website": "http:\/\/bajatacotruck.com\/main-page.html",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Saturday",
     "title": "Cookie Monstah",
+    "location": "Clarendon Street",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Friday",
     "title": "Big Daddy Hotdogs",
-    "website": null,
+    "location": "Clarendon Street",
+    "website": "https:\/\/twitter.com\/bigdaddyhotdogs?lang=en",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Wednesday",
     "title": "Baja Taco Truck",
+    "location": "Clarendon Street",
     "website": "http:\/\/bajatacotruck.com\/main-page.html",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Thursday",
     "title": "Cookie Monstah",
+    "location": "Clarendon Street",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.350659150344,
     "lng": -71.075242679677
   },
   {
+    "day": "Monday",
     "title": "Capriotti's",
+    "location": "Stuart Street",
     "website": "https:\/\/www.capriottis.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Monday",
     "title": "Kebabish",
-    "website": null,
+    "location": "Stuart Street",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Tuesday",
     "title": "SA PA",
+    "location": "Stuart Street",
     "website": "https:\/\/sa-pa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Tuesday",
     "title": "Sabroso Taqueria",
+    "location": "Stuart Street",
     "website": "http:\/\/www.sabrosotaqueria.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Tuesday",
     "title": "The Roving Lunchbox",
+    "location": "Stuart Street",
     "website": "http:\/\/www.rovinglunchbox.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Wednesday",
     "title": "Chicken & Rice Guys",
+    "location": "Stuart Street",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Wednesday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": "Stuart Street",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Wednesday",
     "title": "Cod Squad",
+    "location": "Stuart Street",
     "website": "http:\/\/www.captainmardens.com\/food-truck",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Thursday",
     "title": "Chubby Chickpea",
+    "location": "Stuart Street",
     "website": "http:\/\/www.thechubbychickpea.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Thursday",
     "title": "Indulge India",
+    "location": "Stuart Street",
     "website": "http:\/\/indulgeindiaft.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Thursday",
     "title": "Med Home Cooking",
-    "website": null,
+    "location": "Stuart Street",
+    "website": "https:\/\/www.facebook.com\/Mediterranean-Home-Cooking-440428386060916\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Friday",
     "title": "Teri-Yummy",
+    "location": "Stuart Street",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Friday",
     "title": "North East of the Border",
+    "location": "Stuart Street",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Friday",
     "title": "Zo Food Truck",
+    "location": "Stuart Street",
     "website": "http:\/\/www.zoboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Monday",
     "title": "SA PA",
+    "location": "Belvidere Street",
     "website": "https:\/\/sa-pa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Monday",
     "title": "Big Daddy Hotdogs",
-    "website": null,
+    "location": "Belvidere Street",
+    "website": "https:\/\/twitter.com\/bigdaddyhotdogs?lang=en",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Tuesday",
     "title": "Spicy Salaa",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.spicysalaa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Tuesday",
     "title": "Revelry",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.revelryboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Tuesday",
     "title": "Med Home Cooking",
-    "website": null,
+    "location": "Belvidere Street",
+    "website": "https:\/\/www.facebook.com\/Mediterranean-Home-Cooking-440428386060916\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Wednesday",
     "title": "Sabroso Taqueria",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.sabrosotaqueria.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Wednesday",
     "title": "The Roving Lunchbox",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.rovinglunchbox.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Wednesday",
     "title": "Chik Chak",
+    "location": "Belvidere Street",
     "website": "http:\/\/chikchakfoodtruck.com\/#prettyPhoto\/0\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Thursday",
     "title": "Zo Food Truck",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.zoboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Thursday",
     "title": "Compliments",
+    "location": "Belvidere Street",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Thursday",
     "title": "Clyde's Cupcakes",
+    "location": "Belvidere Street",
     "website": "http:\/\/clydescupcakes.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Friday",
     "title": "SA PA",
+    "location": "Belvidere Street",
     "website": "https:\/\/sa-pa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Friday",
     "title": "Chicken & Rice Guys",
+    "location": "Belvidere Street",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Friday",
     "title": "Kebabish",
-    "website": null,
+    "location": "Belvidere Street",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Thursday",
     "title": "Spicy Salaa",
+    "location": "Belvidere Street",
     "website": "http:\/\/www.spicysalaa.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Thursday",
     "title": "Clyde's Cupcakes",
+    "location": "Belvidere Street",
     "website": "http:\/\/clydescupcakes.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.345846184409,
     "lng": -71.082797874585
   },
   {
+    "day": "Tuesday",
     "title": "Frozen Hoagies",
+    "location": "Charlestown Navy Yard",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.374682390831,
     "lng": -71.0545786033
   },
   {
+    "day": "Wednesday",
     "title": "Frozen Hoagies",
+    "location": "Charlestown Navy Yard",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.374682390831,
     "lng": -71.0545786033
   },
   {
+    "day": "Thursday",
     "title": "Redbones BBQ",
+    "location": "Charlestown Navy Yard",
     "website": "https:\/\/www.redbones.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.374682390831,
     "lng": -71.0545786033
   },
   {
+    "day": "Friday",
     "title": "Bibim Box",
-    "website": null,
+    "location": "Charlestown Navy Yard",
+    "website": "https:\/\/www.facebook.com\/Bibim-Box-1751040118466317\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.374682390831,
     "lng": -71.0545786033
   },
   {
+    "day": "Monday",
     "title": "Frozen Hoagies",
+    "location": "Chinatown",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Tuesday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Tuesday",
     "title": "Bibim Box",
-    "website": null,
+    "location": "Chinatown",
+    "website": "https:\/\/www.facebook.com\/Bibim-Box-1751040118466317\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Wednesday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Wednesday",
     "title": "North East of the Border",
+    "location": "Chinatown",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Thursday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Thursday",
     "title": "Revelry",
+    "location": "Chinatown",
     "website": "http:\/\/www.revelryboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Friday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Friday",
     "title": "Spicy Salaa",
+    "location": "Chinatown",
     "website": "http:\/\/www.spicysalaa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Saturday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Wednesday",
     "title": "Riceburg",
+    "location": "Chinatown",
     "website": "http:\/\/www.riceburg1.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Thursday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Friday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Saturday",
     "title": "Savory",
+    "location": "Chinatown",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.3523392657,
     "lng": -71.06293946853
   },
   {
+    "day": "Monday",
     "title": "Trolley Dogs",
-    "website": null,
+    "location": "City Hall Plaza",
+    "website": "https:\/\/twitter.com\/trolley_dogs?lang=en",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Monday",
     "title": "Chicken & Rice Guys",
+    "location": "City Hall Plaza",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Tuesday",
     "title": "Amigos Locos",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.wildfirecatering.com\/los-amigos\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Tuesday",
     "title": "Roadies Diner",
+    "location": "City Hall Plaza",
     "website": "https:\/\/www.roadiesdiner.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Tuesday",
     "title": "Cod Squad",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.captainmardens.com\/food-truck",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Wednesday",
     "title": "Boston's Baddest Burger",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.bostonsbaddestburger.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Wednesday",
     "title": "Spicy Salaa",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.spicysalaa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Wednesday",
     "title": "Kebabish",
-    "website": null,
+    "location": "City Hall Plaza",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Thursday",
     "title": "Pomaire Chilean Grill",
-    "website": null,
+    "location": "City Hall Plaza",
+    "website": "https:\/\/www.facebook.com\/pomairebostonchilean\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Thursday",
     "title": "Spice Venture",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.spiceventure.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Thursday",
     "title": "Taco Party",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.tacopartytruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Friday",
     "title": "Munch Mobile",
+    "location": "City Hall Plaza",
     "website": "https:\/\/www.munchmobilekitchen.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Friday",
     "title": "Mo'Rockin Fusion",
+    "location": "City Hall Plaza",
     "website": "http:\/\/www.morockinfusion.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Friday",
     "title": "Big Daddy Hotdogs",
-    "website": null,
+    "location": "City Hall Plaza",
+    "website": "https:\/\/twitter.com\/bigdaddyhotdogs?lang=en",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.359717387847,
     "lng": -71.057387565035
   },
   {
+    "day": "Monday",
     "title": "Daddy's Bonetown Burger",
-    "website": null,
+    "location": "Financial District",
+    "website": "https:\/\/twitter.com\/bonetownburgers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Tuesday",
     "title": "Riceburg",
+    "location": "Financial District",
     "website": "http:\/\/www.riceburg1.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Tuesday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Financial District",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Wednesday",
     "title": "The Bacon Truck",
+    "location": "Financial District",
     "website": "http:\/\/www.bostonbacontruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Wednesday",
     "title": "Baja Taco Truck",
+    "location": "Financial District",
     "website": "http:\/\/bajatacotruck.com\/main-page.html",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Thursday",
     "title": "Cookie Monstah",
+    "location": "Financial District",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Thursday",
     "title": "Bibim Box",
-    "website": null,
+    "location": "Financial District",
+    "website": "https:\/\/www.facebook.com\/Bibim-Box-1751040118466317\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Friday",
     "title": "Pennypackers",
+    "location": "Financial District",
     "website": "http:\/\/pennypackersfinefoods.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Friday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Financial District",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.357347058262,
     "lng": -71.055093035046
   },
   {
+    "day": "Tuesday",
     "title": "Baja Taco Truck",
+    "location": "Financial District",
     "website": "http:\/\/bajatacotruck.com\/main-page.html",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35605915987,
     "lng": -71.054867448495
   },
   {
+    "day": "Wednesday",
     "title": "Taco Party",
+    "location": "Financial District",
     "website": "http:\/\/www.tacopartytruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35605915987,
     "lng": -71.054867448495
   },
   {
+    "day": "Thursday",
     "title": "Frozen Hoagies",
+    "location": "Financial District",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35605915987,
     "lng": -71.054867448495
   },
   {
+    "day": "Friday",
     "title": "Revelry",
+    "location": "Financial District",
     "website": "http:\/\/www.revelryboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35605915987,
     "lng": -71.054867448495
   },
   {
+    "day": "Tuesday",
     "title": "Tenoch Mexican",
+    "location": "Maverick Square",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.368871458886,
     "lng": -71.039742063012
   },
   {
+    "day": "Thursday",
     "title": "Tenoch Mexican",
+    "location": "Maverick Square",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.368871458886,
     "lng": -71.039742063012
   },
   {
+    "day": "Friday",
     "title": "Tenoch Mexican",
+    "location": "Maverick Square",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.368871458886,
     "lng": -71.039742063012
   },
   {
+    "day": "Tuesday",
     "title": "Sweet Tomato",
+    "location": "Boston University East",
     "website": "http:\/\/www.sweettomatoespizzatruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Wednesday",
     "title": "The Dining Car",
+    "location": "Boston University East",
     "website": "http:\/\/diningcar.net\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Thursday",
     "title": "Tenoch Mexican",
+    "location": "Boston University East",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Friday",
     "title": "Frozen Hoagies",
+    "location": "Boston University East",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Monday",
     "title": "Meng's Kitchen",
-    "website": null,
+    "location": "Boston University East",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Tuesday",
     "title": "Zinneken's",
+    "location": "Boston University East",
     "website": "http:\/\/zinnekenswaffles.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Wednesday",
     "title": "Teri-Yummy",
+    "location": "Boston University East",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Thursday",
     "title": "Zinneken's",
+    "location": "Boston University East",
     "website": "http:\/\/zinnekenswaffles.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Friday",
     "title": "Bon Me",
+    "location": "Boston University East",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.349129039366,
     "lng": -71.100849392659
   },
   {
+    "day": "Wednesday",
     "title": "Clyde's Cupcakes",
+    "location": "Boston University West",
     "website": "http:\/\/clydescupcakes.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350909391204,
     "lng": -71.112693547358
   },
   {
+    "day": "Thursday",
     "title": "Capriotti's",
+    "location": "Boston University West",
     "website": "https:\/\/www.capriottis.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.350909391204,
     "lng": -71.112693547358
   },
   {
+    "day": "Monday",
     "title": "Bon Me",
+    "location": "Opera Place",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Monday",
     "title": "Frozen Hoagies",
+    "location": "Opera Place",
     "website": "https:\/\/www.frozenhoagies.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Tuesday",
     "title": "Meng's Kitchen",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Tuesday",
     "title": "Spice Venture",
+    "location": "Opera Place",
     "website": "http:\/\/www.spiceventure.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Wednesday",
     "title": "Savory",
+    "location": "Opera Place",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Wednesday",
     "title": "Capriotti's",
+    "location": "Opera Place",
     "website": "https:\/\/www.capriottis.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Thursday",
     "title": "Meng's Kitchen",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Thursday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": "Opera Place",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Friday",
     "title": "Savory",
+    "location": "Opera Place",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Friday",
     "title": "Tenoch Mexican",
+    "location": "Opera Place",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Saturday",
     "title": "Meng's Kitchen",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Monday",
     "title": "Riceburg",
+    "location": "Opera Place",
     "website": "http:\/\/www.riceburg1.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Tuesday",
     "title": "Chicken & Rice Guys",
+    "location": "Opera Place",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Tuesday",
     "title": "Savory",
+    "location": "Opera Place",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Wednesday",
     "title": "Zinneken's",
+    "location": "Opera Place",
     "website": "http:\/\/zinnekenswaffles.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Wednesday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": "Opera Place",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Thursday",
     "title": "Trolley Dogs",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/twitter.com\/trolley_dogs?lang=en",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Thursday",
     "title": "Kebabish",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Friday",
     "title": "Teri-Yummy",
+    "location": "Opera Place",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Friday",
     "title": "Zinneken's",
+    "location": "Opera Place",
     "website": "http:\/\/zinnekenswaffles.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Saturday",
     "title": "Meng's Kitchen",
-    "website": null,
+    "location": "Opera Place",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
-    "title": "Big Daddys Hotdogs",
-    "website": null,
+    "day": "Saturday",
+    "title": "Big Daddy Hotdogs",
+    "location": "Opera Place",
+    "website": "https:\/\/twitter.com\/bigdaddyhotdogs?lang=en",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.340636221466,
     "lng": -71.089047851162
   },
   {
+    "day": "Monday",
     "title": "Spicy Salaa",
+    "location": "Boston Medical Center",
     "website": "http:\/\/www.spicysalaa.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Tuesday",
     "title": "Moyzilla",
+    "location": "Boston Medical Center",
     "website": "http:\/\/www.moyzillaboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Tuesday",
     "title": "Capriotti's",
+    "location": "Boston Medical Center",
     "website": "https:\/\/www.capriottis.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Wednesday",
     "title": "Indulge India",
+    "location": "Boston Medical Center",
     "website": "http:\/\/indulgeindiaft.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Wednesday",
     "title": "Med Home Cooking",
-    "website": null,
+    "location": "Boston Medical Center",
+    "website": "https:\/\/www.facebook.com\/Mediterranean-Home-Cooking-440428386060916\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Thursday",
     "title": "Amigos Locos",
+    "location": "Boston Medical Center",
     "website": "http:\/\/www.wildfirecatering.com\/los-amigos\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Thursday",
     "title": "Daddy's Bonetown Burger",
-    "website": null,
+    "location": "Boston Medical Center",
+    "website": "https:\/\/twitter.com\/bonetownburgers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Thursday",
     "title": "Papi's Stuffed Sopapillas",
+    "location": "Boston Medical Center",
     "website": "http:\/\/www.stuffedbypapi.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Thursday",
     "title": "The Dining Car",
+    "location": "Boston Medical Center",
     "website": "http:\/\/diningcar.net\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Monday",
     "title": "Teri-Yummy",
+    "location": "Boston Medical Center",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Monday",
     "title": "Chicken & Rice Guys",
+    "location": "Boston Medical Center",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Tuesday",
     "title": "Kebabish",
-    "website": null,
+    "location": "Boston Medical Center",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Wednesday",
     "title": "Kebabish",
-    "website": null,
+    "location": "Boston Medical Center",
+    "website": "https:\/\/www.boston.gov\/departments\/small-business-development\/city-boston-food-trucks-schedule",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Wednesday",
     "title": "Clyde's Cupcakes",
+    "location": "Boston Medical Center",
     "website": "http:\/\/clydescupcakes.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Friday",
     "title": "Clyde's Cupcakes",
+    "location": "Boston Medical Center",
     "website": "http:\/\/clydescupcakes.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.336685826226,
     "lng": -71.073092021977
   },
   {
+    "day": "Tuesday",
     "title": "Sach Ko",
+    "location": "Innovation District",
     "website": "https:\/\/www.sachko.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35240653621,
     "lng": -71.046559910764
   },
   {
+    "day": "Wednesday",
     "title": "Redbones BBQ",
+    "location": "Innovation District",
     "website": "https:\/\/www.redbones.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35240653621,
     "lng": -71.046559910764
   },
   {
+    "day": "Thursday",
     "title": "Trolley Dogs",
-    "website": null,
+    "location": "Innovation District",
+    "website": "https:\/\/twitter.com\/trolley_dogs?lang=en",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35240653621,
     "lng": -71.046559910764
   },
   {
+    "day": "Friday",
     "title": "Chik Chak",
+    "location": "Innovation District",
     "website": "http:\/\/chikchakfoodtruck.com\/#prettyPhoto\/0\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.35240653621,
     "lng": -71.046559910764
   },
   {
+    "day": "Tuesday",
     "title": "Posto Mobile",
+    "location": "West End",
     "website": "http:\/\/www.postoboston.com\/#catering",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Wednesday",
     "title": "Bibim Box",
-    "website": null,
+    "location": "West End",
+    "website": "https:\/\/www.facebook.com\/Bibim-Box-1751040118466317\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Thursday",
     "title": "Munch Mobile",
+    "location": "West End",
     "website": "https:\/\/www.munchmobilekitchen.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Friday",
     "title": "Bon Me",
+    "location": "West End",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Monday",
     "title": "Bon Me",
+    "location": "West End",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Tuesday",
     "title": "Teri-Yummy",
+    "location": "West End",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Wednesday",
     "title": "Trolley Dogs",
-    "website": null,
+    "location": "West End",
+    "website": "https:\/\/twitter.com\/trolley_dogs?lang=en",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Thursday",
     "title": "Savory",
+    "location": "West End",
     "website": "http:\/\/www.savoryfoodtruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Friday",
     "title": "Bon Me",
+    "location": "West End",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.364134722957,
     "lng": -71.068446617778
   },
   {
+    "day": "Monday",
     "title": "Chubby Chickpea",
+    "location": "Greenway",
     "website": "http:\/\/www.thechubbychickpea.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.351281064296,
     "lng": -71.059652703136
   },
   {
+    "day": "Tuesday",
     "title": "North East of the Border",
+    "location": "Greenway",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.351281064296,
     "lng": -71.059652703136
   },
   {
+    "day": "Thursday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Greenway",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.351281064296,
     "lng": -71.059652703136
   },
   {
+    "day": "Friday",
     "title": "Boston Burger Company",
+    "location": "Greenway",
     "website": "http:\/\/www.bostonburgerco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.351281064296,
     "lng": -71.059652703136
   },
   {
+    "day": "Wednesday",
     "title": "The Dining Car",
+    "location": "Greenway",
     "website": "http:\/\/diningcar.net\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Thursday",
     "title": "Baja Taco Truck",
+    "location": "Greenway",
     "website": "http:\/\/bajatacotruck.com\/main-page.html",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Thursday",
     "title": "Pennypackers",
+    "location": "Greenway",
     "website": "http:\/\/pennypackersfinefoods.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Friday",
     "title": "The Bacon Truck",
+    "location": "Greenway",
     "website": "http:\/\/www.bostonbacontruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Friday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Greenway",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Monday",
     "title": "Gogi on the Block",
+    "location": "Greenway",
     "website": "http:\/\/gogiontheblock.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Monday",
     "title": "Taco Party",
+    "location": "Greenway",
     "website": "http:\/\/www.tacopartytruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Tuesday",
     "title": "Chik Chak",
+    "location": "Greenway",
     "website": "http:\/\/chikchakfoodtruck.com\/#prettyPhoto\/0\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Tuesday",
     "title": "Sheherazad",
+    "location": "Greenway",
     "website": "http:\/\/sheherazadfood.squarespace.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.353769933635,
     "lng": -71.053771102032
   },
   {
+    "day": "Wednesday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Cookie Monstah",
+    "location": "Greenway",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Moyzilla",
+    "location": "Greenway",
     "website": "http:\/\/www.moyzillaboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "North East of the Border",
+    "location": "Greenway",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Pennypackers",
+    "location": "Greenway",
     "website": "http:\/\/pennypackersfinefoods.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Posto Mobile",
+    "location": "Greenway",
     "website": "http:\/\/www.postoboston.com\/#catering",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Sheherazad",
+    "location": "Greenway",
     "website": "http:\/\/sheherazadfood.squarespace.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Zo Food Truck",
+    "location": "Greenway",
     "website": "http:\/\/www.zoboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Compliments",
+    "location": "Greenway",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Fresh Food Generation",
+    "location": "Greenway",
     "website": "https:\/\/www.freshfoodgeneration.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Tenoch Mexican",
+    "location": "Greenway",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Chicken & Rice Guys",
+    "location": "Greenway",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Cookie Monstah",
+    "location": "Greenway",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Mei Mei",
+    "location": "Greenway",
     "website": "http:\/\/www.meimeiboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": "Greenway",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Sabroso Taqueria",
+    "location": "Greenway",
     "website": "http:\/\/www.sabrosotaqueria.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Stoked Pizza",
+    "location": "Greenway",
     "website": "http:\/\/www.stokedpizzaco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Cookie Monstah",
+    "location": "Greenway",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Sat\u00e9 (Momogoose)",
+    "location": "Greenway",
     "website": "http:\/\/sategrill.com\/sate-grill-on-wheels\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "North East of the Border",
+    "location": "Greenway",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": "Greenway",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "The Dining Car",
+    "location": "Greenway",
     "website": "http:\/\/diningcar.net\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Zo Food Truck",
+    "location": "Greenway",
     "website": "http:\/\/www.zoboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Chubby Chickpea",
+    "location": "Greenway",
     "website": "http:\/\/www.thechubbychickpea.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Mei Mei",
+    "location": "Greenway",
     "website": "http:\/\/www.meimeiboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Tenoch Mexican",
+    "location": "Greenway",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Zinneken's",
+    "location": "Greenway",
     "website": "http:\/\/zinnekenswaffles.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Chicken & Rice Guys",
+    "location": "Greenway",
     "website": "http:\/\/cnrguys.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Wednesday",
     "title": "Chubby Chickpea",
+    "location": "Greenway",
     "website": "http:\/\/www.thechubbychickpea.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Wednesday",
     "title": "Compliments",
+    "location": "Greenway",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Wednesday",
     "title": "Gogi on the Block",
+    "location": "Greenway",
     "website": "http:\/\/gogiontheblock.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Wednesday",
     "title": "Tenoch Mexican",
+    "location": "Greenway",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Thursday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Thursday",
     "title": "Chik Chak",
+    "location": "Greenway",
     "website": "http:\/\/chikchakfoodtruck.com\/#prettyPhoto\/0\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Thursday",
     "title": "Cupcake City",
+    "location": "Greenway",
     "website": "http:\/\/www.cupcake-city.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Thursday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": "Greenway",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Thursday",
     "title": "Sabroso Taqueria",
+    "location": "Greenway",
     "website": "http:\/\/www.sabrosotaqueria.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Thursday",
     "title": "Zinneken's",
+    "location": "Greenway",
     "website": "http:\/\/zinnekenswaffles.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Friday",
     "title": "Baja Taco Truck",
+    "location": "Greenway",
     "website": "http:\/\/bajatacotruck.com\/main-page.html",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Friday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Friday",
     "title": "Jamaica Mi Hungry",
-    "website": null,
+    "location": "Greenway",
+    "website": "http:\/\/www.jamaicamihungry.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Friday",
     "title": "Moyzilla",
+    "location": "Greenway",
     "website": "http:\/\/www.moyzillaboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Friday",
     "title": "Posto Mobile",
+    "location": "Greenway",
     "website": "http:\/\/www.postoboston.com\/#catering",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "The Bacon Truck",
+    "location": "Greenway",
     "website": "http:\/\/www.bostonbacontruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "Boston Burger Company",
+    "location": "Greenway",
     "website": "http:\/\/www.bostonburgerco.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "Fresh Food Generation",
+    "location": "Greenway",
     "website": "https:\/\/www.freshfoodgeneration.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "Sheherazad",
+    "location": "Greenway",
     "website": "http:\/\/sheherazadfood.squarespace.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Monday",
     "title": "Tenoch Mexican",
+    "location": "Greenway",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Bon Me",
+    "location": "Greenway",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Cupcake City",
+    "location": "Greenway",
     "website": "http:\/\/www.cupcake-city.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Indulge India",
+    "location": "Greenway",
     "website": "http:\/\/indulgeindiaft.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Mo'Rockin Fusion",
+    "location": "Greenway",
     "website": "http:\/\/www.morockinfusion.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Taco Party",
+    "location": "Greenway",
     "website": "http:\/\/www.tacopartytruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Zo Food Truck",
+    "location": "Greenway",
     "website": "http:\/\/www.zoboston.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356578976893,
     "lng": -71.051106937312
   },
   {
+    "day": "Tuesday",
     "title": "Morning Salute",
+    "location": "Greenway",
     "website": "https:\/\/www.morningsalute.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.359494968006,
     "lng": -71.052076270348
   },
   {
+    "day": "Wednesday",
     "title": "Coffee Trike",
+    "location": "Greenway",
     "website": "http:\/\/www.thecoffeetrike.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.359494968006,
     "lng": -71.052076270348
   },
   {
+    "day": "Thursday",
     "title": "Morning Salute",
+    "location": "Greenway",
     "website": "https:\/\/www.morningsalute.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.359494968006,
     "lng": -71.052076270348
   },
   {
+    "day": "Friday",
     "title": "Morning Salute",
+    "location": "Greenway",
     "website": "https:\/\/www.morningsalute.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.359494968006,
     "lng": -71.052076270348
   },
   {
+    "day": "Monday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Monday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Tuesday",
     "title": "Coffee Trike",
+    "location": "Greenway",
     "website": "http:\/\/www.thecoffeetrike.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Wednesday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Thursday",
     "title": "Coffee Trike",
+    "location": "Greenway",
     "website": "http:\/\/www.thecoffeetrike.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Quebrada Baking Co.",
+    "location": "Greenway",
     "website": "http:\/\/quebradabakingco.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Friday",
     "title": "Clover",
+    "location": "Greenway",
     "website": "https:\/\/www.cloverfoodlab.com\/",
     "availability": "7 a.m. - 10:30 a.m.",
     "lat": 42.352960169491,
     "lng": -71.055610110534
   },
   {
+    "day": "Saturday",
     "title": "Tenoch Mexican",
+    "location": "Maverick Square",
     "website": "http:\/\/www.tenochmexican.com\/",
     "availability": "3 p.m. - 8 p.m.",
     "lat": 42.368871458886,
     "lng": -71.039742063012
   },
   {
+    "day": "Monday",
     "title": "Bon Me",
+    "location": " Boston Common",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Tuesday",
     "title": "North East of the Border",
+    "location": " Boston Common",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Thursday",
     "title": "North East of the Border",
+    "location": " Boston Common",
     "website": "http:\/\/www.neotbtruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Tuesday",
     "title": "Bon Me",
+    "location": " Boston Common",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Wednesday",
     "title": "Bon Me",
+    "location": " Boston Common",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Thursday",
     "title": "Bon Me",
+    "location": " Boston Common",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Friday",
     "title": "Bon Me",
+    "location": " Boston Common",
     "website": "http:\/\/www.bonmetruck.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Monday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": " Boston Common",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Wednesday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": " Boston Common",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Friday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": " Boston Common",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Monday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": " Boston Common",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "3 p.m. - 7 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Wednesday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": " Boston Common",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "3 p.m. - 7 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Friday",
     "title": "Roxy\u2019s Grilled Cheese",
+    "location": " Boston Common",
     "website": "http:\/\/www.roxysgrilledcheese.com\/",
     "availability": "3 p.m. - 7 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Saturday",
     "title": "Cookie Monstah",
+    "location": " Boston Common",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Saturday",
     "title": "Cookie Monstah",
+    "location": " Boston Common",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "3 p.m. - 7 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Sunday",
     "title": "Cookie Monstah",
+    "location": " Boston Common",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Sunday",
     "title": "Cookie Monstah",
+    "location": " Boston Common",
     "website": "http:\/\/www.thecookiemonstah.com\/",
     "availability": "3 p.m. - 7 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Saturday",
     "title": "Teri-Yummy",
+    "location": " Boston Common",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Sunday",
     "title": "Teri-Yummy",
+    "location": " Boston Common",
     "website": "https:\/\/www.teri-yummy.com\/",
     "availability": "11 a.m. - 3 p.m.",
     "lat": 42.356090909924,
     "lng": -71.062875138556
   },
   {
+    "day": "Thursday",
     "title": "Compliments",
+    "location": "Boston Public Library",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "7 a.m. - 11 a.m.",
     "lat": 42.349673390421,
     "lng": -71.078612558638
   },
   {
+    "day": "Wednesday",
     "title": "Compliments",
+    "location": "Stuart Street",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "7 a.m. - 11 a.m.",
     "lat": 42.348367827965,
     "lng": -71.075784044532
   },
   {
+    "day": "Friday",
     "title": "Compliments",
+    "location": "Stuart Street",
     "website": "https:\/\/www.complimentsfood.com\/",
     "availability": "7 a.m. - 11 a.m.",
     "lat": 42.348367827965,
