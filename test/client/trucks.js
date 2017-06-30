@@ -2,6 +2,7 @@ var expect = require("chai").expect;
 var trucks = require('../trucks.json');
 var trucksjs = require('../../src/client/trucks.js');
 
+
 describe("Trucks", function() {
     it("test data should not be empty", function() {
         expect(typeof trucks !== 'undefined' && trucks.length > 0);
@@ -67,6 +68,43 @@ describe("Trucks", function() {
             date.setHours(11);
             date.setMinutes(1);
             expect(trucksjs.dateWithinAvailability(availability, date)).to.equal(false);
+        });
+
+        it("is open in morning", function () {
+            expect(trucksjs.isOpenInMorning("3 a.m. - 4 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInMorning("3 a.m. - 5 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInMorning("3 a.m. - 5:30 a.m.")).to.equal(true);
+            expect(trucksjs.isOpenInMorning("7 a.m. - 11 a.m.")).to.equal(true);
+            expect(trucksjs.isOpenInMorning("10 a.m. - 12 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInMorning("12 p.m. - 1 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInMorning("12:01 p.m. - 1 p.m.")).to.equal(false);
+        });
+
+        it("is open in afternoon", function () {
+            expect(trucksjs.isOpenInAfternoon("3 a.m. - 4 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon("3 a.m. - 5 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon("3 a.m. - 5:30 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon("7 a.m. - 11 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon("10 a.m. - 12 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon("12 p.m. - 1 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon("12:01 p.m. - 1 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon("12 p.m. - 5 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon("4 p.m. - 5 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon("5 p.m. - 6 p.m.")).to.equal(false);
+        });
+
+        it("is open in evening", function () {
+            expect(trucksjs.isOpenInEvening("3 a.m. - 4 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("3 a.m. - 5 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("3 a.m. - 5:30 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("7 a.m. - 11 a.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("10 a.m. - 12 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("12 p.m. - 1 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("12:01 p.m. - 1 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("12 p.m. - 5 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("4 p.m. - 5 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInEvening("5 p.m. - 6 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInEvening("5 p.m. - 9 p.m.")).to.equal(true);
         });
     });
 });

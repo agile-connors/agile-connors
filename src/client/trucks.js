@@ -28,15 +28,18 @@ function convertTimeStringToDate(rawTime) {
         minutes = rawTime.slice(3, 5);
     }
 
-    if (period === "p.m.") {
+    if (period === "p.m." && hours !== 12) {
         hours += 12;
+    }else if (period === "a.m." && hours === 12) {
+        hours = 0;
     }
     return getTodaysDate(hours, minutes);
 }
 
 /**
  * Returns the start time of a truck in the format '11:00'.
- * @param {string} availability Availability property from a truck in the format '11 a.m. - 3 p.m.'.
+ * @param {string} availability Availability property from a truck in the
+ *     format '11 a.m. - 3 p.m.'.
  */
 function getStartTime(availability) {
     var hyphenPos = availability.indexOf("-");
@@ -54,6 +57,32 @@ function dateWithinAvailability (availability, date) {
     return date >= getStartTime(availability) &&
            date <= getEndTime(availability);
 }
+
+function isOpenInMorning (truckAvailability) {
+    return availabilitiesIntersect(truckAvailability, "5 a.m. - 12 p.m.");
+}
+
+function isOpenInAfternoon (truckAvailability) {
+    return availabilitiesIntersect(truckAvailability, "12 p.m. - 5 p.m.");
+}
+
+function isOpenInEvening (truckAvailability) {
+    return availabilitiesIntersect(truckAvailability, "5 p.m. - 9 p.m.");
+}
+
+/**
+ * Exclusive for the beginning minute and last minute. So we don't say a
+ * place is open in the afternoon if it closes at 12 p.m.
+ * @param truckAvailability
+ * @param periodAvailability
+ * @returns {boolean}
+ */
+function availabilitiesIntersect (truckAvailability, periodAvailability) {
+    return getStartTime(periodAvailability) < getEndTime(truckAvailability)
+           && getStartTime(truckAvailability) < getEndTime(periodAvailability);
+}
+
+
 
 // TODO(ben): Add a date closing within 1 hour functionality
 
@@ -74,6 +103,9 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.getStartTime = getStartTime;
     exports.getEndTime = getEndTime;
     exports.dateWithinAvailability = dateWithinAvailability;
+    exports.isOpenInMorning = isOpenInMorning;
+    exports.isOpenInAfternoon = isOpenInAfternoon;
+    exports.isOpenInEvening = isOpenInEvening;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();
