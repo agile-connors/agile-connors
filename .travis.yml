@@ -9,8 +9,8 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_e8d31d247bc0_key -iv $encrypted_e8d31d247bc0_iv
   -in deploy_key.pem.enc -out deploy_key.pem -d
 after_success:
-  - eval "$(ssh-agent -s)" #start the ssh agent
-  - chmod 600 deploy_key.pem # this key should have push access
-  - ssh-add deploy_key.pem
-  - git remote add deploy https://github.com/benjenkinsv95/agile-connors
-  - git push deploy
+- eval "$(ssh-agent -s)"
+- chmod 600 deploy_key.pem
+- ssh-add deploy_key.pem
+- git remote add deploy https://github.com/benjenkinsv95/agile-connors
+- git push deploy
