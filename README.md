@@ -176,6 +176,23 @@ We completed our entire sprint backlog of 8 points by the end of the sprint. 6 p
 
 ![Sprint 1 - Burndown Chart](sprint1-burndown.png)
 
+## Sprint 2
+
+*Thursday 6/29, 6:15pm - Monday 7/3 3:00pm*
+
+### Story Points Forecast
+
+Our initial forecast is **10 story points**. These points comprise of:
+
+- (1) Remove duplicated trucks
+- (1) Provide link to truck website, if available
+- (1) View truck availability at a glance
+- (2) Filter by time of day
+- (2) Filter by day of week
+- (3) Filter by location
+
+We chose 10 story points because we completed 8 story points last sprint and we have slightly more time this sprint as it spans more days (including a weekend). The 8 points felt very much appropriate, as we finished all of the work but probably couldn't have taken on any more. We are confident that we can add 2 more points to the velocity, given the schedule.
+
 ## Development
 
 Download and install [Node.js](https://nodejs.org/en/) if you don't already have it. This project was developed with Node v4.6.0. Any higher version should also work.
