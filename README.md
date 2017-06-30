@@ -8,6 +8,7 @@ Project for CSCI S-71: Agile Software Development. A web application for finding
 - [Product Design](#product-design)
 - [Product Backlog](#product-backlog)
 - [Sprint 1](#sprint-1)
+- [Sprint 2](#sprint-2)
 - [Development](#development)
 
 ## Project Team
