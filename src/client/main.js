@@ -119,6 +119,7 @@ function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
 }
 
 function createInfoWindowContent(truck) {
+    var website = (truck.website) ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
     return '' +
         '<div id="content">' +
             '<div id="siteNotice"></div>' +
@@ -126,7 +127,7 @@ function createInfoWindowContent(truck) {
             '<div id="bodyContent">' +
                 '<p><strong>' + truck.title + '</strong> is a... </p>' +
                 '<p>Open from ' + truck.availability + '</p>' +
-                '<p>More information: <a href="#">No website found</a></p>' +
+                '<p>More information: ' + website + '</p>' +
             '</div>'+
         '</div>';
 }
