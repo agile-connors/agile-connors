@@ -106,7 +106,8 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
         dataType: 'JSON',
         success: function(trucks){
             console.log(JSON.stringify(trucks));
-            var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
+            var combinedTrucks = combineTrucks(trucks);
+            var markers = addMapMarkers(map, infoWindow, markerSpiderfier, combinedTrucks);
             //var markerClusterer = addMarkerClusterer(map, markers);
             attachUiEvents(markers);
         }
@@ -121,6 +122,17 @@ function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
     });
 }
 
+function getTruckAvailability(truck){
+    var availability = "";
+    var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    for (day of days){
+        if (truck.days.hasOwnProperty(day)) {
+            availability += day + ": " + truck.days[day] + "<br>"
+        }
+    }
+    return availability;
+}
+
 function createInfoWindowContent(truck) {
     var website = (truck.website) ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
     return '' +
@@ -128,9 +140,9 @@ function createInfoWindowContent(truck) {
             '<div id="siteNotice"></div>' +
             '<h1>' + truck.title + '</h1>' +
             '<div id="bodyContent">' +
-                '<p><strong>' + truck.title + '</strong> is a... </p>' +
-                '<p>Open from ' + truck.availability + '</p>' +
-                '<p>More information: ' + website + '</p>' +
+               '<p><strong>Located at ' + truck.location + '</strong></p>' +
+               '<p>Hours<br>' + getTruckAvailability(truck) + '</p>' +
+               '<p>More information: ' + website + '</p>' +
             '</div>'+
         '</div>';
 }
