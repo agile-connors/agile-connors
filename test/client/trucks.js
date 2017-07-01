@@ -52,60 +52,47 @@ describe("Trucks", function() {
             expect(endTime.getMinutes()).to.equal(0);
         });
 
-        it("Date within availability", function () {
-            var availability = "7 a.m. - 11 a.m.";
-            var date = new Date();
-            date.setHours(6);
-            date.setMinutes(0);
-            date.setMilliseconds(0);
-            date.setSeconds(0);
-            expect(trucksjs.dateWithinAvailability(availability, date)).to.equal(false);
-            date.setHours(7);
-            date.setMinutes(0);
-            expect(trucksjs.dateWithinAvailability(availability, date)).to.equal(true);
-            date.setHours(11);
-            date.setMinutes(0);
-            expect(trucksjs.dateWithinAvailability(availability, date)).to.equal(true);
-            date.setHours(11);
-            date.setMinutes(1);
-            expect(trucksjs.dateWithinAvailability(availability, date)).to.equal(false);
-        });
-
+        /**
+         * Convert availability to day
+         */
+        function a2d(availability) {
+            return {"Sunday" : [availability]};
+        }
         it("is open in morning", function () {
-            expect(trucksjs.isOpenInMorning("3 a.m. - 4 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInMorning("3 a.m. - 5 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInMorning("3 a.m. - 5:30 a.m.")).to.equal(true);
-            expect(trucksjs.isOpenInMorning("7 a.m. - 11 a.m.")).to.equal(true);
-            expect(trucksjs.isOpenInMorning("10 a.m. - 12 p.m.")).to.equal(true);
-            expect(trucksjs.isOpenInMorning("12 p.m. - 1 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInMorning("12:01 p.m. - 1 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInMorning(a2d("3 a.m. - 4 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInMorning(a2d("3 a.m. - 5 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInMorning(a2d("3 a.m. - 5:30 a.m."))).to.equal(true);
+            expect(trucksjs.isOpenInMorning(a2d("7 a.m. - 11 a.m."))).to.equal(true);
+            expect(trucksjs.isOpenInMorning(a2d("10 a.m. - 12 p.m."))).to.equal(true);
+            expect(trucksjs.isOpenInMorning(a2d("12 p.m. - 1 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInMorning(a2d("12:01 p.m. - 1 p.m."))).to.equal(false);
         });
 
         it("is open in afternoon", function () {
-            expect(trucksjs.isOpenInAfternoon("3 a.m. - 4 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInAfternoon("3 a.m. - 5 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInAfternoon("3 a.m. - 5:30 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInAfternoon("7 a.m. - 11 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInAfternoon("10 a.m. - 12 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInAfternoon("12 p.m. - 1 p.m.")).to.equal(true);
-            expect(trucksjs.isOpenInAfternoon("12:01 p.m. - 1 p.m.")).to.equal(true);
-            expect(trucksjs.isOpenInAfternoon("12 p.m. - 5 p.m.")).to.equal(true);
-            expect(trucksjs.isOpenInAfternoon("4 p.m. - 5 p.m.")).to.equal(true);
-            expect(trucksjs.isOpenInAfternoon("5 p.m. - 6 p.m.")).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon(a2d("3 a.m. - 4 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon(a2d("3 a.m. - 5 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon(a2d("3 a.m. - 5:30 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon(a2d("7 a.m. - 11 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon(a2d("10 a.m. - 12 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInAfternoon(a2d("12 p.m. - 1 p.m."))).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon(a2d("12:01 p.m. - 1 p.m."))).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon(a2d("12 p.m. - 5 p.m."))).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon(a2d("4 p.m. - 5 p.m."))).to.equal(true);
+            expect(trucksjs.isOpenInAfternoon(a2d("5 p.m. - 6 p.m."))).to.equal(false);
         });
 
         it("is open in evening", function () {
-            expect(trucksjs.isOpenInEvening("3 a.m. - 4 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("3 a.m. - 5 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("3 a.m. - 5:30 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("7 a.m. - 11 a.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("10 a.m. - 12 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("12 p.m. - 1 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("12:01 p.m. - 1 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("12 p.m. - 5 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("4 p.m. - 5 p.m.")).to.equal(false);
-            expect(trucksjs.isOpenInEvening("5 p.m. - 6 p.m.")).to.equal(true);
-            expect(trucksjs.isOpenInEvening("5 p.m. - 9 p.m.")).to.equal(true);
+            expect(trucksjs.isOpenInEvening(a2d("3 a.m. - 4 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("3 a.m. - 5 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("3 a.m. - 5:30 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("7 a.m. - 11 a.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("10 a.m. - 12 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("12 p.m. - 1 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("12:01 p.m. - 1 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("12 p.m. - 5 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("4 p.m. - 5 p.m."))).to.equal(false);
+            expect(trucksjs.isOpenInEvening(a2d("5 p.m. - 6 p.m."))).to.equal(true);
+            expect(trucksjs.isOpenInEvening(a2d("5 p.m. - 9 p.m."))).to.equal(true);
         });
 
         it("can combine availability", function () {

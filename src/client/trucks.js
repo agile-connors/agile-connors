@@ -61,21 +61,52 @@ function getEndTime(availability) {
     return convertTimeStringToDate(startRaw);
 }
 
-function dateWithinAvailability (availability, date) {
-    return date >= getStartTime(availability) &&
-           date <= getEndTime(availability);
+function getCurrentWeekday(){
+    var d = new Date();
+    switch(d.getDay()) {
+        case 0:
+            return "Sunday";
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        default:
+            return "Saturday";
+    }
 }
 
-function isOpenInMorning (truckAvailability) {
-    return availabilitiesIntersect(truckAvailability, "5 a.m. - 12 p.m.");
+function isCurrentlyAvailable (days) {
+    var currentWeekday = getCurrentWeekday();
+    if (! days.hasOwnProperty(currentWeekday)){
+        return false;
+    }
+
+    var date = new Date();
+    for (availability of days[currentWeekday]){
+        if (date >= getStartTime(availability) && date <= getEndTime(availability)){
+            return true;
+        }
+    }
+
+    return false;
 }
 
-function isOpenInAfternoon (truckAvailability) {
-    return availabilitiesIntersect(truckAvailability, "12 p.m. - 5 p.m.");
+function isOpenInMorning (days) {
+    return availabilitiesIntersect(days, "5 a.m. - 12 p.m.");
 }
 
-function isOpenInEvening (truckAvailability) {
-    return availabilitiesIntersect(truckAvailability, "5 p.m. - 9 p.m.");
+function isOpenInAfternoon (days) {
+    return availabilitiesIntersect(days, "12 p.m. - 5 p.m.");
+}
+
+function isOpenInEvening (days) {
+    return availabilitiesIntersect(days, "5 p.m. - 9 p.m.");
 }
 
 /**
@@ -85,9 +116,23 @@ function isOpenInEvening (truckAvailability) {
  * @param periodAvailability
  * @returns {boolean}
  */
-function availabilitiesIntersect (truckAvailability, periodAvailability) {
-    return getStartTime(periodAvailability) < getEndTime(truckAvailability)
-           && getStartTime(truckAvailability) < getEndTime(periodAvailability);
+function availabilitiesIntersect (days, periodAvailability) {
+    var ALL_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+
+    for (day of ALL_DAYS){
+        if (days.hasOwnProperty(day)){
+            var availabilities = days[day];
+            for (availability of availabilities){
+                if (getStartTime(periodAvailability) < getEndTime(availability)
+                    && getStartTime(availability) < getEndTime(periodAvailability)){
+                    return true;
+                }
+            }
+        }
+    }
+
+    return false;
 }
 
 
@@ -167,8 +212,6 @@ function combineAvailabilities(availabilities, availability) {
 
     while (canCombineAvailability(availabilities, availability)){
         var combinableAvailability = getCombinableAvailability(availabilities, availability);
-        console.log(availabilities);
-        console.log(availability);
         var index = availabilities.indexOf(combinableAvailability);
         if (index > -1) {
             availabilities.splice(index, 1);
@@ -186,7 +229,7 @@ function isNodeJsEnvironment() {
 function exportNodeJsFunctionsForTestingTrucks() {
     exports.getStartTime = getStartTime;
     exports.getEndTime = getEndTime;
-    exports.dateWithinAvailability = dateWithinAvailability;
+    exports.isCurrentlyAvailable = isCurrentlyAvailable;
     exports.isOpenInMorning = isOpenInMorning;
     exports.isOpenInAfternoon = isOpenInAfternoon;
     exports.isOpenInEvening = isOpenInEvening;

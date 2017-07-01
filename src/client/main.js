@@ -184,17 +184,17 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         var chosen = $( "#showPeriodOfDay").val();
         console.log("Time filter changed to: " + chosen);
         for (var marker of allMarkers) {
+            // TODO(ben): Move all of this over to work with combined truck data
             if (chosen === "anytime") {
                 marker.setVisible(true);
             } else if (chosen === "currentlyAvailable"){
-                var isAvailable = dateWithinAvailability(marker.truck.availability, new Date());
-                marker.setVisible(isAvailable);
+                marker.setVisible(isCurrentlyAvailable(marker.truck.days));
             } else if (chosen === "morning"){
-                marker.setVisible(isOpenInMorning(marker.truck.availability));
+                marker.setVisible(isOpenInMorning(marker.truck.days));
             } else if (chosen === "afternoon"){
-                marker.setVisible(isOpenInAfternoon(marker.truck.availability));
+                marker.setVisible(isOpenInAfternoon(marker.truck.days));
             } else if (chosen === "evening"){
-                marker.setVisible(isOpenInEvening(marker.truck.availability));
+                marker.setVisible(isOpenInEvening(marker.truck.days));
             }
 
         }
