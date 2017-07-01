@@ -107,6 +107,29 @@ describe("Trucks", function() {
             expect(trucksjs.isOpenInEvening("5 p.m. - 6 p.m.")).to.equal(true);
             expect(trucksjs.isOpenInEvening("5 p.m. - 9 p.m.")).to.equal(true);
         });
+
+        it("can combine availability", function () {
+
+            var availabilities = ["11 a.m. - 3 p.m."];
+            expect(trucksjs.canCombineAvailability(availabilities, "7 a.m. - 10 a.m."))
+                .to.equal(false);
+            expect(trucksjs.canCombineAvailability(availabilities, "7 a.m. - 11 a.m."))
+                .to.equal(true);
+            expect(trucksjs.canCombineAvailability(availabilities, "3 p.m. - 7 p.m."))
+                .to.equal(true);
+        });
+
+        it("combine availability", function () {
+            var actual = trucksjs.combineAvailabilities(["11 a.m. - 3 p.m."], "7 a.m. - 11 a.m.");
+
+            expect(isEqual(actual, ["7 a.m. - 3 p.m."])).to.equal(true);
+
+            var actual2 = trucksjs.combineAvailabilities(["11 a.m. - 3 p.m."], "3 p.m. - 7 p.m.");
+            console.log("actual2: " + actual2);
+            expect(isEqual(actual2,
+                           ["11 a.m. - 7 p.m."])).to.equal(true);
+        });
+
     });
 
     describe("Combine two days of data for the same truck.", function () {
@@ -152,7 +175,6 @@ describe("Trucks", function() {
                 "lat": 42.3688714588863,
                 "lng": -71.03974206301206
             }];
-            console.log(JSON.stringify(combinedTrucks));
             expect(isEqual(combinedTrucks, expected)).to.equal(true);
         });
     });
@@ -170,4 +192,6 @@ describe("Trucks", function() {
             expect(isEqual(combinedTrucks, expected)).to.equal(true);
         });
     });
+
+
 });

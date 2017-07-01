@@ -36,20 +36,28 @@ function convertTimeStringToDate(rawTime) {
     return getTodaysDate(hours, minutes);
 }
 
+function getStartTimeString(availability) {
+    var hyphenPos = availability.indexOf("-");
+    var startRaw = availability.slice(0, hyphenPos - 1);
+    return startRaw;
+}
 /**
  * Returns the start time of a truck in the format '11:00'.
  * @param {string} availability Availability property from a truck in the
  *     format '11 a.m. - 3 p.m.'.
  */
 function getStartTime(availability) {
-    var hyphenPos = availability.indexOf("-");
-    var startRaw = availability.slice(0, hyphenPos - 1);
+    var startRaw = getStartTimeString(availability);
     return convertTimeStringToDate(startRaw);
 }
 
-function getEndTime(availability) {
+function getEndTimeString(availability) {
     var hyphenPos = availability.indexOf("-");
     var startRaw = availability.substr(hyphenPos + 2);
+    return startRaw;
+}
+function getEndTime(availability) {
+    var startRaw = getEndTimeString(availability);
     return convertTimeStringToDate(startRaw);
 }
 
@@ -94,7 +102,6 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
     return true;
 }
 
-
 function combineTrucks (uncombinedTrucks) {
     var combinedTrucksMap = new Map;
     for (truck of uncombinedTrucks) {
@@ -117,10 +124,59 @@ function combineTrucks (uncombinedTrucks) {
         if (! value.days.hasOwnProperty(truck.day)){
             value.days[truck.day] = [];
         }
-        value.days[truck.day].push(truck.availability);
+
+        var availabilities = value.days[truck.day];
+        if (canCombineAvailability(availabilities, truck.availability)){
+            availabilities = combineAvailabilities(availabilities, truck.availability);
+        } else {
+            availabilities.push(truck.availability);
+        }
+
+
+        value.days[truck.day] = availabilities;
         combinedTrucksMap.set(key, value);
     }
     return Array.from(combinedTrucksMap.values());
+}
+
+function getCombinableAvailability(availabilities, truckAvailability) {
+    for (availability of availabilities){
+        if(getStartTime(availability).getTime() === getEndTime(truckAvailability).getTime() ||
+           getStartTime(truckAvailability).getTime() === getEndTime(availability).getTime()){
+            return availability;
+        }
+    }
+
+    return null;
+}
+
+function canCombineAvailability(availabilities, truckAvailability) {
+    return getCombinableAvailability(availabilities, truckAvailability) !== null;
+}
+function combineAvailabilities(availabilities, availability) {
+    function combineAvailability(availability, availability2) {
+        if (getStartTime(availability).getTime() === getEndTime(availability2).getTime()) {
+            return getStartTimeString(availability2) + " - " + getEndTimeString(availability);
+        }else if (getStartTime(availability2).getTime() === getEndTime(availability).getTime()) {
+            return getStartTimeString(availability) + " - " + getEndTimeString(availability2);
+        }else {
+            console.log("Couldn't combine availabilities!");
+            return null;
+        }
+    }
+
+    while (canCombineAvailability(availabilities, availability)){
+        var combinableAvailability = getCombinableAvailability(availabilities, availability);
+        console.log(availabilities);
+        console.log(availability);
+        var index = availabilities.indexOf(combinableAvailability);
+        if (index > -1) {
+            availabilities.splice(index, 1);
+        }
+        availabilities.push(combineAvailability(availability, combinableAvailability));
+    }
+
+    return availabilities;
 }
 
 function isNodeJsEnvironment() {
@@ -135,6 +191,8 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.isOpenInAfternoon = isOpenInAfternoon;
     exports.isOpenInEvening = isOpenInEvening;
     exports.combineTrucks = combineTrucks;
+    exports.canCombineAvailability = canCombineAvailability;
+    exports.combineAvailabilities = combineAvailabilities;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();
