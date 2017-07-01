@@ -95,6 +95,34 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
 }
 
 
+function combineTrucks (uncombinedTrucks) {
+    var combinedTrucksMap = new Map;
+    for (truck of uncombinedTrucks) {
+        var key = truck.title + truck.location + truck.notes + truck.website +
+            truck.lat + truck.lng;
+        var value;
+        if(combinedTrucksMap.has(key)){
+            value = combinedTrucksMap.get(key);
+        } else {
+            value = {
+                "days": {},
+                "title":truck.title,
+                "location": truck.location,
+                "notes": truck.notes,
+                "website": truck.website,
+                "lat": truck.lat,
+                "lng": truck.lng
+            };
+        }
+        if (! value.days.hasOwnProperty(truck.day)){
+            value.days[truck.day] = [];
+        }
+        value.days[truck.day].push(truck.availability);
+        combinedTrucksMap.set(key, value);
+    }
+    return Array.from(combinedTrucksMap.values());
+}
+
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&
            typeof module.exports !== 'undefined';
@@ -106,7 +134,9 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.isOpenInMorning = isOpenInMorning;
     exports.isOpenInAfternoon = isOpenInAfternoon;
     exports.isOpenInEvening = isOpenInEvening;
+    exports.combineTrucks = combineTrucks;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();
 }
+

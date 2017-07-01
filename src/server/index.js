@@ -21,7 +21,6 @@ app.get('/api/trucks', function(req, res) {
         const responseData = data.features.map(function(feature) {
             const coordinates = proj4('EPSG:3857', 'EPSG:4326', [feature.attributes.POINT_X, feature.attributes.POINT_Y]);
             return {
-                id: feature.attributes.FID,
                 day: feature.attributes.Day,
                 title: feature.attributes.Truck,
                 location: feature.attributes.Title,

@@ -1,0 +1,122 @@
+[
+  {
+    "day": "Monday",
+    "title": "Tenoch Mexican",
+    "location": "Boston University West",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.35090939120357,
+    "lng": -71.11269354735796
+  },
+  {
+    "day": "Saturday",
+    "title": "Tenoch Mexican",
+    "location": "Maverick Square",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.3688714588863,
+    "lng": -71.03974206301206
+  },
+  {
+    "day": "Tuesday",
+    "title": "Tenoch Mexican",
+    "location": "Maverick Square",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "3 p.m. - 8 p.m.",
+    "lat": 42.3688714588863,
+    "lng": -71.03974206301206
+  },
+  {
+    "day": "Thursday",
+    "title": "Tenoch Mexican",
+    "location": "Maverick Square",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "3 p.m. - 8 p.m.",
+    "lat": 42.3688714588863,
+    "lng": -71.03974206301206
+  },
+  {
+    "day": "Friday",
+    "title": "Tenoch Mexican",
+    "location": "Maverick Square",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "3 p.m. - 8 p.m.",
+    "lat": 42.3688714588863,
+    "lng": -71.03974206301206
+  },
+  {
+    "day": "Thursday",
+    "title": "Tenoch Mexican",
+    "location": "Boston University East",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.34912903936633,
+    "lng": -71.1008493926587
+  },
+  {
+    "day": "Friday",
+    "title": "Tenoch Mexican",
+    "location": "Opera Place",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.34063622146565,
+    "lng": -71.08904785116188
+  },
+  {
+    "day": "Thursday",
+    "title": "Tenoch Mexican",
+    "location": "Greenway",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.35296016949104,
+    "lng": -71.05561011053376
+  },
+  {
+    "day": "Tuesday",
+    "title": "Tenoch Mexican",
+    "location": "Greenway",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.35296016949104,
+    "lng": -71.05561011053376
+  },
+  {
+    "day": "Wednesday",
+    "title": "Tenoch Mexican",
+    "location": "Greenway",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.356578976892955,
+    "lng": -71.05110693731201
+  },
+  {
+    "day": "Monday",
+    "title": "Tenoch Mexican",
+    "location": "Greenway",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "11 a.m. - 3 p.m.",
+    "lat": 42.356578976892955,
+    "lng": -71.05110693731201
+  },
+  {
+    "day": "Saturday",
+    "title": "Tenoch Mexican",
+    "location": "Maverick Square",
+    "notes": " ",
+    "website": "http://www.tenochmexican.com/",
+    "availability": "3 p.m. - 8 p.m.",
+    "lat": 42.3688714588863,
+    "lng": -71.03974206301206
+  }
+]

@@ -19,6 +19,7 @@
   "dependencies": {
     "chai": "^4.0.2",
     "express": "^4.15.3",
+    "lodash": "^4.17.4",
     "mocha": "^3.4.2",
     "proj4": "^2.4.3",
     "request": "^2.81.0"
