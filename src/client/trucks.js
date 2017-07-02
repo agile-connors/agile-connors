@@ -97,6 +97,26 @@ function isCurrentlyAvailable (days) {
     return false;
 }
 
+function isClosingSoon (days) {
+
+    var currentWeekday = getCurrentWeekday();
+    if (!days.hasOwnProperty(currentWeekday)){
+        return false;
+    }
+
+    var date = new Date();
+    for (availability of days[currentWeekday]){
+        var endTime = getEndTime(availability);
+        var startTime = new Date(endTime.getTime());
+        startTime.setHours(startTime.getHours() - 1);
+        if (date >= startTime && date <= endTime) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 function isOpenInMorning (days) {
     return availabilitiesIntersect(days, "5 a.m. - 12 p.m.");
 }

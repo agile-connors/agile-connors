@@ -1,6 +1,35 @@
 //var MARKER_CLUSTERER_MAX_ZOOM = 15;
 
+var truckMarkerImage;
+var truckClosingMarkerImage;
+var truckUnavailableMarkerImage;
+var truckExpandMarkerImage;
+
 function initMap() {
+    truckMarkerImage = {
+        url: '/img/truck.png',
+        size: new google.maps.Size(36, 26),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(18, 26)
+    };
+    truckClosingMarkerImage = {
+        url: '/img/truck-closing.png',
+        size: new google.maps.Size(36, 26),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(18, 26)
+    };
+    truckUnavailableMarkerImage = {
+        url: '/img/truck-unavailable.png',
+        size: new google.maps.Size(36, 26),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(18, 26)
+    };
+    truckExpandMarkerImage = {
+        url: '/img/truck-expand.png',
+        size: new google.maps.Size(47, 30),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(23, 15)
+    };
     var map = createMapOfBoston();
     var infoWindow = createInfoWindow(map);
     var markerSpiderfier = createMarkerSpiderfier(map);
@@ -79,21 +108,21 @@ function createMarkerSpiderfier(map) {
     var markerSpiderfier = new OverlappingMarkerSpiderfier(map, markerSpiderfierOptions);
 
     markerSpiderfier.addListener('format', function(marker, status) {
-        var imageUrl;
-        switch (status) {
-            case OverlappingMarkerSpiderfier.markerStatus.SPIDERFIED:
-            case OverlappingMarkerSpiderfier.markerStatus.UNSPIDERFIABLE:
-                imageUrl = '/img/truck.png';
-                break;
-            case OverlappingMarkerSpiderfier.markerStatus.SPIDERFIABLE:
-                imageUrl = '/img/truck-expand.png';
-                break;
-            default:
-                imageUrl = null;
+        var image;
+        if (status === OverlappingMarkerSpiderfier.markerStatus.SPIDERFIABLE) {
+            image = truckExpandMarkerImage;
         }
-        if (imageUrl) {
-            marker.setIcon({ url: imageUrl });
+        else if (!isCurrentlyAvailable(marker.truck.days)) {
+            image = truckUnavailableMarkerImage;
         }
+        else if (isClosingSoon(marker.truck.days)) {
+            image = truckClosingMarkerImage;
+        }
+        else {
+            image = truckMarkerImage;
+        }
+        console.log(image);
+        marker.setIcon(image);
     });
 
     return markerSpiderfier;
@@ -114,8 +143,6 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
     });
 }
 
-
-
 function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
     return trucks.map(function(truck) {
         return addMapMarker(map, infoWindow, markerSpiderfier, truck);
@@ -134,7 +161,7 @@ function getTruckAvailability(truck){
 }
 
 function createInfoWindowContent(truck) {
-    var website = (truck.website) ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
+    var website = truck.website !== undefined ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
     var notes = truck.notes !== undefined && truck.notes.trim().length > 0 ? '<p>' + truck.notes + '</p>' : "";
     return '' +
         '<div id="content">' +
@@ -155,7 +182,7 @@ function addMapMarker(map, infoWindow, markerSpiderfier, truck) {
         position: {lat: truck.lat, lng: truck.lng},
         map: map,
         title: truck.title,
-        icon: 'img/truck.png',
+        icon: truckMarkerImage,
         truck: truck
     });
 
@@ -171,6 +198,7 @@ function addMapMarker(map, infoWindow, markerSpiderfier, truck) {
 }
 
 function addMarkerClusterer(map, markers) {
+
     return new MarkerClusterer(map, markers, {
         imagePath: '/img/marker-cluster',
         maxZoom: MARKER_CLUSTERER_MAX_ZOOM,
