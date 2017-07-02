@@ -234,6 +234,13 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
             return false;
         }
 
+        if(chosen === "currentlyAvailable"){
+            $('#daysButton').hide();
+        } else {
+            $('#daysButton').show();
+        }
+
+
         for (var marker of allMarkers) {
             if (chosen === "anytime") {
                 marker.setVisible(isVisibleOnSelectedDays(marker.truck.days, selectedDays));
