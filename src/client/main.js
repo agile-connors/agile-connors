@@ -143,8 +143,6 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
     });
 }
 
-
-
 function addMapMarkers(map, infoWindow, markerSpiderfier, trucks) {
     return trucks.map(function(truck) {
         return addMapMarker(map, infoWindow, markerSpiderfier, truck);
@@ -163,7 +161,7 @@ function getTruckAvailability(truck){
 }
 
 function createInfoWindowContent(truck) {
-    var website = (truck.website) ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
+    var website = truck.website !== undefined ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
     var notes = truck.notes !== undefined && truck.notes.trim().length > 0 ? '<p>' + truck.notes + '</p>' : "";
     return '' +
         '<div id="content">' +
