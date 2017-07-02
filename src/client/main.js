@@ -121,7 +121,7 @@ function createMarkerSpiderfier(map) {
         else {
             image = truckMarkerImage;
         }
-        console.log(image);
+        // console.log(image);
         marker.setIcon(image);
     });
 
@@ -208,44 +208,85 @@ function addMarkerClusterer(map, markers) {
 
 function attachUiEvents(allMarkers/*, markerClusterer*/) {
 
-    $('#showPeriodOfDay').change(function() {
-        var chosen = $( "#showPeriodOfDay").val();
+    function getCurrentlySelectedDays(){
+        var days = [];
+        if ($('#sundayCheckbox').is(':checked')) days.push('Sunday');
+        if ($('#mondayCheckbox').is(':checked')) days.push('Monday');
+        if ($('#tuesdayCheckbox').is(':checked')) days.push('Tuesday');
+        if ($('#wednesdayCheckbox').is(':checked')) days.push('Wednesday');
+        if ($('#thursdayCheckbox').is(':checked')) days.push('Thursday');
+        if ($('#fridayCheckbox').is(':checked')) days.push('Friday');
+        if ($('#saturdayCheckbox').is(':checked')) days.push('Saturday');
+        return days;
+    }
+
+    function updateFilters() {
+        var chosen = $("#showPeriodOfDay").val();
+        var selectedDays = getCurrentlySelectedDays();
         console.log("Time filter changed to: " + chosen);
-        for (var marker of allMarkers) {
-            if (chosen === "anytime") {
-                marker.setVisible(true);
-            } else if (chosen === "currentlyAvailable"){
-                marker.setVisible(isCurrentlyAvailable(marker.truck.days));
-            } else if (chosen === "morning"){
-                marker.setVisible(isOpenInMorning(marker.truck.days));
-            } else if (chosen === "afternoon"){
-                marker.setVisible(isOpenInAfternoon(marker.truck.days));
-            } else if (chosen === "evening"){
-                marker.setVisible(isOpenInEvening(marker.truck.days));
+        console.log("CUrrently selected days: " + selectedDays);
+        function isVisibleOnSelectedDays(days, selectedDays) {
+            for (selectedDay of selectedDays){
+                if(days.hasOwnProperty(selectedDay)){
+                    return true;
+                }
             }
+            return false;
         }
 
+        for (var marker of allMarkers) {
+            if (chosen === "anytime") {
+                marker.setVisible(isVisibleOnSelectedDays(marker.truck.days, selectedDays));
+            } else if (chosen === "currentlyAvailable") {
+                marker.setVisible(isCurrentlyAvailable(marker.truck.days));
+            } else if (chosen === "morning") {
+                marker.setVisible(isOpenInMorning(marker.truck.days, selectedDays));
+            } else if (chosen === "afternoon") {
+                marker.setVisible(isOpenInAfternoon(marker.truck.days, selectedDays));
+            } else if (chosen === "evening") {
+                marker.setVisible(isOpenInEvening(marker.truck.days, selectedDays));
+            }
+        }
+    }
+
+    $('#showPeriodOfDay').change(function() {
+        updateFilters();
     });
 
     var options = [];
     $( '.dropdown-menu a' ).on( 'click', function( event ) {
-
         var $target = $( event.currentTarget ),
             val = $target.attr( 'data-value' ),
             $inp = $target.find( 'input' ),
             idx;
 
+        function updateDaysButtonText() {
+            if (getCurrentlySelectedDays().length === 7) {
+                $('#daysButton').html('All Days <span class="caret"></span>');
+            } else {
+                $('#daysButton').html('Selected Days <span class="caret"></span>');
+            }
+        }
+
         if ( ( idx = options.indexOf( val ) ) > -1 ) {
             options.splice( idx, 1 );
-            setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+            setTimeout( function() {
+                $inp.prop( 'checked', true );
+                updateFilters();
+                updateDaysButtonText();
+            }, 0);
         } else {
             options.push( val );
-            setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+            setTimeout( function() {
+                $inp.prop( 'checked', false);
+                updateFilters();
+                updateDaysButtonText();
+            }, 0);
         }
 
         $( event.target ).blur();
 
-        console.log( options );
+
         return false;
     });
 }

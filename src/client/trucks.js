@@ -117,32 +117,30 @@ function isClosingSoon (days) {
     return false;
 }
 
-function isOpenInMorning (days) {
-    return availabilitiesIntersect(days, "5 a.m. - 12 p.m.");
+function isOpenInMorning (truckDays, selectedDays) {
+    return availabilitiesIntersect(truckDays, selectedDays, "5 a.m. - 12 p.m.");
 }
 
-function isOpenInAfternoon (days) {
-    return availabilitiesIntersect(days, "12 p.m. - 5 p.m.");
+function isOpenInAfternoon (truckDays, selectedDays) {
+    return availabilitiesIntersect(truckDays, selectedDays, "12 p.m. - 5 p.m.");
 }
 
-function isOpenInEvening (days) {
-    return availabilitiesIntersect(days, "5 p.m. - 9 p.m.");
+function isOpenInEvening (truckDays, selectedDays) {
+    return availabilitiesIntersect(truckDays, selectedDays, "5 p.m. - 9 p.m.");
 }
 
 /**
  * Exclusive for the beginning minute and last minute. So we don't say a
  * place is open in the afternoon if it closes at 12 p.m.
- * @param days
+ * @param truckDays days from truck object
+ * @param selectedDays the selected days from the ui
  * @param periodAvailability
  * @returns {boolean}
  */
-function availabilitiesIntersect (days, periodAvailability) {
-    var selectedWeekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-
-    for (day of selectedWeekdays){
-        if (days.hasOwnProperty(day)){
-            var availabilities = days[day];
+function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
+    for (day of selectedDays){
+        if (truckDays.hasOwnProperty(day)){
+            var availabilities = truckDays[day];
             for (availability of availabilities){
                 if (getStartTime(periodAvailability) < getEndTime(availability)
                     && getStartTime(availability) < getEndTime(periodAvailability)){

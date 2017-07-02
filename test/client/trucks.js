@@ -2,6 +2,8 @@ var expect = require("chai").expect;
 var isEqual = require("lodash").isEqual;
 var trucks = require('../trucks.json');
 var trucksjs = require('../../src/client/trucks.js');
+var selectedWeekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
 
 
 describe("Trucks", function() {
