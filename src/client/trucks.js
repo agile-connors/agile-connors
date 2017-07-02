@@ -112,15 +112,15 @@ function isOpenInEvening (days) {
 /**
  * Exclusive for the beginning minute and last minute. So we don't say a
  * place is open in the afternoon if it closes at 12 p.m.
- * @param truckAvailability
+ * @param days
  * @param periodAvailability
  * @returns {boolean}
  */
 function availabilitiesIntersect (days, periodAvailability) {
-    var ALL_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    var selectedWeekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 
-    for (day of ALL_DAYS){
+    for (day of selectedWeekdays){
         if (days.hasOwnProperty(day)){
             var availabilities = days[day];
             for (availability of availabilities){

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Boston Scavenger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="/img/truck.png"/>
     <link rel="stylesheet" href="main.css" />
 </head>
@@ -15,8 +17,23 @@
                 <input name="submit" type="button" value="Search">
             </form>
         </label>
-        <label class="headerTimePeriod">
-            <span>Time</span>
+
+        <div class="headerTimePeriod">
+            <div id="all-days">
+                <div class="button-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">All Days <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="small" data-value="sunday" tabIndex="-1"><input
+                                type="checkbox" checked/>&nbsp;Sunday</a></li>
+                        <li><a href="#" class="small" data-value="monday" tabIndex="-1"><input type="checkbox" checked/>&nbsp;Monday</a></li>
+                        <li><a href="#" class="small" data-value="tuesday" tabIndex="-1"><input type="checkbox" checked/>&nbsp;Tuesday</a></li>
+                        <li><a href="#" class="small" data-value="wednesday" tabIndex="-1"><input type="checkbox" checked/>&nbsp;Wednesday</a></li>
+                        <li><a href="#" class="small" data-value="thursday" tabIndex="-1"><input type="checkbox" checked/>&nbsp;Thursday</a></li>
+                        <li><a href="#" class="small" data-value="friday" tabIndex="-1"><input type="checkbox" checked/>&nbsp;Friday</a></li>
+                        <li><a href="#" class="small" data-value="saturday" tabIndex="-1"><input type="checkbox" checked/>&nbsp;Saturday</a></li>
+                    </ul>
+                </div>
+            </div>
             <select id="showPeriodOfDay">
                 <option value="anytime">Anytime</option>
                 <option value="currentlyAvailable">Currently Available</option>
@@ -26,10 +43,11 @@
                 <option value="evening">Evening (within 5 p.m. - 9 p.m.)
                 </option>
             </select>
-        </label>
+        </div>
 	</header>
     <div id="map"></div>
     <script src="vendor/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="vendor/lodash.min.js"></script>
     <script src="trucks.js"></script>
     <script src="main.js"></script>

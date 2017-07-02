@@ -23,12 +23,22 @@ body {
 	float: right;
 	font-size: 12px;
 	line-height: 40px;
+	display: inline-block;
+}
+
+#all-days{
+	display: inline-block;
 }
 
 .searchBar {
 	display: inline-block;
+	margin-top: 8px;
 	font-size: 12px;
-	line-height: 40px;
+	line-height: 12px;
+}
+
+.dropdown-menu{
+	left: auto;
 }
 
 #map {
