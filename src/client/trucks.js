@@ -108,7 +108,7 @@ function isClosingSoon (days) {
     for (availability of days[currentWeekday]){
         var endTime = getEndTime(availability);
         var startTime = new Date(endTime.getTime());
-        startTime.setHours(startTime.getHours() - 4);
+        startTime.setHours(startTime.getHours() - 1);
         if (date >= startTime && date <= endTime) {
             return true;
         }
