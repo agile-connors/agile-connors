@@ -197,6 +197,8 @@ We chose 9 story points because we completed 8 story points last sprint and we h
 
 We utilized pair programming again this sprint. Henry and Ben met to work on tests.
 
+![Sprint 2 - Pair Programming](pair_programming2.jpg)
+
 ### Daily Scrum
 
 We conducted two daily scrums this sprint, the first on July 1st and the second on July 2nd. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
