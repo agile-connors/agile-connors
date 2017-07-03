@@ -291,7 +291,7 @@ Finally, open `localhost:3000` in a web browser.
 
 ### Continuous Integration / Continuous Deployment
 
-TODO
+Using Travis CI for Continuous Integration
 
 ## Resources
 * Truck Icon made by [Nikita Golubev](http://www.flaticon.com/authors/nikita-golubev) from www.flaticon.com
