@@ -193,6 +193,10 @@ Our initial forecast is **9 story points**. These points comprise of:
 
 We chose 9 story points because we completed 8 story points last sprint and we have slightly more time this sprint as it spans more days (including a weekend). The 8 points felt very much appropriate, as we finished all of the work but probably couldn't have taken on any more. We are confident that we can add 2 more points to the velocity, given the schedule.
 
+### Pair Programming
+
+We utilized pair programming again this sprint. Henry and Ben met to work on tests.
+
 ### Daily Scrum
 
 We conducted two daily scrums this sprint, the first on July 1st and the second on July 2nd. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
