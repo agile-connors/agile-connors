@@ -161,7 +161,7 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
 // Calculate the distance between the truck and the search location.
 // Returns: True if the distance between the truck and the location is less than or equal to maxDistance.
 //          False if they are too far apart.
-//          Null if error in geocoding process.
+//          Null if error in geocoding process. 
 function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
     var geocoder = new google.maps.Geocoder();
     var location = document.getElementById('location').value;
