@@ -295,7 +295,7 @@ Using Travis CI for Continuous Integration
 
 And Codeship for Continuous Deployment
 
- TODO add pictures
+  TODO add pictures
 
 ## Resources
 * Truck Icon made by [Nikita Golubev](http://www.flaticon.com/authors/nikita-golubev) from www.flaticon.com
