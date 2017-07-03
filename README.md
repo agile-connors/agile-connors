@@ -293,6 +293,7 @@ Finally, open `localhost:3000` in a web browser.
 
 We use Travis CI for continuous integration, because it easily integrates into our slack channel 
 and tells us when we break a build.
+
 ![Travis CI Build Messages](travis_ci.png)
 
 We also use Codeship for Continuous Deployment, because it is the easiest way we could find to 
@@ -303,6 +304,7 @@ deploy a nodejs app. Since it allows us to easily ssh into our server.
 
 #### If they pass we deploy
 We go through the process of updating the git repo, then restarting our node js app with yarn.
+
 ![Deploying](deployment.png)
 
 
