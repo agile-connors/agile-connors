@@ -291,11 +291,23 @@ Finally, open `localhost:3000` in a web browser.
 
 ### Continuous Integration / Continuous Deployment
 
-Using Travis CI for Continuous Integration
+We use Travis CI for continuous integration, because it easily integrates into our slack channel 
+and tells us when we break a build.
+![Travis CI Build Messages](travis_ci.png)
 
-And Codeship for Continuous Deployment
+We also use Codeship for Continuous Deployment, because it is the easiest way we could find to 
+deploy a nodejs app. Since it allows us to easily ssh into our server.
 
-   TODO add pictures
+#### All of our tests are ran before deploying
+![Tests before deploying](tests_passing_before_deployment.png)
+
+#### If they pass we deploy
+We go through the process of updating the git repo, then restarting our node js app with yarn.
+![Deploying](deployment.png)
+
+
+#### Deployed site
+The deployed site can be found here: [Boston Scavenger](http://boston-scavenger.ben-jenkins.com/)
 
 ## Resources
 * Truck Icon made by [Nikita Golubev](http://www.flaticon.com/authors/nikita-golubev) from www.flaticon.com
