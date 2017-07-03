@@ -233,7 +233,7 @@ See below for a summary of this conversation.
   - *Next 24 hours:* Probably going to continue refactoring but there isn't much left.
 - **Ben**
   - *Last 24 hours:* Sanitize truck data so that a single truck contains all of its days and availabilities. Also spent time combining availabilities when appropriate (i.e. if a truck has an 11 - 3 and a 3 - 8, they are combined to 11 - 8).
-  - *Next 24 hours:* 
+  - *Next 24 hours:* Add continuous deployment, and finish adding the ability to filter by days.
 - **Henry**
   - *Last 24 hours:* Began implementing location search.
   - *Next 24 hours:* Continue implementing location search.
