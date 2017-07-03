@@ -97,6 +97,13 @@ describe("Trucks", function() {
             expect(trucksjs.isOpenInEvening(a2d("5 p.m. - 9 p.m."), allDays)).to.equal(true);
         });
 
+        it("is open in evening", function () {
+            expect(trucksjs.availabilitiesIntersect(a2d("3 a.m. - 4 a.m."),
+                                           allDays, "5 p.m. - 9 p.m.")).to.equal(false);
+            expect(trucksjs.availabilitiesIntersect(a2d("3 a.m. - 6 p.m."),
+                                                    allDays, "5 p.m. - 9 p.m.")).to.equal(true);
+        });
+
         it("can combine availability", function () {
 
             var availabilities = ["11 a.m. - 3 p.m."];
@@ -108,6 +115,17 @@ describe("Trucks", function() {
                 .to.equal(true);
         });
 
+        it("get combinable availability", function () {
+
+            var availabilities = ["11 a.m. - 3 p.m."];
+            expect(trucksjs.getCombinableAvailability(availabilities, "7 a.m. - 10 a.m."))
+                .to.equal(null);
+            expect(trucksjs.getCombinableAvailability(availabilities, "7 a.m. - 11 a.m."))
+                .to.equal("11 a.m. - 3 p.m.");
+            expect(trucksjs.getCombinableAvailability(availabilities, "3 p.m. - 7 p.m."))
+                .to.equal("11 a.m. - 3 p.m.");
+        });
+
         it("combine availability", function () {
             var actual = trucksjs.combineAvailabilities(["11 a.m. - 3 p.m."], "7 a.m. - 11 a.m.");
 
@@ -117,6 +135,12 @@ describe("Trucks", function() {
             console.log("actual2: " + actual2);
             expect(isEqual(actual2,
                            ["11 a.m. - 7 p.m."])).to.equal(true);
+        });
+
+        it("check null combinable availability", function () {
+            var availabilities = ["11 a.m. - 3 p.m."];
+            expect(trucksjs.getCombinableAvailability(availabilities, "3 a.m. - 10 a.m."))
+                .to.equal(null);
         });
 
     });

@@ -277,6 +277,8 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.combineTrucks = combineTrucks;
     exports.canCombineAvailability = canCombineAvailability;
     exports.combineAvailabilities = combineAvailabilities;
+    exports.getCombinableAvailability = getCombinableAvailability;
+    exports.availabilitiesIntersect = availabilitiesIntersect;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();

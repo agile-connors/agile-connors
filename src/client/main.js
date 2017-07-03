@@ -224,7 +224,7 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         var chosen = $("#showPeriodOfDay").val();
         var selectedDays = getCurrentlySelectedDays();
         console.log("Time filter changed to: " + chosen);
-        console.log("CUrrently selected days: " + selectedDays);
+        console.log("Currently selected days: " + selectedDays);
         function isVisibleOnSelectedDays(days, selectedDays) {
             for (selectedDay of selectedDays){
                 if(days.hasOwnProperty(selectedDay)){
