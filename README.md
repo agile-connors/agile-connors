@@ -261,7 +261,9 @@ We once again showed the product to our **stakeholder** and they are happy with 
 
 #### Burndown Chart
 
-TODO: burndown summary and image
+We didn't complete our entire sprint backlog of 9 points. We were not able to complete the search
+ by location features, but we commented out the form elements so that we still have a releasable 
+ product increment.
 
 ![Sprint 2 - Burndown Chart](sprint2-burndown.png)
 
