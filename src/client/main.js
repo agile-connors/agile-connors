@@ -297,7 +297,7 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         return false;
     });
 }
-
+/*
 function showNearbyMarkers(allMarkers, location, maxDistance) {
     for (var marker of allMarkers) {
         var isNearby = locationIsNearby(marker.truck.latitude, marker.truck.longitude, location, maxDistance);
@@ -308,7 +308,7 @@ function showNearbyMarkers(allMarkers, location, maxDistance) {
         }
     }
 }
-
+*/
 
 
 

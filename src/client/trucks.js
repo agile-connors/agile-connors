@@ -157,11 +157,17 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
 
 // TODO(ben): Add a date closing within 1 hour functionality
 
-
-// Calculate the distance between the truck and the search location.
-// Returns: True if the distance between the truck and the location is less than or equal to maxDistance.
-//          False if they are too far apart.
-//          Null if error in geocoding process. 
+/**
+ * Calculate the distance between the truck and the search location.
+ * @param: truckLatitude - the latitude of the truck.
+ * @param: truckLongitude - the longitude of the truck.
+ * @param: location - the human readable location the search should be based around.
+ * @param: maxDistance - the furthest distance (in miles) from the location we want to find trucks.
+ * @returns: True if the distance between the truck and the location is less than or equal to maxDistance.
+ *          False if they are too far apart.
+ *          Null if error in geocoding process.
+ */
+/*
 function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
     var geocoder = new google.maps.Geocoder();
     var location = document.getElementById('location').value;
@@ -181,7 +187,7 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
         }
     }
 }
-
+*/
 function combineTrucks (uncombinedTrucks) {
     var combinedTrucksMap = new Map;
     for (truck of uncombinedTrucks) {
