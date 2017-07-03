@@ -287,5 +287,9 @@ npm start
 
 Finally, open `localhost:3000` in a web browser.
 
+### Continuous Integration / Continuous Deployment
+
+TODO
+
 ## Resources
-* Truck Icon made by [Nikita Golubev](http://www.flaticon.com/authors/nikita-golubev) from www.flaticon.com 
+* Truck Icon made by [Nikita Golubev](http://www.flaticon.com/authors/nikita-golubev) from www.flaticon.com
