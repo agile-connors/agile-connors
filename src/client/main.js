@@ -301,7 +301,11 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
 function showNearbyMarkers(allMarkers, location, maxDistance) {
     for (var marker of allMarkers) {
         var isNearby = locationIsNearby(marker.truck.latitude, marker.truck.longitude, location, maxDistance);
-        marker.setVisible(isNearby);
+        if (isNearby == null){
+            alert('Could not find your search location.');
+        } else {
+            marker.setVisible(isNearby);
+        }
     }
 }
 

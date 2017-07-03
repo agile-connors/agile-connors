@@ -159,10 +159,27 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
 
 
 // Calculate the distance between the truck and the search location.
-// Returns: True if the distance between the truck and the location is less than maxDistance.
+// Returns: True if the distance between the truck and the location is less than or equal to maxDistance.
 //          False if they are too far apart.
+//          Null if error in geocoding process.
 function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
-    return true;
+    var geocoder = new google.maps.Geocoder();
+    var location = document.getElementById('location').value;
+    geocoder.geocode({'location'}:location), function(results, status) {
+        if (status == 'OK') {
+            var locationLatLng = results[0].geometry.location;
+            var truckLatLng = new google.maps.LatLng(truckLatitude, truckLongitude);
+            var distance = google.maps.geometry.spherical.computeDistanceBetween(locationLatLng, truckLatLng);
+            //convert meters to miles
+            if (distance/1609.34 <= maxDistance) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return null;
+        }
+    }
 }
 
 function combineTrucks (uncombinedTrucks) {
