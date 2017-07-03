@@ -217,8 +217,8 @@ See below for a summary of this conversation.
   - *Last 24 hours:* Add filtering for time of the day (morning, afternoon, evening).
   - *Next 24 hours:* Consolidate truck data so that a single truck title contains all data.
 - **Henry**
-  - *Last 24 hours:* TODO
-  - *Next 24 hours:* TODO
+  - *Last 24 hours:* Added HTML header bar for location search.
+  - *Next 24 hours:* Implement location search.
 - **Kerry**
   - *Last 24 hours:* Create icon suite and log of activities.
   - *Next 24 hours:* Thorough review of backlog.
@@ -235,8 +235,8 @@ See below for a summary of this conversation.
   - *Last 24 hours:* Sanitize truck data so that a single truck contains all of its days and availabilities. Also spent time combining availabilities when appropriate (i.e. if a truck has an 11 - 3 and a 3 - 8, they are combined to 11 - 8).
   - *Next 24 hours:* 
 - **Henry**
-  - *Last 24 hours:* TODO
-  - *Next 24 hours:* TODO
+  - *Last 24 hours:* Began implementing location search.
+  - *Next 24 hours:* Continue implementing location search.
 - **Kerry**
   - *Last 24 hours:* Update backlog logo card. Update backlog item status to be up-to-date. Review order of backlog items.
   - *Next 24 hours:* Continue to monitor backlog status and keep updated.
