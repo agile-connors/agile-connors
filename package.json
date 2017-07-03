@@ -4,7 +4,9 @@
   "description": "Project for CSCI S-71: Agile Software Development. A web application for finding food trucks in Boston.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server",
+    "start": "pm2 start src/server/index.js -i max — name=\"Boston-Scavenger\"",
+    "restart": "pm2 restart all",
+    "stop": "pm2 stop index",
     "test": "./node_modules/.bin/mocha --recursive --reporter spec"
   },
   "repository": {
@@ -22,6 +24,7 @@
     "lodash": "^4.17.4",
     "mocha": "^3.4.2",
     "proj4": "^2.4.3",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "pm2": "^2.4.2"
   }
 }
