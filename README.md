@@ -193,6 +193,74 @@ Our initial forecast is **9 story points**. These points comprise of:
 
 We chose 9 story points because we completed 8 story points last sprint and we have slightly more time this sprint as it spans more days (including a weekend). The 8 points felt very much appropriate, as we finished all of the work but probably couldn't have taken on any more. We are confident that we can add 2 more points to the velocity, given the schedule.
 
+### Daily Scrum
+
+We conducted two daily scrums this sprint, the first on July 1st and the second on July 2nd. Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
+
+See below for a summary of this conversation.
+
+*July 1*
+
+- **Kyle**
+  - *Last 24 hours:* Add initial content for the sprint to the README. Research changing truck icons for assigned backlog item.
+  - *Next 24 hours:* Work on assigned backlog item.
+- **Lennart**
+  - *Last 24 hours:* Refactor and fix truck website showing in the info box. Remove ticket from sprint backlog that is no longer relevant.
+  - *Next 24 hours:* Do more refactoring on these pieces.
+- **Ben**
+  - *Last 24 hours:* Add filtering for time of the day (morning, afternoon, evening).
+  - *Next 24 hours:* Consolidate truck data so that a single truck title contains all data.
+- **Henry**
+  - *Last 24 hours:* TODO
+  - *Next 24 hours:* TODO
+- **Kerry**
+  - *Last 24 hours:* Create icon suite and log of activities.
+  - *Next 24 hours:* Thorough review of backlog.
+
+*July 2*
+
+- **Kyle**
+  - *Last 24 hours:* Complete backlog item (view truck availability at a glance).
+  - *Next 24 hours:* Refactor some of the work on the mentioned backlog item.
+- **Lennart**
+  - *Last 24 hours:* More refactoring of the truck data and info box.
+  - *Next 24 hours:* Probably going to continue refactoring but there isn't much left.
+- **Ben**
+  - *Last 24 hours:* Sanitize truck data so that a single truck contains all of its days and availabilities. Also spent time combining availabilities when appropriate (i.e. if a truck has an 11 - 3 and a 3 - 8, they are combined to 11 - 8).
+  - *Next 24 hours:* 
+- **Henry**
+  - *Last 24 hours:* TODO
+  - *Next 24 hours:* TODO
+- **Kerry**
+  - *Last 24 hours:* Update backlog logo card. Update backlog item status to be up-to-date. Review order of backlog items.
+  - *Next 24 hours:* Continue to monitor backlog status and keep updated.
+
+We discussed **impediments** again at each of the daily scrums and they remained roughly the same as the ones we identified in the first sprint's daily scrum.
+
+### Sprint Review
+
+We held a sprint review to ensure that everything in the backlog was up to date for the end of the sprint. We also did a foursquare activity again, as a sort of sprint retrospective. The results are below.
+
+#### Start doing
+- Discussing availability during sprint planning / when we'll be working on things (in case there are dependencies).
+
+#### Stop doing
+- Changing out sprint backlog items after the sprint starts, if we can avoid it.
+
+#### Continue doing
+- Doing great work on the product.
+
+#### Kudos/shoutouts
+- Ben, for taking on CI/CD plus a bunch of other work on the codebase.
+
+We once again showed the product to our **stakeholder** and they are happy with its progress so far. They like the updates to how availability is viewed on the info cards and on the truck icons on the map.
+
+#### Burndown Chart
+
+TODO: burndown summary and image
+
+![Sprint 2 - Burndown Chart](sprint2-burndown.png)
+
 ## Development
 
 Download and install [Node.js](https://nodejs.org/en/) if you don't already have it. This project was developed with Node v4.6.0. Any higher version should also work.
