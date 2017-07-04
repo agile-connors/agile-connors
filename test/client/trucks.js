@@ -193,9 +193,10 @@ describe("Trucks", function() {
     });
 
     describe("Search", function () {
-        it("Should return one Bibim box object when searching for it", function () {
-            var searchResults = trucksjs.search("Bibim Box");
-            expect(searchResults.length).to.equal(1);
+        it("Should all Bibim box results when searching for it", function () {
+            var searchResults = trucksjs.search(trucks, "Bibim Box");
+            var combinedResults = trucksjs.combineTrucks(searchResults);
+            expect(combinedResults.length).to.equal(5);
         })
     });
 

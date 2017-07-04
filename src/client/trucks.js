@@ -263,8 +263,12 @@ function combineAvailabilities(availabilities, availability) {
     return availabilities;
 }
 
-function search(query) {
+function search(trucks, query) {
+    var matches = trucks.filter(function(truck){
+        return truck.title.includes(query);
+    })
 
+    return matches;
 }
 
 function isNodeJsEnvironment() {
