@@ -8,15 +8,30 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
 #header {
 	position: absolute;
 	top: 0; right: 0; left: 0;
-	height: 40px;
-	background: #FFF;
+	height: 50px;
+	background: #254251;
 	padding: 0 20px;
 	z-index: 20;
+}
+
+#brand {
+	float: left;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 50px;
+	color: #FFF;
+}
+
+#brand-secondary {
+	color: #FFBC48;
 }
 
 .topbar {
