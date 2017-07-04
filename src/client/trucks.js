@@ -194,6 +194,19 @@ function getTruckTitles(trucks) {
     return companies.sort();
 }
 
+function getSearchAutocompleteSuggestions(trucks) {
+    var companies = [];
+    for (truck of trucks){
+        if (companies.indexOf(truck.title) === -1){
+            companies.push(truck.title);
+        }
+        if (companies.indexOf(truck.location) === -1){
+            companies.push(truck.location);
+        }
+    }
+    return companies.sort();
+}
+
 function filterBySearch(trucks, searchQuery) {
     searchQuery = searchQuery.toLowerCase();
     var splitQuery = searchQuery.split(/[ ,]+/);
@@ -224,6 +237,7 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.getStartTimeString = getStartTimeString;
     exports.getEndTimeString = getEndTimeString;
     exports.getTruckTitles = getTruckTitles;
+    exports.getSearchAutocompleteSuggestions = getSearchAutocompleteSuggestions;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();

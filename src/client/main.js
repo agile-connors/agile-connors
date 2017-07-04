@@ -176,6 +176,8 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
             });
 
             attachUiEvents(markers);
+
+
         }
     });
 }
@@ -257,10 +259,22 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         return days;
     }
 
-    function updateFilters() {
+    function getAlltrucks() {
+        var allTrucks = [];
+        allMarkers.forEach(function (marker) {
+            allTrucks.push(marker.truck);
+        }, this);
+        return allTrucks;
+    }
+
+    function updateFilters(searchInput) {
+        if(typeof searchInput === "undefined") {
+            searchInput = $("#trucksearch").val();
+        }
+
         var chosen = $("#showPeriodOfDay").val();
         var selectedDays = getCurrentlySelectedDays();
-        var searchInput = $("#trucksearch").val();
+
         var truckTitle = $("#truckTitles").val();
         console.log("Time filter changed to: " + chosen);
         console.log("Currently selected days: " + selectedDays);
@@ -299,12 +313,7 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         }
 
         // Rebuild trucks array. TODO: Store globally?
-        var allTrucks = [];
-        allMarkers.forEach(function(marker) {
-            allTrucks.push(marker.truck);
-        }, this);
-
-        var filteredTrucks = filterBySearch(allTrucks, searchInput);
+        var filteredTrucks = filterBySearch(getAlltrucks(), searchInput);
         console.log("Search results: " + filteredTrucks.length);
         filteredTrucks = filterByTime(filteredTrucks, chosen, selectedDays);
         console.log("Search and time filtered results: " + filteredTrucks.length);
@@ -325,13 +334,17 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         updateFilters();
     });
 
-    $('#truckTitles').change(function() {
+
+    $('#trucksearch').on('input propertychange paste', function() {
         updateFilters();
     });
 
-    $('#trucksearch').on('input', function() {
-        updateFilters();
-    });
+    $( "#trucksearch" ).autocomplete({
+         source: getSearchAutocompleteSuggestions(getAlltrucks()),
+         select: function (e, ui) {
+             updateFilters(ui.item.value);
+         }
+     });
 
     var options = [];
     $( '.dropdown-menu a' ).on( 'click', function( event ) {
