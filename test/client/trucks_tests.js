@@ -1,6 +1,6 @@
 var expect = require("chai").expect;
 var isEqual = require("lodash").isEqual;
-var trucks = require('../trucks.json');
+var trucks = require('./trucks.json');
 var trucksjs = require('../../src/client/trucks.js');
 
 describe("Trucks", function() {
@@ -231,9 +231,9 @@ describe("Trucks", function() {
            "when I combine trucks together" +
            "then trucks with the same days should be in the same object", function () {
 
-            var uncombinedTrucks = require('../uncombined_trucks.json');
+            var uncombinedTrucks = require('./uncombined_trucks.json');
             var combinedTrucks = trucksjs.combineTrucks(uncombinedTrucks);
-            var expected  = require('../combined_trucks.json');
+            var expected  = require('./combined_trucks.json');
             expect(isEqual(combinedTrucks, expected)).to.equal(true);
         });
     });
