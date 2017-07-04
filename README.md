@@ -9,6 +9,7 @@ Project for CSCI S-71: Agile Software Development. A web application for finding
 - [Product Backlog](#product-backlog)
 - [Sprint 1](#sprint-1)
 - [Sprint 2](#sprint-2)
+- [Sprint 3](#sprint-3)
 - [Development](#development)
 
 ## Project Team
@@ -183,7 +184,7 @@ We completed our entire sprint backlog of 8 points by the end of the sprint. 6 p
 
 ### Story Points Forecast
 
-Our initial forecast is **9 story points**. These points comprise of:
+Our forecast for this sprint is **9 story points**. These points comprise of:
 
 - (1) Provide link to truck website, if available
 - (1) View truck availability at a glance
@@ -268,6 +269,21 @@ We didn't complete our entire sprint backlog of 9 points. We were not able to co
  product increment.
 
 ![Sprint 2 - Burndown Chart](sprint2-burndown.png)
+
+## Sprint 3
+
+*Monday 7/3, 6:15pm - Thursday 7/6 3:00pm*
+
+### Story Points Forecast
+
+Our forecast for this sprint is **9 story points**. These points comprise of:
+
+- (3) Search bar
+- (2) Brand site / improve appearance of map and icons
+- (3) Filter by location
+- (1) Filter by specific truck (company)
+
+We chose 9 story points because we've assigned tasks to each team member and it seems like we can all realistically accomplish our individual tasks, which add up to 9 story points. We forecast 9 story points last sprint and only completed 6 but the remaining 3 points were represented by a single task that was almost finished and that is entering this sprint partially complete.
 
 ## Development
 
