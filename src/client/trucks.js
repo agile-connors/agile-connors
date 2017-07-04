@@ -38,8 +38,7 @@ function convertTimeStringToDate(rawTime) {
 
 function getStartTimeString(availability) {
     var hyphenPos = availability.indexOf("-");
-    var startRaw = availability.slice(0, hyphenPos - 1);
-    return startRaw;
+    return availability.slice(0, hyphenPos - 1);
 }
 /**
  * Returns the start time of a truck in the format '11:00'.
@@ -53,8 +52,7 @@ function getStartTime(availability) {
 
 function getEndTimeString(availability) {
     var hyphenPos = availability.indexOf("-");
-    var startRaw = availability.substr(hyphenPos + 2);
-    return startRaw;
+    return availability.substr(hyphenPos + 2);
 }
 function getEndTime(availability) {
     var startRaw = getEndTimeString(availability);
@@ -153,10 +151,6 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
     return false;
 }
 
-
-
-// TODO(ben): Add a date closing within 1 hour functionality
-
 /**
  * Calculate the distance between the truck and the search location.
  * @param: truckLatitude - the latitude of the truck.
@@ -188,93 +182,18 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
     }
 }
 */
-function combineTrucks (uncombinedTrucks) {
-    var combinedTrucksMap = new Map;
-    for (truck of uncombinedTrucks) {
-        var key = truck.title + truck.location + truck.notes + truck.website +
-            truck.lat + truck.lng;
-        var value;
-        if(combinedTrucksMap.has(key)){
-            value = combinedTrucksMap.get(key);
-        } else {
-            value = {
-                "days": {},
-                "title":truck.title,
-                "location": truck.location,
-                "notes": truck.notes,
-                "website": truck.website,
-                "lat": truck.lat,
-                "lng": truck.lng
-            };
-        }
-        if (! value.days.hasOwnProperty(truck.day)){
-            value.days[truck.day] = [];
-        }
 
-        var availabilities = value.days[truck.day];
-        if (canCombineAvailability(availabilities, truck.availability)){
-            availabilities = combineAvailabilities(availabilities, truck.availability);
-        } else {
-            availabilities.push(truck.availability);
-        }
-
-
-        value.days[truck.day] = availabilities;
-        combinedTrucksMap.set(key, value);
-    }
-    return Array.from(combinedTrucksMap.values());
-}
-
-function getCombinableAvailability(availabilities, truckAvailability) {
-    for (availability of availabilities){
-        if(getStartTime(availability).getTime() === getEndTime(truckAvailability).getTime() ||
-           getStartTime(truckAvailability).getTime() === getEndTime(availability).getTime()){
-            return availability;
-        }
-    }
-
-    return null;
-}
-
-function canCombineAvailability(availabilities, truckAvailability) {
-    return getCombinableAvailability(availabilities, truckAvailability) !== null;
-}
-function combineAvailabilities(availabilities, availability) {
-    function combineAvailability(availability, availability2) {
-        if (getStartTime(availability).getTime() === getEndTime(availability2).getTime()) {
-            return getStartTimeString(availability2) + " - " + getEndTimeString(availability);
-        }else if (getStartTime(availability2).getTime() === getEndTime(availability).getTime()) {
-            return getStartTimeString(availability) + " - " + getEndTimeString(availability2);
-        }else {
-            console.log("Couldn't combine availabilities!");
-            return null;
-        }
-    }
-
-    while (canCombineAvailability(availabilities, availability)){
-        var combinableAvailability = getCombinableAvailability(availabilities, availability);
-        var index = availabilities.indexOf(combinableAvailability);
-        if (index > -1) {
-            availabilities.splice(index, 1);
-        }
-        availabilities.push(combineAvailability(availability, combinableAvailability));
-    }
-
-    return availabilities;
-}
 
 function searchTrucks(trucks, searchQuery) {
     searchQuery = searchQuery.toLowerCase();
     var splitQuery = searchQuery.split(/[ ,]+/);
 
-    var matches = trucks.filter(function(truck){
+    return trucks.filter(function(truck){
         var result = splitQuery.filter(function(query) {
             return truck.title.toLowerCase().includes(query) || truck.website.toLowerCase().includes(query) || truck.location.toLowerCase().includes(query);
         });
         return result.length == splitQuery.length;
-    })
-
-    return matches;
+    });
 }
 
 function isNodeJsEnvironment() {
@@ -288,12 +207,10 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.isOpenInMorning = isOpenInMorning;
     exports.isOpenInAfternoon = isOpenInAfternoon;
     exports.isOpenInEvening = isOpenInEvening;
-    exports.combineTrucks = combineTrucks;
-    exports.canCombineAvailability = canCombineAvailability;
-    exports.combineAvailabilities = combineAvailabilities;
-    exports.getCombinableAvailability = getCombinableAvailability;
     exports.availabilitiesIntersect = availabilitiesIntersect;
     exports.searchTrucks = searchTrucks;
+    exports.getStartTimeString = getStartTimeString;
+    exports.getEndTimeString = getEndTimeString;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();

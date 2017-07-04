@@ -4,6 +4,7 @@
   "description": "Project for CSCI S-71: Agile Software Development. A web application for finding food trucks in Boston.",
   "main": "index.js",
   "scripts": {
+    "#start": "node src/server",
     "start": "pm2 start src/server/index.js -i max — name=\"Boston-Scavenger\"",
     "restart": "pm2 restart all",
     "stop": "pm2 stop index",
