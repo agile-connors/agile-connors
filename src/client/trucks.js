@@ -263,6 +263,10 @@ function combineAvailabilities(availabilities, availability) {
     return availabilities;
 }
 
+function search(query) {
+
+}
+
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&
            typeof module.exports !== 'undefined';
@@ -279,6 +283,7 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.combineAvailabilities = combineAvailabilities;
     exports.getCombinableAvailability = getCombinableAvailability;
     exports.availabilitiesIntersect = availabilitiesIntersect;
+    exports.search = search;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();

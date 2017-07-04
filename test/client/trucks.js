@@ -192,6 +192,13 @@ describe("Trucks", function() {
         });
     });
 
+    describe("Search", function () {
+        it("Should return one Bibim box object when searching for it", function () {
+            var searchResults = trucksjs.search("Bibim Box");
+            expect(searchResults.length).to.equal(1);
+        })
+    });
+
     // BDD Style
     describe("Trucks at the same location on different days should be"
              + " combined into the same record.", function () {
