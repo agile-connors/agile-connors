@@ -263,7 +263,7 @@ function combineAvailabilities(availabilities, availability) {
     return availabilities;
 }
 
-function search(trucks, searchQuery) {
+function searchTrucks(trucks, searchQuery) {
     searchQuery = searchQuery.toLowerCase();
     var splitQuery = searchQuery.split(/[ ,]+/);
 
@@ -293,7 +293,7 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.combineAvailabilities = combineAvailabilities;
     exports.getCombinableAvailability = getCombinableAvailability;
     exports.availabilitiesIntersect = availabilitiesIntersect;
-    exports.search = search;
+    exports.searchTrucks = searchTrucks;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();
