@@ -167,8 +167,8 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
         dataType: 'JSON',
         success: function(trucks){
             console.log(JSON.stringify(trucks));
-            var combinedTrucks = combineTrucks(trucks);
-            var markers = addMapMarkers(map, infoWindow, markerSpiderfier, combinedTrucks);
+            // var combinedTrucks = combineTrucks(trucks);
+            var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
             //var markerClusterer = addMarkerClusterer(map, markers);
             attachUiEvents(markers);
         }
@@ -344,11 +344,10 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         }
 
         $( event.target ).blur();
-
-
         return false;
     });
 }
+
 /*
 function showNearbyMarkers(allMarkers, location, maxDistance) {
     for (var marker of allMarkers) {
@@ -361,10 +360,6 @@ function showNearbyMarkers(allMarkers, location, maxDistance) {
     }
 }
 */
-
-
-
-
 
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&

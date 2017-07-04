@@ -6,6 +6,7 @@ const express = require('express');
 const proj4 = require('proj4');
 
 const app = express();
+const trucksjs = require('../client/trucks.js');
 
 app.use('/', express.static(path.join(__dirname, '../client')));
 
@@ -31,7 +32,8 @@ app.get('/api/trucks', function(req, res) {
                 lng: coordinates[0]
             };
         });
-        res.json(responseData);
+        const combinedTrucks = trucksjs.combineTrucks(responseData);
+        res.json(combinedTrucks);
     });
 });
 
