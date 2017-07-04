@@ -184,6 +184,16 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
 */
 
 
+function getTruckTitles(trucks) {
+    var companies = [];
+    for (truck of trucks){
+        if (companies.indexOf(truck.title) === -1){
+            companies.push(truck.title);
+        }
+    }
+    return companies.sort();
+}
+
 function filterBySearch(trucks, searchQuery) {
     searchQuery = searchQuery.toLowerCase();
     var splitQuery = searchQuery.split(/[ ,]+/);
@@ -195,6 +205,8 @@ function filterBySearch(trucks, searchQuery) {
         return result.length == splitQuery.length;
     });
 }
+
+
 
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&
@@ -211,6 +223,7 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.filterBySearch = filterBySearch;
     exports.getStartTimeString = getStartTimeString;
     exports.getEndTimeString = getEndTimeString;
+    exports.getTruckTitles = getTruckTitles;
 }
 if (isNodeJsEnvironment()) {
     exportNodeJsFunctionsForTestingTrucks();

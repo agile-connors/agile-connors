@@ -167,9 +167,14 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
         dataType: 'JSON',
         success: function(trucks){
             console.log(JSON.stringify(trucks));
-            // var combinedTrucks = combineTrucks(trucks);
             var markers = addMapMarkers(map, infoWindow, markerSpiderfier, trucks);
             //var markerClusterer = addMarkerClusterer(map, markers);
+
+            var options = $("#truckTitles");
+            $.each(getTruckTitles(trucks), function() {
+                options.append($("<option />").val(this).text(this));
+            });
+
             attachUiEvents(markers);
         }
     });
@@ -256,6 +261,7 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         var chosen = $("#showPeriodOfDay").val();
         var selectedDays = getCurrentlySelectedDays();
         var searchInput = $("#trucksearch").val();
+        var truckTitle = $("#truckTitles").val();
         console.log("Time filter changed to: " + chosen);
         console.log("Currently selected days: " + selectedDays);
         console.log("Search input is: " + searchInput);
@@ -298,18 +304,28 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
             allTrucks.push(marker.truck);
         }, this);
 
-        var searchFilteredTrucks = filterBySearch(allTrucks, searchInput);
-        var timeFilteredTrucks = filterByTime(searchFilteredTrucks, chosen, selectedDays);
-        console.log("Search results: " + searchFilteredTrucks.length);
-        console.log("Search and time filtered results: " + timeFilteredTrucks.length);
+        var filteredTrucks = filterBySearch(allTrucks, searchInput);
+        console.log("Search results: " + filteredTrucks.length);
+        filteredTrucks = filterByTime(filteredTrucks, chosen, selectedDays);
+        console.log("Search and time filtered results: " + filteredTrucks.length);
+
+        console.log("truck title: " + truckTitle);
+        if( truckTitle !== "all"){
+            filteredTrucks = filterBySearch(filteredTrucks, truckTitle);
+            console.log("Search, time, and title filtered results: " + filteredTrucks.length);
+        }
 
         for (var marker of allMarkers) {
-            var truckIsVisible = timeFilteredTrucks.indexOf(marker.truck) > -1;
+            var truckIsVisible = filteredTrucks.indexOf(marker.truck) > -1;
             marker.setVisible(truckIsVisible);
         }
     }
 
     $('#showPeriodOfDay').change(function() {
+        updateFilters();
+    });
+
+    $('#truckTitles').change(function() {
         updateFilters();
     });
 
