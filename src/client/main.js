@@ -339,6 +339,10 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         updateFilters();
     });
 
+    $('#truckTitles').on('input propertychange paste', function() {
+        updateFilters();
+    });
+
     $( "#trucksearch" ).autocomplete({
          source: getSearchAutocompleteSuggestions(getAlltrucks()),
          select: function (e, ui) {
