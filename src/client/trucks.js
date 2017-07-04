@@ -184,7 +184,7 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
 */
 
 
-function searchTrucks(trucks, searchQuery) {
+function filterBySearch(trucks, searchQuery) {
     searchQuery = searchQuery.toLowerCase();
     var splitQuery = searchQuery.split(/[ ,]+/);
 
@@ -208,7 +208,7 @@ function exportNodeJsFunctionsForTestingTrucks() {
     exports.isOpenInAfternoon = isOpenInAfternoon;
     exports.isOpenInEvening = isOpenInEvening;
     exports.availabilitiesIntersect = availabilitiesIntersect;
-    exports.searchTrucks = searchTrucks;
+    exports.filterBySearch = filterBySearch;
     exports.getStartTimeString = getStartTimeString;
     exports.getEndTimeString = getEndTimeString;
 }

@@ -268,6 +268,24 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
             return false;
         }
 
+        function filterByTime(trucks, timePeriod, selectedDays) {
+            return trucks.filter(function(truck){
+                if (timePeriod === "anytime") {
+                    return isVisibleOnSelectedDays(truck.days, selectedDays);
+                } else if (timePeriod === "currentlyAvailable") {
+                    return isCurrentlyAvailable(truck.days);
+                } else if (timePeriod === "morning") {
+                    return isOpenInMorning(truck.days, selectedDays);
+                } else if (timePeriod === "afternoon") {
+                    return isOpenInAfternoon(truck.days, selectedDays);
+                } else if (timePeriod === "evening") {
+                    return isOpenInEvening(truck.days, selectedDays);
+                } else {
+                    return false;
+                }
+            });
+        }
+
         if(chosen === "currentlyAvailable"){
             $('#daysButton').hide();
         } else {
@@ -280,27 +298,14 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
             allTrucks.push(marker.truck);
         }, this);
 
-        var filteredTrucks = searchTrucks(allTrucks, searchInput);
-        console.log("Search results: " + filteredTrucks.length);
+        var searchFilteredTrucks = filterBySearch(allTrucks, searchInput);
+        var timeFilteredTrucks = filterByTime(searchFilteredTrucks, chosen, selectedDays);
+        console.log("Search results: " + searchFilteredTrucks.length);
+        console.log("Search and time filtered results: " + timeFilteredTrucks.length);
 
         for (var marker of allMarkers) {
-            marker.setVisible(true);            
-            if (filteredTrucks.indexOf(marker.truck) > -1) {
-                if (chosen === "anytime") {
-                    marker.setVisible(isVisibleOnSelectedDays(marker.truck.days, selectedDays));
-                } else if (chosen === "currentlyAvailable") {
-                    marker.setVisible(isCurrentlyAvailable(marker.truck.days));
-                } else if (chosen === "morning") {
-                    marker.setVisible(isOpenInMorning(marker.truck.days, selectedDays));
-                } else if (chosen === "afternoon") {
-                    marker.setVisible(isOpenInAfternoon(marker.truck.days, selectedDays));
-                } else if (chosen === "evening") {
-                    marker.setVisible(isOpenInEvening(marker.truck.days, selectedDays));
-                }
-            }
-            else {
-                marker.setVisible(false);
-            }
+            var truckIsVisible = timeFilteredTrucks.indexOf(marker.truck) > -1;
+            marker.setVisible(truckIsVisible);
         }
     }
 
