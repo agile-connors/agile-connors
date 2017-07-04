@@ -19,6 +19,20 @@ body {
 	z-index: 20;
 }
 
+.topbar {
+	float: right;
+	font-size: 12px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+.searchbar {
+	font-size: 12px;
+	line-height: 25px;
+	display: inline-block;
+	margin-right: 4px;
+}
+
 .headerTimePeriod {
 	float: right;
 	font-size: 12px;

@@ -19,40 +19,45 @@
             <!--</form>-->
         </label>
 
-        <div class="headerTimePeriod">
-            <div id="all-days">
-                <div class="button-group">
-                    <button id="daysButton" type="button"
-                            class="btn btn-default btn-sm dropdown-toggle"
-                            data-toggle="dropdown">All Days <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="small" data-value="sunday" tabIndex="-1"><input
-                                id="sundayCheckbox" type="checkbox" checked/>&nbsp;Sunday</a></li>
-                        <li><a href="#" class="small" data-value="monday" tabIndex="-1"><input
-                                id="mondayCheckbox" type="checkbox" checked/>&nbsp;Monday</a></li>
-                        <li><a href="#" class="small" data-value="tuesday" tabIndex="-1"><input
-                                id="tuesdayCheckbox" type="checkbox" checked/>&nbsp;Tuesday</a></li>
-                        <li><a href="#" class="small" data-value="wednesday" tabIndex="-1"><input
-                                id="wednesdayCheckbox" type="checkbox" checked/>&nbsp;
-                            Wednesday</a></li>
-                        <li><a href="#" class="small" data-value="thursday" tabIndex="-1"><input
-                                id="thursdayCheckbox" type="checkbox" checked/>&nbsp;Thursday</a></li>
-                        <li><a href="#" class="small" data-value="friday" tabIndex="-1"><input
-                                id="fridayCheckbox" type="checkbox" checked/>&nbsp;Friday</a></li>
-                        <li><a href="#" class="small" data-value="saturday" tabIndex="-1"><input
-                                id="saturdayCheckbox" type="checkbox" checked/>&nbsp;Saturday</a></li>
-                    </ul>
-                </div>
+        <div class="topbar">
+            <div class="searchbar">
+                <input id="trucksearch" type="search" />
             </div>
-            <select id="showPeriodOfDay">
-                <option value="anytime">Any hour</option>
-                <option value="currentlyAvailable">Currently Available</option>
-                <option value="morning">Morning (within 5 a.m. - noon)</option>
-                <option value="afternoon">Afternoon (within noon - 5 p.m.)
-                </option>
-                <option value="evening">Evening (within 5 p.m. - 9 p.m.)
-                </option>
-            </select>
+            <div class="headerTimePeriod">
+                <div id="all-days">
+                    <div class="button-group">
+                        <button id="daysButton" type="button"
+                                class="btn btn-default btn-sm dropdown-toggle"
+                                data-toggle="dropdown">All Days <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="small" data-value="sunday" tabIndex="-1"><input
+                                    id="sundayCheckbox" type="checkbox" checked/>&nbsp;Sunday</a></li>
+                            <li><a href="#" class="small" data-value="monday" tabIndex="-1"><input
+                                    id="mondayCheckbox" type="checkbox" checked/>&nbsp;Monday</a></li>
+                            <li><a href="#" class="small" data-value="tuesday" tabIndex="-1"><input
+                                    id="tuesdayCheckbox" type="checkbox" checked/>&nbsp;Tuesday</a></li>
+                            <li><a href="#" class="small" data-value="wednesday" tabIndex="-1"><input
+                                    id="wednesdayCheckbox" type="checkbox" checked/>&nbsp;
+                                Wednesday</a></li>
+                            <li><a href="#" class="small" data-value="thursday" tabIndex="-1"><input
+                                    id="thursdayCheckbox" type="checkbox" checked/>&nbsp;Thursday</a></li>
+                            <li><a href="#" class="small" data-value="friday" tabIndex="-1"><input
+                                    id="fridayCheckbox" type="checkbox" checked/>&nbsp;Friday</a></li>
+                            <li><a href="#" class="small" data-value="saturday" tabIndex="-1"><input
+                                    id="saturdayCheckbox" type="checkbox" checked/>&nbsp;Saturday</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <select id="showPeriodOfDay">
+                    <option value="anytime">Any hour</option>
+                    <option value="currentlyAvailable">Currently Available</option>
+                    <option value="morning">Morning (within 5 a.m. - noon)</option>
+                    <option value="afternoon">Afternoon (within noon - 5 p.m.)
+                    </option>
+                    <option value="evening">Evening (within 5 p.m. - 9 p.m.)
+                    </option>
+                </select>
+            </div>
         </div>
 	</header>
     <div id="map"></div>
