@@ -14,9 +14,9 @@ function initMap() {
     };
     truckClosingMarkerImage = {
         url: '/img/truck-closing.png',
-        size: new google.maps.Size(36, 26),
+        size: new google.maps.Size(36, 30),
         origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(18, 26)
+        anchor: new google.maps.Point(18, 30)
     };
     truckUnavailableMarkerImage = {
         url: '/img/truck-unavailable.png',
@@ -39,50 +39,82 @@ function initMap() {
 function createMapOfBoston() {
     var mapElement = document.getElementById('map');
     var mapOptions = {
-        center: {lat: 42.3530715, lng: -71.0736387},
+        center: {
+            lat: 42.3530715,
+            lng: -71.0736387
+        },
         zoom: 13,
         minZoom: 13,
         maxZoom: 16,
         disableDefaultUI: true,
         clickableIcons: false,
         styles: [{
-            "featureType": "all",
-            "elementType": "all",
-            "stylers": [{"hue": "#ff0000"}, {"saturation": -100},
-                {"lightness": -30}]
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{
+                color: '#193341'
+            }]
         }, {
-            "featureType": "all",
-            "elementType": "labels.text.fill",
-            "stylers": [{"color": "#ffffff"}]
+            featureType: 'landscape',
+            elementType: 'geometry',
+            stylers: [{
+                color: '#2c5a71'
+            }]
         }, {
-            "featureType": "all",
-            "elementType": "labels.text.stroke",
-            "stylers": [{"color": "#353535"}]
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{
+                color: '#29768a'
+            }, {
+                lightness: -37
+            }]
         }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{"color": "#656565"}]
+            featureType: 'poi',
+            elementType: 'geometry',
+            stylers: [{
+                color: '#406d80'
+            }]
         }, {
-            "featureType": "poi",
-            "elementType": "geometry.fill",
-            "stylers": [{"color": "#505050"}]
+            featureType: 'transit',
+            elementType: 'geometry',
+            stylers: [{
+                color: '#406d80'
+            }]
         }, {
-            "featureType": "poi",
-            "elementType": "geometry.stroke",
-            "stylers": [{"color": "#808080"}]
+            elementType: 'labels.text.stroke',
+            stylers: [{
+                visibility: 'on'
+            }, {
+                color: '#3e606f'
+            }, {
+                weight: 2
+            }, {
+                gamma: 0.84
+            }]
         }, {
-            "featureType": "road",
-            "elementType": "geometry",
-            "stylers": [{"color": "#454545"}]
+            elementType: 'labels.text.fill',
+            stylers: [{
+                color: '#ffffff'
+            }]
         }, {
-            "featureType": "transit",
-            "elementType": "labels",
-            "stylers": [{"hue": "#007bff"}, {"saturation": 100},
-                {"lightness": -40}, {"invert_lightness": true}, {"gamma": 1.5}]
+            featureType: 'administrative',
+            elementType: 'geometry',
+            stylers: [{
+                weight: 0.6
+            }, {
+                color: '#1a3541'
+            }]
         }, {
-            "featureType": "transit.station.bus",
-            "elementType": "geometry.fill",
-            "stylers": [{"color": "#08498f"}]
+            elementType: 'labels.icon',
+            stylers: [{
+                visibility: 'off'
+            }]
+        }, {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{
+                color: '#2c5a71'
+            }]
         }]
     };
     return new google.maps.Map(mapElement, mapOptions);
@@ -162,7 +194,7 @@ function getTruckAvailability(truck){
 
 function createInfoWindowContent(truck) {
     var website = truck.website !== undefined ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
-    var notes = truck.notes !== undefined && truck.notes.trim().length > 0 ? '<p>' + truck.notes + '</p>' : "";
+    var notes = truck.notes !== undefined && truck.notes.trim().length > 0 ? '<p>' + truck.notes + '</p>' : '';
     return '' +
         '<div id="content">' +
             '<div id="siteNotice"></div>' +
@@ -189,7 +221,7 @@ function addMapMarker(map, infoWindow, markerSpiderfier, truck) {
     markerSpiderfier.addMarker(marker);
 
     var infoWindowContent = createInfoWindowContent(truck);
-    marker.addListener('click', function () {
+    marker.addListener('spider_click', function () {
         infoWindow.setContent(infoWindowContent);
         infoWindow.open(map, marker);
     });

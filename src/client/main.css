@@ -8,22 +8,63 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
 #header {
 	position: absolute;
 	top: 0; right: 0; left: 0;
-	height: 40px;
-	background: #FFF;
+	height: 50px;
+	background: #254251;
 	padding: 0 20px;
 	z-index: 20;
 }
 
-.topbar {
+#brand {
+	float: left;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 50px;
+	color: #FFF;
+}
+
+#brand-secondary {
+	color: #FFBC48;
+}
+
+#filter-controls {
 	float: right;
 	font-size: 12px;
-	line-height: 40px;
-	display: inline-block;
+}
+
+.filter-controls-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.filter-controls-item {
+	float: left;
+	line-height: 50px;
+	margin-right: 10px;
+}
+
+.filter-controls-item:last-child {
+	margin-right: 0;
+}
+
+.filter-controls-item input[type='search'] {
+	height: 30px;
+	background: #FFF;
+	padding: 0 8px;
+	border-radius: 3px;
+	border: none;
+}
+
+.filter-controls-item select {
+	height: 30px;
 }
 
 .searchbar {
@@ -33,17 +74,6 @@ body {
 	margin-right: 4px;
 }
 
-.headerTimePeriod {
-	float: right;
-	font-size: 12px;
-	line-height: 40px;
-	display: inline-block;
-}
-
-#all-days{
-	display: inline-block;
-}
-
 .searchBar {
 	display: inline-block;
 	margin-top: 8px;
@@ -51,8 +81,8 @@ body {
 	line-height: 12px;
 }
 
-.dropdown-menu{
-	left: auto;
+.button-group {
+	position: relative;
 }
 
 #map {
