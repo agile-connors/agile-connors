@@ -193,10 +193,34 @@ describe("Trucks", function() {
     });
 
     describe("Search", function () {
-        it("Should all Bibim box results when searching for it", function () {
+        it("Should return all Bibim box results when searching for it", function () {
             var searchResults = trucksjs.search(trucks, "Bibim Box");
             var combinedResults = trucksjs.combineTrucks(searchResults);
             expect(combinedResults.length).to.equal(5);
+        })
+
+        it("Should return all Bibim box results when searching for it lowercase", function () {
+            var searchResults = trucksjs.search(trucks, "bibim box");
+            var combinedResults = trucksjs.combineTrucks(searchResults);
+            expect(combinedResults.length).to.equal(5);
+        })
+
+        it("Should return all Bibim box results when searching for Bibim", function () {
+            var searchResults = trucksjs.search(trucks, "Bibim");
+            var combinedResults = trucksjs.combineTrucks(searchResults);
+            expect(combinedResults.length).to.equal(5);
+        })
+
+        it("Should return all Bibim box results when searching for their website https://www.facebook.com/Bibim-Box-1751040118466317/", function () {
+            var searchResults = trucksjs.search(trucks, "https://www.facebook.com/Bibim-Box-1751040118466317/");
+            var combinedResults = trucksjs.combineTrucks(searchResults);
+            expect(combinedResults.length).to.equal(5);
+        })
+
+        it("Should return one Bibim box location when searching for their name and location", function () {
+            var searchResults = trucksjs.search(trucks, "Bibim Box Opera");
+            var combinedResults = trucksjs.combineTrucks(searchResults);
+            expect(combinedResults.length).to.equal(1);
         })
     });
 

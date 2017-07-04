@@ -263,9 +263,15 @@ function combineAvailabilities(availabilities, availability) {
     return availabilities;
 }
 
-function search(trucks, query) {
+function search(trucks, searchQuery) {
+    searchQuery = searchQuery.toLowerCase();
+    var splitQuery = searchQuery.split(/[ ,]+/);
+
     var matches = trucks.filter(function(truck){
-        return truck.title.includes(query);
+        var result = splitQuery.filter(function(query) {
+            return truck.title.toLowerCase().includes(query) || truck.website.toLowerCase().includes(query) || truck.location.toLowerCase().includes(query);
+        });
+        return result.length == splitQuery.length;
     })
 
     return matches;
