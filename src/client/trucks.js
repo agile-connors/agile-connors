@@ -151,41 +151,34 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
     return false;
 }
 
+function getLocationLatLng(location) {
+    return new Promise(function(resolve, reject) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({ address: location }, function(results, status) {
+            if (status !== google.maps.GeocoderStatus.OK) {
+                resolve(null);
+                return;
+            }
+            resolve(results[0].geometry.location);
+        });
+    });
+}
+
 /**
  * Calculate the distance between the truck and the search location.
  * @param: truckLatitude - the latitude of the truck.
  * @param: truckLongitude - the longitude of the truck.
- * @param: location - the human readable location the search should be based around.
+ * @param: locationLatLng - lat/lng object representing the location
  * @param: maxDistance - the furthest distance (in miles) from the location we want to find trucks.
  * @returns: True if the distance between the truck and the location is less than or equal to maxDistance.
  *          False if they are too far apart.
  *          Null if error in geocoding process.
  */
-
-function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
-    var geocoder = new google.maps.Geocoder();
-    console.log("locationIsNearby " + JSON.stringify({
-                   "truckLatitude": truckLatitude,
-                   "truckLongitude": truckLongitude,
-                   "location": location,
-                   "maxDistance": maxDistance
-                }));
-
-    geocoder.geocode({address: location}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            var locationLatLng = results[0].geometry.location;
-            var truckLatLng = new google.maps.LatLng(truckLatitude, truckLongitude);
-            console.log("locationIsNearby" + JSON.stringify({
-                "locationLatLng": locationLatLng,
-                "truckLatLng": truckLatLng
-            }));
-            var distance = google.maps.geometry.spherical.computeDistanceBetween(locationLatLng, truckLatLng);
-            //convert meters to miles
-            return distance / 1609.34 <= maxDistance;
-        } else {
-            return null;
-        }
-    });
+function locationIsNearby(truckLatitude, truckLongitude, locationLatLng, maxDistance) {
+    var truckLatLng = new google.maps.LatLng(truckLatitude, truckLongitude);
+    var distanceInMeters = google.maps.geometry.spherical.computeDistanceBetween(locationLatLng, truckLatLng);
+    var distanceInMiles = distanceInMeters / 1609.34;
+    return distanceInMiles <= maxDistance;
 }
 
 

@@ -333,30 +333,21 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
     function showNearbyMarkers() {
         var location = $("#location").val();
         var maxDistance = $("#distance").val();
-        console.log("showNearbyMarkers" + JSON.stringify({
-            "location": location,
-            "maxDistance": maxDistance
-        }));
-
-
-        for (var marker of allMarkers) {
-            var isNearby = locationIsNearby(marker.truck.lat, marker.truck.lng, location, maxDistance);
-            console.log("showNearbyMarkers" + JSON.stringify({
-                "isNearby": isNearby,
-                 "marker.truck": marker.truck
-            }));
-            if (isNearby === null){
+        getLocationLatLng(location).then(function(locationLatLng) {
+            if (locationLatLng === null) {
                 alert('Could not find your search location.');
-            } else {
+                return;
+            }
+            for (var marker of allMarkers) {
+                var isNearby = locationIsNearby(marker.truck.lat, marker.truck.lng, locationLatLng, maxDistance);
                 marker.setVisible(isNearby);
             }
-        }
+        });
     }
 
     $('#showPeriodOfDay').change(function() {
         updateFilters();
     });
-
 
     $('#trucksearch').on('input propertychange paste', function() {
         updateFilters();
