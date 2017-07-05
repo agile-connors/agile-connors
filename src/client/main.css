@@ -34,6 +34,12 @@ body {
 	color: #FFBC48;
 }
 
+.headerLocationSearchBox {
+    height: 100%;
+    line-height: 50px;
+	margin: 0 0 0 20px;
+}
+
 #filter-controls {
 	float: right;
 	font-size: 12px;
@@ -55,12 +61,29 @@ body {
 	margin-right: 0;
 }
 
+.searchBar input[type='search'],
 .filter-controls-item input[type='search'] {
 	height: 30px;
+	font-weight: 400;
+	font-size: 12px;
 	background: #FFF;
 	padding: 0 8px;
 	border-radius: 3px;
 	border: none;
+}
+
+#location {
+	width: 100px;
+}
+
+#distance {
+	width: 50px;
+}
+
+#searchLocation,
+#clearLocation {
+	vertical-align: top;
+	height: 30px;
 }
 
 .filter-controls-item select {
