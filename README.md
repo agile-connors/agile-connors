@@ -285,6 +285,30 @@ Our forecast for this sprint is **9 story points**. These points comprise of:
 
 We chose 9 story points because we've assigned tasks to each team member and it seems like we can all realistically accomplish our individual tasks, which add up to 9 story points. We forecast 9 story points last sprint and only completed 6 but the remaining 3 points were represented by a single task that was almost finished and that is entering this sprint partially complete.
 
+### Pair Programming
+
+TODO
+
+![Sprint 3 - Pair Programming](pair_programming3.jpg)
+
+### Daily Scrum
+
+We conducted one daily scrum this sprint, after the first 48 hours of the sprint (24 of those hours covering the holiday of July 4). Each team member summarized what they accomplished in the last 24 hours, what they plan to accomplish in the next 24 hours, and if they are blocked by anything or need assistance from any other team members.
+
+See below for a summary of this conversation.
+
+TODO
+
+### Sprint Review
+
+TODO
+
+#### Burndown Chart
+
+TODO
+
+![Sprint 3 - Burndown Chart](sprint3-burndown.png)
+
 ## Development
 
 Download and install [Node.js](https://nodejs.org/en/) if you don't already have it. This project was developed with Node v4.6.0. Any higher version should also work.
