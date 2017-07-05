@@ -175,9 +175,22 @@ function fetchTrucks(map, infoWindow, markerSpiderfier) {
                 options.append($("<option />").val(this).text(this));
             });
 
-            attachUiEvents(markers);
+            var locationCircle = new google.maps.Circle({
+                strokeColor: '#FFF',
+                strokeOpacity: 0.8,
+                strokeWeight: 1,
+                fillColor: '#FFF',
+                fillOpacity: 0.15,
+                map: map,
+                center: { lat: 0, lng: 0 },
+                radius: 0
+            });
+            locationCircle.setVisible(false);
+            google.maps.event.addListener(locationCircle, 'click', function() {
+                google.maps.event.trigger(map, 'click', null);
+            });
 
-
+            attachUiEvents(markers, locationCircle);
         }
     });
 }
@@ -245,7 +258,7 @@ function addMarkerClusterer(map, markers) {
     });
 }
 
-function attachUiEvents(allMarkers/*, markerClusterer*/) {
+function attachUiEvents(allMarkers, locationCircle/*, markerClusterer*/) {
 
     function getCurrentlySelectedDays(){
         var days = [];
@@ -332,17 +345,30 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
 
     function showNearbyMarkers() {
         var location = $("#location").val();
-        var maxDistance = $("#distance").val();
+        var maxDistance = parseFloat($("#distance").val());
+        if (isNaN(maxDistance) || maxDistance <= 0) {
+            alert('Please enter a valid number of miles.');
+            return;
+        }
         getLocationLatLng(location).then(function(locationLatLng) {
             if (locationLatLng === null) {
                 alert('Could not find your search location.');
                 return;
             }
+            locationCircle.setCenter(locationLatLng);
+            locationCircle.setRadius(maxDistance * 1609.34);
+            locationCircle.setVisible(true);
             for (var marker of allMarkers) {
                 var isNearby = locationIsNearby(marker.truck.lat, marker.truck.lng, locationLatLng, maxDistance);
                 marker.setVisible(isNearby);
             }
         });
+    }
+
+    function clearLocation() {
+        $('#location').val('');
+        $('#distance').val('');
+        locationCircle.setVisible(false);
     }
 
     $('#showPeriodOfDay').change(function() {
@@ -359,6 +385,11 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
 
     $( '#searchLocation' ).on( 'click', function( event ) {
         showNearbyMarkers();
+    });
+
+    $( '#clearLocation' ).on( 'click', function( event ) {
+        clearLocation();
+        updateFilters();
     });
 
     $( "#trucksearch" ).autocomplete({
