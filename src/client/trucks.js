@@ -213,7 +213,8 @@ function filterBySearch(trucks, searchQuery) {
 
     return trucks.filter(function(truck){
         var result = splitQuery.filter(function(query) {
-            return truck.title.toLowerCase().includes(query) || truck.website.toLowerCase().includes(query) || truck.location.toLowerCase().includes(query);
+            return truck.title.toLowerCase().includes(query) || truck.website.toLowerCase().includes(query) || truck.location.toLowerCase().includes(query) || 
+                truck.notes.toLowerCase().includes(query);
         });
         return result.length == splitQuery.length;
     });
