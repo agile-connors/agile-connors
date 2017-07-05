@@ -161,12 +161,12 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
  *          False if they are too far apart.
  *          Null if error in geocoding process.
  */
-/*
-function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
+
+/*function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
     var geocoder = new google.maps.Geocoder();
-    var location = document.getElementById('location').value;
-    geocoder.geocode({'location'}:location), function(results, status) {
-        if (status == 'OK') {
+
+    geocoder.geocode({address: location}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
             var locationLatLng = results[0].geometry.location;
             var truckLatLng = new google.maps.LatLng(truckLatitude, truckLongitude);
             var distance = google.maps.geometry.spherical.computeDistanceBetween(locationLatLng, truckLatLng);
@@ -179,9 +179,9 @@ function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) 
         } else {
             return null;
         }
-    }
-}
-*/
+    });
+}*/
+
 
 
 function getTruckTitles(trucks) {

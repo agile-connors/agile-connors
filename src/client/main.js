@@ -387,10 +387,14 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
 }
 
 /*
-function showNearbyMarkers(allMarkers, location, maxDistance) {
+function showNearbyMarkers() {
+    var location = document.getElementById('location').value;
+    var maxDistance = document.getElementById('distance').value;
+    var allMarkers = getAllTrucks();
+
     for (var marker of allMarkers) {
         var isNearby = locationIsNearby(marker.truck.latitude, marker.truck.longitude, location, maxDistance);
-        if (isNearby == null){
+        if (isNearby != null){
             alert('Could not find your search location.');
         } else {
             marker.setVisible(isNearby);
