@@ -287,7 +287,7 @@ We chose 9 story points because we've assigned tasks to each team member and it 
 
 ### Pair Programming
 
-TODO
+We utilized pair programming again this sprint. Henry and Ben worked on some functionality and associated tests.
 
 ![Sprint 3 - Pair Programming](pair_programming3.jpg)
 
