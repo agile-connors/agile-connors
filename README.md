@@ -297,7 +297,21 @@ We conducted one daily scrum this sprint, after the first 48 hours of the sprint
 
 See below for a summary of this conversation.
 
-TODO
+- **Kyle**
+  - *Last 24 hours:* Completed branding backlog item.
+  - *Next 24 hours:* Assist with location search functionality. Write additional unit tests.
+- **Lennart**
+  - *Last 24 hours:* Begin work on search feature, along with tests for it.
+  - *Next 24 hours:* Finalize work on search feature.
+- **Ben**
+  - *Last 24 hours:* Improve and stabilize Continuous Deployment. Refactor and clean up existing code. Complete "filter by specific truck" backlog item. Add autocomplete suggestions to search box.
+  - *Next 24 hours:* Add tests and refactor code. Reorganize code into separate files based on their responsibilities.
+- **Henry**
+  - *Last 24 hours:* 
+  - *Next 24 hours:* 
+- **Kerry**
+  - *Last 24 hours:* 
+  - *Next 24 hours:* 
 
 ### Sprint Review
 
