@@ -104,5 +104,4 @@ describe("Trucks at the same location on different days should be"
         var expected = require('./combined_trucks.json');
         expect(isEqual(combinedTrucks, expected)).to.equal(true);
     });
-
 });

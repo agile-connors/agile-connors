@@ -162,25 +162,31 @@ function availabilitiesIntersect (truckDays, selectedDays, periodAvailability) {
  *          Null if error in geocoding process.
  */
 
-/*function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
+function locationIsNearby(truckLatitude, truckLongitude, location, maxDistance) {
     var geocoder = new google.maps.Geocoder();
+    console.log("locationIsNearby " + JSON.stringify({
+                   "truckLatitude": truckLatitude,
+                   "truckLongitude": truckLongitude,
+                   "location": location,
+                   "maxDistance": maxDistance
+                }));
 
     geocoder.geocode({address: location}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
             var locationLatLng = results[0].geometry.location;
             var truckLatLng = new google.maps.LatLng(truckLatitude, truckLongitude);
+            console.log("locationIsNearby" + JSON.stringify({
+                "locationLatLng": locationLatLng,
+                "truckLatLng": truckLatLng
+            }));
             var distance = google.maps.geometry.spherical.computeDistanceBetween(locationLatLng, truckLatLng);
             //convert meters to miles
-            if (distance/1609.34 <= maxDistance) {
-                return true;
-            } else {
-                return false;
-            }
+            return distance / 1609.34 <= maxDistance;
         } else {
             return null;
         }
     });
-}*/
+}
 
 
 

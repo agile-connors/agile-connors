@@ -26,14 +26,14 @@
             <span>Boston</span>
             <span id="brand-secondary">Scavenger</span>
         </div>
-        <!--<label class="headerLocationSearchBox">
-            &lt;!&ndash;TODO(ben): Readd when we finish the implementation&ndash;&gt;
+        <label class="headerLocationSearchBox">
             <form class="searchBar">
-                <input name="location" type="search" placeholder="Search near location">
-                <input name="distance" type="search" placeholder="Distance">
-                <input name="submit" type="button" value="Search" onclick="showNearbyMarkers();">
+                <input id="location" name="location" type="search"
+                       placeholder="Search near location">
+                <input id="distance" name="distance" type="search" placeholder="Distance">
+                <input id="searchLocation" name="submit" type="button" value="Search">
             </form>
-        </label>-->
+        </label>
         <div id="filter-controls">
             <ul class="filter-controls-list">
                 <li class="filter-controls-item">
@@ -95,7 +95,8 @@
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier/1.0.3/oms.min.js"></script>
     <!--<script src="vendor/markerclusterer.js"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZVlP76qkUkbwhFsH-K1--esa0dOaU4JA&callback=initMap"
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZVlP76qkUkbwhFsH-K1--esa0dOaU4JA&callback=initMap&libraries=geometry"
     async defer></script>
 </body>
 </html>

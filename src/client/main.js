@@ -259,7 +259,7 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         return days;
     }
 
-    function getAlltrucks() {
+    function getAllTrucks() {
         var allTrucks = [];
         allMarkers.forEach(function (marker) {
             allTrucks.push(marker.truck);
@@ -313,7 +313,7 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         }
 
         // Rebuild trucks array. TODO: Store globally?
-        var filteredTrucks = filterBySearch(getAlltrucks(), searchInput);
+        var filteredTrucks = filterBySearch(getAllTrucks(), searchInput);
         console.log("Search results: " + filteredTrucks.length);
         filteredTrucks = filterByTime(filteredTrucks, chosen, selectedDays);
         console.log("Search and time filtered results: " + filteredTrucks.length);
@@ -330,6 +330,29 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         }
     }
 
+    function showNearbyMarkers() {
+        var location = $("#location").val();
+        var maxDistance = $("#distance").val();
+        console.log("showNearbyMarkers" + JSON.stringify({
+            "location": location,
+            "maxDistance": maxDistance
+        }));
+
+
+        for (var marker of allMarkers) {
+            var isNearby = locationIsNearby(marker.truck.lat, marker.truck.lng, location, maxDistance);
+            console.log("showNearbyMarkers" + JSON.stringify({
+                "isNearby": isNearby,
+                 "marker.truck": marker.truck
+            }));
+            if (isNearby === null){
+                alert('Could not find your search location.');
+            } else {
+                marker.setVisible(isNearby);
+            }
+        }
+    }
+
     $('#showPeriodOfDay').change(function() {
         updateFilters();
     });
@@ -343,8 +366,12 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
         updateFilters();
     });
 
+    $( '#searchLocation' ).on( 'click', function( event ) {
+        showNearbyMarkers();
+    });
+
     $( "#trucksearch" ).autocomplete({
-         source: getSearchAutocompleteSuggestions(getAlltrucks()),
+         source: getSearchAutocompleteSuggestions(getAllTrucks()),
          select: function (e, ui) {
              updateFilters(ui.item.value);
          }
@@ -386,22 +413,9 @@ function attachUiEvents(allMarkers/*, markerClusterer*/) {
     });
 }
 
-/*
-function showNearbyMarkers() {
-    var location = document.getElementById('location').value;
-    var maxDistance = document.getElementById('distance').value;
-    var allMarkers = getAllTrucks();
 
-    for (var marker of allMarkers) {
-        var isNearby = locationIsNearby(marker.truck.latitude, marker.truck.longitude, location, maxDistance);
-        if (isNearby != null){
-            alert('Could not find your search location.');
-        } else {
-            marker.setVisible(isNearby);
-        }
-    }
-}
-*/
+
+
 
 function isNodeJsEnvironment() {
     return typeof module !== 'undefined' &&
