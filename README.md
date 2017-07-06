@@ -333,7 +333,8 @@ We performed an early sprint review, as we needed to prepare for the final prese
 
 #### Burndown Chart
 
-TODO
+We finished all of the tasks on our backlog half a day early. We spent the remaining time 
+refactoring code instead of pulling more stories into the sprint.
 
 ![Sprint 3 - Burndown Chart](sprint3-burndown.png)
 
