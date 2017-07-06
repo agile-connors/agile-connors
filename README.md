@@ -319,11 +319,11 @@ See below for a summary of this conversation.
   - *Last 24 hours:* Improve and stabilize Continuous Deployment. Refactor and clean up existing code. Complete "filter by specific truck" backlog item. Add autocomplete suggestions to search box.
   - *Next 24 hours:* Add tests and refactor code. Reorganize code into separate files based on their responsibilities.
 - **Henry**
-  - *Last 24 hours:* TODO
-  - *Next 24 hours:* TODO
+  - *Last 24 hours:* Work on location search feature.
+  - *Next 24 hours:* Finalize location search with Kyle and refactor / enhance.
 - **Kerry**
-  - *Last 24 hours:* TODO
-  - *Next 24 hours:* TODO
+  - *Last 24 hours:* Set up slides for final presentation. Review presentation requirements.
+  - *Next 24 hours:* Finalize presentation slides. Practice for presentation.
 
 We discussed **impediments** again at this daily scrum. Once again, we identified distance and location as one of our biggest problem. It impedes our ability to collaborate but we've overcome it relatively well by being extremely active on Slack.
 
