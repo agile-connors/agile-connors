@@ -214,7 +214,7 @@ function getTruckAvailability(truck){
 
 function createInfoWindowContent(truck) {
     var website = truck.website !== undefined ? '<a href="' + truck.website + '">Click here</a>' : 'No website found';
-    var notes = truck.notes !== undefined && truck.notes.trim().length > 0 ? '<p>' + truck.notes + '</p>' : '';
+    var notes = truck.notes !== undefined && truck.notes !== null && truck.notes.trim().length > 0 ? '<p>' + truck.notes + '</p>' : '';
     return '' +
         '<div id="content">' +
             '<div id="siteNotice"></div>' +
