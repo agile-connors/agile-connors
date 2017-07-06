@@ -149,34 +149,42 @@ Our **impediment removal** plan is as follows:
 
 ### Sprint Review
 
-#### Start doing
-Write down tasks that come up as work is being done in our current card's task list. So we can track all completed work.
-Come up with schedules before leaving class for the day. So we can decide when we'll sit down for pair programming.
+We performed a sprint review and reviewed our backlog items and demoed new functionality to the rest of the team.
 
-#### Stop doing
-Working on items aren't in the Sprint backlog. 
-[(1) Provide link to truck website, if available on Agile Connors | Trello](https://trello.com/c/8DlYozJC/20-1-provide-link-to-truck-website-if-available)
+We also met with our real stakeholder and received their input on the project thus far. Picture below.
 
-#### Continue doing
-Making Trello board to manage assignment guidelines.
-[Agile Connors Meta | Trello](https://trello.com/b/pJo83OOM/agile-connors-meta)
-Pair programming. Great learning experience.
-Assigning card's to users in our group, so that we know whose main responsibilty completing a card is.
-
-#### Kudos/shoutouts
-Kyle quickly got the initial google maps api setup.
-Ben did a lot to get the testing setup.
-Lennart communicated with our stakeholder Danielle and recieved feedback from her. 
-
-We also met with our real stakeholder and received their input on the project thus far:
-
-![Sprint 1 - Stakeholder Input](sprint1-stakeholder.png)
+![Sprint 1 - Stakeholder Input](sprint1-stakeholder.png) 
 
 #### Burndown Chart
 
 We completed our entire sprint backlog of 8 points by the end of the sprint. 6 points were completed on the first day. The final 2 points were completed on the second day.
 
 ![Sprint 1 - Burndown Chart](sprint1-burndown.png)
+
+### Sprint Retrospective
+
+We did a sprint retrospective and used a foursquare activity where all team members are free to volunteer stickies for "start doing", "stop doing", "continue doing", and "shoutouts". The results are below.
+
+**Start doing**
+
+- Write down tasks that come up as work is being done in our current card's task list. So we can track all completed work.
+- Come up with schedules before leaving class for the day. So we can decide when we'll sit down for pair programming.
+
+**Stop doing**
+
+- Working on items aren't in the Sprint backlog.
+
+**Continue doing**
+
+- Making Trello board to manage assignment guidelines ([Agile Connors Meta | Trello](https://trello.com/b/pJo83OOM/agile-connors-meta)).
+- Pair programming. Great learning experience.
+- Assigning card's to users in our group, so that we know whose main responsibilty completing a card is.
+
+**Shout-outs**
+
+- Kyle quickly got the initial google maps api setup.
+- Ben did a lot to get the testing setup.
+- Lennart communicated with our stakeholder Danielle and recieved feedback from her.
 
 ## Sprint 2
 
@@ -246,19 +254,7 @@ We discussed **impediments** again at each of the daily scrums and they remained
 
 ### Sprint Review
 
-We held a sprint review to ensure that everything in the backlog was up to date for the end of the sprint. We also did a foursquare activity again, as a sort of sprint retrospective. The results are below.
-
-#### Start doing
-- Discussing availability during sprint planning / when we'll be working on things (in case there are dependencies).
-
-#### Stop doing
-- Changing out sprint backlog items after the sprint starts, if we can avoid it.
-
-#### Continue doing
-- Doing great work on the product.
-
-#### Kudos/shoutouts
-- Ben, for taking on CI/CD plus a bunch of other work on the codebase.
+We performed a sprint review and reviewed our backlog items and demoed new functionality to the rest of the team.
 
 We once again showed the product to our **stakeholder** and they are happy with its progress so far. They like the updates to how availability is viewed on the info cards and on the truck icons on the map.
 
@@ -269,6 +265,22 @@ We didn't complete our entire sprint backlog of 9 points. We were not able to co
  product increment.
 
 ![Sprint 2 - Burndown Chart](sprint2-burndown.png)
+
+### Sprint Retrospective
+
+We did a sprint retrospective and used the same foursquare activity as the previous sprint. All team members are free to volunteer stickies for "start doing", "stop doing", "continue doing", and "shoutouts". The results are below.
+
+**Start doing**
+- Discussing availability during sprint planning / when we'll be working on things (in case there are dependencies).
+
+**Stop doing**
+- Changing out sprint backlog items after the sprint starts, if we can avoid it.
+
+**Continue doing**
+- Doing great work on the product.
+
+**Shout-outs**
+- Ben, for taking on CI/CD plus a bunch of other work on the codebase.
 
 ## Sprint 3
 
@@ -322,6 +334,10 @@ TODO
 TODO
 
 ![Sprint 3 - Burndown Chart](sprint3-burndown.png)
+
+### Sprint Retrospective
+
+TODO
 
 ## Development
 
