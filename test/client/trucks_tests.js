@@ -117,6 +117,16 @@ describe("Trucks", function() {
             expect(searchResults.length).to.equal(5);
         });
 
+        it("Should return nothing when Bibimo boxes results when searching for it lowercase", function () {
+            var searchResults = trucksjs.filterBySearch(trucks, "bibimo boxes");
+            expect(searchResults.length).to.equal(0);
+        });
+
+        it("Should return nothing when Bijingo boxes results when searching for it lowercase", function () {
+            var searchResults = trucksjs.filterBySearch(trucks, "Bijingo boxes");
+            expect(searchResults.length).to.equal(0);
+        });
+
         it("Should return all Bibim box results when searching for Bibim", function () {
             var searchResults = trucksjs.filterBySearch(trucks, "Bibim");
             expect(searchResults.length).to.equal(5);
