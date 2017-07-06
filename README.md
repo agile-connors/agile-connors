@@ -319,15 +319,17 @@ See below for a summary of this conversation.
   - *Last 24 hours:* Improve and stabilize Continuous Deployment. Refactor and clean up existing code. Complete "filter by specific truck" backlog item. Add autocomplete suggestions to search box.
   - *Next 24 hours:* Add tests and refactor code. Reorganize code into separate files based on their responsibilities.
 - **Henry**
-  - *Last 24 hours:* 
-  - *Next 24 hours:* 
+  - *Last 24 hours:* TODO
+  - *Next 24 hours:* TODO
 - **Kerry**
-  - *Last 24 hours:* 
-  - *Next 24 hours:* 
+  - *Last 24 hours:* TODO
+  - *Next 24 hours:* TODO
+
+We discussed **impediments** again at this daily scrum. Once again, we identified distance and location as one of our biggest problem. It impedes our ability to collaborate but we've overcome it relatively well by being extremely active on Slack.
 
 ### Sprint Review
 
-TODO
+We performed an early sprint review, as we needed to prepare for the final presentation in which the official sprint review would take place. We reviewed our backlog items and demoed new functionality to the rest of the team.
 
 #### Burndown Chart
 
@@ -337,7 +339,26 @@ TODO
 
 ### Sprint Retrospective
 
-TODO
+We did a sprint retrospective and used the foursquare activity once again. The results are below.
+
+**Start doing**
+
+- Pair programming more if we can make it work with peoples schedules.
+- Actually using sprint retrospective results to improve the team.
+- Doing more code review so that everyone has a good idea of changes to the codebase.
+
+**Stop doing**
+
+- Committing code to the master branch that doesn't pass tests.
+
+**Continue doing**
+
+- Maintaining the meta Trello board for tracking class-specific rubric requirements and their status.
+- Assigning sprint backlog items (and meta backlog items) to one specific team member, to ensure someone is accountable for the item being completed.
+
+**Shout-outs**
+
+- Ben has done the bulk of the DevOps and unit testing work for the team.
 
 ## Development
 
