@@ -216,7 +216,7 @@ function filterBySearch(trucks, searchQuery) {
                 if (truck.notes === undefined || truck.notes === null){
                     return "";
                 }
-                
+
                 return truck.notes.toLowerCase();
             }
 
