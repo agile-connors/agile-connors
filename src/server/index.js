@@ -19,6 +19,12 @@ app.get('/api/trucks', function(req, res) {
             return;
         }
         const data = JSON.parse(body);
+
+        // Trucks can have null points, so we must filter out those bad values.
+        data.features = data.features.filter(function (feature) {
+            return feature.attributes.POINT_X && feature.attributes.POINT_Y
+        });
+
         const responseData = data.features.map(function(feature) {
             const coordinates = proj4('EPSG:3857', 'EPSG:4326', [feature.attributes.POINT_X, feature.attributes.POINT_Y]);
             return {
@@ -37,6 +43,6 @@ app.get('/api/trucks', function(req, res) {
     });
 });
 
-app.listen(3000, function() {
-    console.log('Express server listening on port 3000.');
+app.listen(80, function() {
+    console.log('Express server listening on port 80.');
 });
