@@ -23,21 +23,18 @@ Install Docker
 
 
 ## Run Docker Image (from Docker hub)
-### Prerequisite
-#### Install and []nginx proxy](https://github.com/jwilder/nginx-proxy/)
-```
-docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
-```
+On the production machine
 
+### Prerequisites
+This application requires [the following prerequisites](https://github.com/benjenkinsv95/personal-website/blob/master/docker_nginx_prerequisites.md) so that it can be hosted with a domain name using a secure HTTPS encryption.
 
-### Run Image itself
+### Run App in Production
+Finally, run the application from DockerHub. Pulls down a fresh copy and specifies what the domain name should be.
 ```
 docker pull benjenkinsv95/agile-connors-boston-scavenger && \
-docker run -e VIRTUAL_HOST=boston-scavenger.ben-jenkins.com -p 80:80 benjenkinsv95/agile-connors-boston-scavenger
+docker run -d \
+-e VIRTUAL_HOST=boston-scavenger.ben-jenkins.com \
+-e LETSENCRYPT_HOST=boston-scavenger.ben-jenkins.com \
+-e LETSENCRYPT_EMAIL=benjenkinsv95@gmail.com \
+benjenkinsv95/agile-connors-boston-scavenger
 ```
-
-### Ports
-The left port your server makes accessible. While the right port is used inside the docker container.
-
-## HTTPS
-https://medium.com/@mvuksano/using-tls-certificates-with-nginx-docker-container-74c6769a26db
