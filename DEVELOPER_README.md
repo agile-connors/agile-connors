@@ -33,8 +33,8 @@ Finally, run the application from DockerHub. Pulls down a fresh copy and specifi
 ```
 docker pull benjenkinsv95/agile-connors-boston-scavenger && \
 docker run -d \
--e "VIRTUAL_HOST=boston-scavenger.ben-jenkins.com,www.boston-scavenger.ben-jenkins.com" \
--e "LETSENCRYPT_HOST=boston-scavenger.ben-jenkins.com,www.boston-scavenger.ben-jenkins.com" \
+-e VIRTUAL_HOST=boston-scavenger.ben-jenkins.com \
+-e LETSENCRYPT_HOST=boston-scavenger.ben-jenkins.com \
 -e LETSENCRYPT_EMAIL=benjenkinsv95@gmail.com \
 benjenkinsv95/agile-connors-boston-scavenger
 ```
